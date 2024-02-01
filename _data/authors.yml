@@ -1,0 +1,31 @@
+Billy Rick:
+  name        : "Billy Rick"
+  bio         : "What do you want, jewels? I am a very extravagant man."
+  avatar      : "/assets/images/bio-photo-2.jpg"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:billyrick@rick.com"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://thewhip.com"
+    - label: "Twitter"
+      icon: "fab fa-fw fa-twitter-square"
+      url: "https://twitter.com/extravagantman"
+
+Christina Kratsch:
+  name        : "Christina Kratsch"
+  #bio         : "I ordered what?"
+  avatar      : "/assets/images/authors/ck.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:kratsch@htw-berlin.de"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.htw-berlin.de/hochschule/personen/person/?eid=13856"
+#    - label: "Twitter"
+#      icon: "fab fa-fw fa-twitter-square"
+#      url: "https://twitter.com/rhymeswithsackit"
+
+
