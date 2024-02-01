@@ -1,5 +1,5 @@
 ---
-title: "Überblick zur Vorlesung"
+title: "Vorlesung Data Science - Überblick"
 layout: single
 author_profile: true
 author: Christina Kratsch
@@ -11,10 +11,9 @@ toc: false
 classes: wide
 ---
 
-
-# Vorlesung Data Science
-
 Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
+
+[templates.md](lecture/templates.md)
 
 ## Was ist Data Science?
 
@@ -45,15 +44,16 @@ Hier finden Sie weiterführende Links zu den Inhalten der Vorlesung:
 
 ### Vor der Vorlesung
 
-0. [Von den Besten lernen](toc/0.md)
+[Von den Besten lernen](modules/ex-bahn-ds/index.md)
 
 ### Grüne Phase: Werkzeuge kennen
 
-1. Grundlagen, Organisatorisches, Daten
-2. Werkzeuge für Data Science
-3. Daten  verstehen als Projekt
-4. Einfache Visualisierungen
-5. Fortgeschrittene Visualisierungen
+1. [Grundlagen, Organisatorisches, Daten](lectures/01/index.md)
+2. [Grundlagen, Organisatorisches, Daten](lectures/01/index.html)
+3. Werkzeuge für Data Science
+4. Daten  verstehen als Projekt
+5. Einfache Visualisierungen
+6. Fortgeschrittene Visualisierungen
 
 ### Blaue Phase: Echte Problem analysieren und Lösungen organisieren
 

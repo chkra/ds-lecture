@@ -1,0 +1,34 @@
+---
+title: "Vorlesung 01"
+layout: single
+author_profile: true
+author: Christina Kratsch
+lecture_name: "Data Science"
+lecture_desc: "Grundlegende Methoden für die Exploration und das Management von Daten."
+licence: "CC-BY"
+licence_desc: 2024 | HTW Berlin 
+classes: wide
+---
+
+In dieser Vorlesung gehts ums ankommen und kennenlernen. Wir reden über den Sinn und Zweck von Date Science, klären alle organisatorischen Fragen und besprechen ganz genau, was einen guten Data Scientist ausmacht.
+{: .notice--primary}
+
+## Vorbereitung
+
+Wir steigen direkt ambitioniert ein - es gibt eine Hausaufgabe, bevor die Vorlesung überhaupt begonnen habt. Hoffentlich macht Ihnen die Aufgabe aber Appetit auf die geplanten Inhalte:
+
+Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema ["BahnMining - Pünktlichkeit ist eine Zier"](/modules/ex-bahn-ds/index.md) beim 36C3 des Chaos Computer Clubs. Bitte sehen Sie sich zur Vorbereitung auf die erste Vorlesung das Video VOR der Vorlesung in Gänze an (Achtung, es ist etwas länger, aber hoffentlich sehr unterhaltsam). Machen Sie sich Notizen, aber nicht dazu, *was* der Redner bespricht, sondern vor allem *wie* er seine Data Science Story erzählt.
+{: .notice--warning}
+
+## 🛠 Im Workshop vor Ort
+
+Erster Teil: Ankommen:
+* Gegenseitiges Vorstellen und Kennenlernen
+* Präsentation zu Organisatorischen Themen
+* Ankommen in Miro
+  
+Zweiter Teil: Praktisches Arbeiten
+* Impuls: Was ist Story Telling?
+* Austausch in Gruppen: Zusammenfassung der Vortrags, Beobachtungen zum Story Telling, festhalten in Miro
+* Review Miro
+* Suche: Coole Datensätze & Pitch

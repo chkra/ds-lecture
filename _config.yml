@@ -14,6 +14,8 @@ theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
 
+
+
 # Site Settings
 locale                   : "en-US"
 title                    : ""
@@ -23,7 +25,7 @@ name                     : ""
 description              : "Neue Impulse für die KI-Lehre"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "chkra/kiwi"
+repository               : ""
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -156,6 +158,8 @@ footer:
 include:
   - .htaccess
   - _pages
+  - lectures
+  - toc
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -236,20 +240,27 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
+  - jekyll-relative-links
   - jekyll-gist
-  - jekyll-feed
+
   - jekyll-include-cache
+#  - jekyll-paginate
+#  - jekyll-feed
+#  - jekyll-sitemap
+
 
 # mimic GitHub Pages with --safe
 whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
   - jekyll-gist
   - jekyll-feed
   - jekyll-include-cache
+#  - jekyll-paginate
+#  - jekyll-sitemap
 
+
+relative_links:
+  enabled:     true
+  collections: false
 
 # Archives
 #  Type
@@ -301,3 +312,4 @@ defaults:
       comments: # true
       share: true
       related: true
+
