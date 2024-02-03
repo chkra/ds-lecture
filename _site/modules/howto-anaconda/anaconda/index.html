@@ -1,0 +1,426 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>HowTo: Anaconda für virtuelle Umgebungen -</title>
+<meta name="description" content="Neue Impulse für die KI-Lehre">
+
+
+  <meta name="author" content="Christina Kratsch">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="HowTo: Anaconda für virtuelle Umgebungen">
+<meta property="og:url" content="http://localhost:4000/modules/howto-anaconda/anaconda/">
+
+
+  <meta property="og:description" content="Neue Impulse für die KI-Lehre">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/modules/howto-anaconda/anaconda/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+<div style="color: #76B900;margin-bottom:-10px;font-weight: bold;"><h3>Data Science</h3></div>
+
+<div style="color: #858585;font-size:small;">Grundlegende Methoden für die Exploration und das Management von Daten.</div>
+
+
+
+
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
+</a>
+
+
+<div style="color: #858585;font-size:small;margin-top: -15px;">2024 | HTW Berlin</div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/authors/ck.png" alt="Christina Kratsch" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <div class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Christina Kratsch</a>
+    </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:kratsch@htw-berlin.de" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.htw-berlin.de/hochschule/personen/person/?eid=13856" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="HowTo: Anaconda für virtuelle Umgebungen">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/modules/howto-anaconda/anaconda/" class="u-url" itemprop="url">HowTo: Anaconda für virtuelle Umgebungen
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="einführung-in-anaconda">Einführung in Anaconda</h3>
+
+<p>In der Welt der Datenwissenschaft und Python-Entwicklung ist Anaconda zu einem unverzichtbaren Werkzeug geworden. In diesem Artikel werden wir uns damit befassen, warum virtuelle Umgebungen wichtig sind, was Anaconda ist, wie man es installiert und wie man es verwendet.</p>
+
+<h3 id="1-warum-virtuelle-umgebungen">1. Warum virtuelle Umgebungen?</h3>
+
+<p>Virtuelle Umgebungen sind entscheidend, um Projektabhängigkeiten zu verwalten und Konflikte zwischen verschiedenen Projekten zu vermeiden. Es kann schenell entstehen, dass Sie Python gleichzeitig für ganz unterschiedliche Projekte (z.B. Data Science, Webentwicklung, Skripte) verwenden. Früher oder später kommen sich die dafür benötigten Libraries und Abhängigkeiten in die Quere.</p>
+
+<p>Indem Sie für jedes Projekt eine eigene, isolierte Python-Umgebung einzurichten, in der Sie Bibliotheken und Pakete installieren können, ohne die Systeminstallation zu beeinträchtigen, schaffen Sie Ordnung und Effizienz in der Ausführung und vermeiden Konflikte zwischen unterschiedlichen Abhängigkeiten.</p>
+
+<h3 id="2-was-ist-anaconda">2. Was ist Anaconda?</h3>
+
+<p>Anaconda ist eine Open-Source-Distribution von Python und R, die speziell für Datenwissenschaft, maschinelles Lernen und wissenschaftliches Rechnen entwickelt wurde. Es wird mit einer Vielzahl von vorinstallierten Bibliotheken geliefert, darunter NumPy, pandas, matplotlib und viele mehr. Vor allem aber bietet Anaconda ein eigenes Paketverwaltungssystem, das es einfach macht, virtuelle Umgbungen zu verwalten und zusätzliche Pakete zu installieren und zu verwalten.</p>
+
+<p>Anaconda bietet den Konsolenbefehl <code class="language-plaintext highlighter-rouge">conda</code>, den Sie in vielen Tutorials finden werden:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nt">--help</span>
+</code></pre></div></div>
+
+<p>Mit dem Anaconda Navigator steht Ihnen aber eine ebenso mächtige graphische Umgebung zur Verwaltung Ihrer virtuellen Umgebungen zur Verfügung.</p>
+
+<h3 id="3-wie-installiere-ich-anaconda">3. Wie installiere ich Anaconda?</h3>
+
+<p>Die Installation von Anaconda ist einfach und unkompliziert. Gehen Sie auf die <a href="https://www.anaconda.com/products/distribution">Anaconda-Website</a> und laden Sie das entsprechende Installationspaket für Ihr Betriebssystem herunter. Folgen Sie dann den Anweisungen des Installationsassistenten, um Anaconda auf Ihrem System zu installieren.</p>
+
+<h3 id="4-wie-verwende-ich-anaconda">4. Wie verwende ich Anaconda?</h3>
+
+<p>Nach der Installation können Sie Anaconda Navigator oder die Anaconda-Befehlszeile verwenden, um auf verschiedene Funktionen zuzugreifen. Mit dem Anaconda Navigator können Sie problemlos virtuelle Umgebungen erstellen, Pakete installieren und Anwendungen wie Jupyter Notebook starten. Die Anaconda-Befehlszeile bietet ähnliche Funktionen und ermöglicht es Ihnen, Ihr System über die Befehlszeile zu verwalten.</p>
+
+<p>Ein Beispiel für die Erstellung einer virtuellen Umgebung mit Anaconda:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">--name</span> myenv <span class="nv">python</span><span class="o">=</span>3.9
+</code></pre></div></div>
+
+<p>Aktivieren Sie dann die Umgebung:</p>
+
+<ul>
+  <li>Unter Windows:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>activate myenv
+</code></pre></div></div>
+
+<ul>
+  <li>Unter macOS und Linux:</li>
+</ul>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>activate myenv
+</code></pre></div></div>
+
+<p>Nun sind Sie in der virtuellen Umgebung, hier steht Ihnen das eben frisch installierte Python (hier in der gewünschten Version 3.9) zur Verfügung. Sie können nun Pakete in Ihrer virtuellen Umgebung installieren und verwenden, ohne die Systeminstallation zu beeinträchtigen, hier exemplarisch für das Paket <code class="language-plaintext highlighter-rouge">pandas</code>:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>pandas
+</code></pre></div></div>
+
+<p>In diesem Artikel haben wir einen kurzen Überblick über Anaconda gegeben und warum es ein wichtiges Werkzeug für Python-Entwickler und Datenwissenschaftler ist. Von der Verwaltung virtueller Umgebungen bis zur Installation und Nutzung von Paketen bietet Anaconda eine benutzerfreundliche Plattform für die Entwicklung und Ausführung von Python-Anwendungen. Für weiterführende Themen verweisen wir auf den <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">User Guide der Anaconda Website</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,648 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Visualizing Distributions -</title>
+<meta name="description" content="Neue Impulse für die KI-Lehre">
+
+
+  <meta name="author" content="Christina Kratsch">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Visualizing Distributions">
+<meta property="og:url" content="http://localhost:4000/modules/10-visualization-distributions/">
+
+
+  <meta property="og:description" content="Neue Impulse für die KI-Lehre">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/modules/10-visualization-distributions/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+<div style="color: #76B900;margin-bottom:-10px;font-weight: bold;"><h3>Data Science</h3></div>
+
+<div style="color: #858585;font-size:small;">Grundlegende Methoden für die Exploration und das Management von Daten.</div>
+
+
+
+
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
+</a>
+
+
+<div style="color: #858585;font-size:small;margin-top: -15px;">2024 | HTW Berlin</div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/authors/ck.png" alt="Christina Kratsch" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <div class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Christina Kratsch</a>
+    </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:kratsch@htw-berlin.de" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.htw-berlin.de/hochschule/personen/person/?eid=13856" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Visualizing Distributions">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/modules/10-visualization-distributions/" class="u-url" itemprop="url">Visualizing Distributions
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>In the previous lesson, you learned some interesting facts about a dataset about the birds of Minnesota. You found some erroneous data by visualizing outliers and looked at the differences between bird categories by their maximum length.</p>
+
+<h2 id="explore-the-birds-dataset">Explore the birds dataset</h2>
+
+<p>Another way to dig into data is by looking at its distribution, or how the data is organized along an axis. Perhaps, for example, you’d like to learn about the general distribution, for this dataset, of the maximum wingspan or maximum body mass for the birds of Minnesota.</p>
+
+<p>Let’s discover some facts about the distributions of data in this dataset. In the <em>notebook.ipynb</em> file at the root of this lesson folder, import Pandas, Matplotlib, and your data:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">birds</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span><span class="sh">'</span><span class="s">../../data/birds.csv</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">birds</span><span class="p">.</span><span class="nf">head</span><span class="p">()</span>
+</code></pre></div></div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right"> </th>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">ScientificName</th>
+      <th style="text-align: left">Category</th>
+      <th style="text-align: left">Order</th>
+      <th style="text-align: left">Family</th>
+      <th style="text-align: left">Genus</th>
+      <th style="text-align: left">ConservationStatus</th>
+      <th style="text-align: right">MinLength</th>
+      <th style="text-align: right">MaxLength</th>
+      <th style="text-align: right">MinBodyMass</th>
+      <th style="text-align: right">MaxBodyMass</th>
+      <th style="text-align: right">MinWingspan</th>
+      <th style="text-align: right">MaxWingspan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left">Black-bellied whistling-duck</td>
+      <td style="text-align: left">Dendrocygna autumnalis</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Dendrocygna</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">47</td>
+      <td style="text-align: right">56</td>
+      <td style="text-align: right">652</td>
+      <td style="text-align: right">1020</td>
+      <td style="text-align: right">76</td>
+      <td style="text-align: right">94</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td style="text-align: left">Fulvous whistling-duck</td>
+      <td style="text-align: left">Dendrocygna bicolor</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Dendrocygna</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">45</td>
+      <td style="text-align: right">53</td>
+      <td style="text-align: right">712</td>
+      <td style="text-align: right">1050</td>
+      <td style="text-align: right">85</td>
+      <td style="text-align: right">93</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td style="text-align: left">Snow goose</td>
+      <td style="text-align: left">Anser caerulescens</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">79</td>
+      <td style="text-align: right">2050</td>
+      <td style="text-align: right">4050</td>
+      <td style="text-align: right">135</td>
+      <td style="text-align: right">165</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">3</td>
+      <td style="text-align: left">Ross’s goose</td>
+      <td style="text-align: left">Anser rossii</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">57.3</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">1066</td>
+      <td style="text-align: right">1567</td>
+      <td style="text-align: right">113</td>
+      <td style="text-align: right">116</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">4</td>
+      <td style="text-align: left">Greater white-fronted goose</td>
+      <td style="text-align: left">Anser albifrons</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">81</td>
+      <td style="text-align: right">1930</td>
+      <td style="text-align: right">3310</td>
+      <td style="text-align: right">130</td>
+      <td style="text-align: right">165</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>In general, you can quickly look at the way data is distributed by using a scatter plot as we did in the previous lesson:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birds</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">kind</span><span class="o">=</span><span class="sh">'</span><span class="s">scatter</span><span class="sh">'</span><span class="p">,</span><span class="n">x</span><span class="o">=</span><span class="sh">'</span><span class="s">MaxLength</span><span class="sh">'</span><span class="p">,</span><span class="n">y</span><span class="o">=</span><span class="sh">'</span><span class="s">Order</span><span class="sh">'</span><span class="p">,</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">))</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">'</span><span class="s">Max Length per Order</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Order</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">xlabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Max Length</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/scatter-wb.png" alt="max length per order" /></p>
+
+<p>This gives an overview of the general distribution of body length per bird Order, but it is not the optimal way to display true distributions. That task is usually handled by creating a Histogram.</p>
+<h2 id="working-with-histograms">Working with histograms</h2>
+
+<p>Matplotlib offers very good ways to visualize data distribution using Histograms. This type of chart is like a bar chart where the distribution can be seen via a rise and fall of the bars. To build a histogram, you need numeric data. To build a Histogram, you can plot a chart defining the kind as ‘hist’ for Histogram. This chart shows the distribution of MaxBodyMass for the entire dataset’s range of numeric data. By dividing the array of data it is given into smaller bins, it can display the distribution of the data’s values:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">].</span><span class="nf">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="sh">'</span><span class="s">hist</span><span class="sh">'</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/dist1-wb.png" alt="distribution over the entire dataset" /></p>
+
+<p>As you can see, most of the 400+ birds in this dataset fall in the range of under 2000 for their Max Body Mass. Gain more insight into the data by changing  the <code class="language-plaintext highlighter-rouge">bins</code> parameter to a higher number, something like 30:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">].</span><span class="nf">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="sh">'</span><span class="s">hist</span><span class="sh">'</span><span class="p">,</span> <span class="n">bins</span> <span class="o">=</span> <span class="mi">30</span><span class="p">,</span> <span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/dist2-wb.png" alt="distribution over the entire dataset with larger bins param" /></p>
+
+<p>This chart shows the distribution in a bit more granular fashion. A chart less skewed to the left could be created by ensuring that you only select data within a given range:</p>
+
+<p>Filter your data to get only those birds whose body mass is under 60, and show 40 <code class="language-plaintext highlighter-rouge">bins</code>:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">filteredBirds</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[(</span><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="o">&amp;</span> <span class="p">(</span><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="mi">60</span><span class="p">)]</span>      
+<span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">].</span><span class="nf">plot</span><span class="p">(</span><span class="n">kind</span> <span class="o">=</span> <span class="sh">'</span><span class="s">hist</span><span class="sh">'</span><span class="p">,</span><span class="n">bins</span> <span class="o">=</span> <span class="mi">40</span><span class="p">,</span><span class="n">figsize</span> <span class="o">=</span> <span class="p">(</span><span class="mi">12</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>     
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/dist3-wb.png" alt="filtered histogram" /></p>
+
+<p>✅ Try some other filters and data points. To see the full distribution of the data, remove the <code class="language-plaintext highlighter-rouge">['MaxBodyMass']</code> filter to show labeled distributions.</p>
+
+<p>The histogram offers some nice color and labeling enhancements to try as well:</p>
+
+<p>Create a 2D histogram to compare the relationship between two distributions. Let’s compare <code class="language-plaintext highlighter-rouge">MaxBodyMass</code> vs. <code class="language-plaintext highlighter-rouge">MaxLength</code>. Matplotlib offers a built-in way to show convergence using brighter colors:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxLength</span><span class="sh">'</span><span class="p">]</span>
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="p">.</span><span class="nf">subplots</span><span class="p">(</span><span class="n">tight_layout</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">hist</span> <span class="o">=</span> <span class="n">ax</span><span class="p">.</span><span class="nf">hist2d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+</code></pre></div></div>
+<p>There appears to be an expected correlation between these two elements along an expected axis, with one particularly strong point of convergence:</p>
+
+<p><img src="/modules/10-visualization-distributions/images/2D-wb.png" alt="2D plot" /></p>
+
+<p>Histograms work well by default for numeric data. What if you need to see distributions according to text data?</p>
+<h2 id="explore-the-dataset-for-distributions-using-text-data">Explore the dataset for distributions using text data</h2>
+
+<p>This dataset also includes good information about the bird category and its genus, species, and family as well as its conservation status. Let’s dig into this conservation information. What is the distribution of the birds according to their conservation status?</p>
+
+<blockquote>
+  <p>✅ In the dataset, several acronyms are used to describe conservation status. These acronyms come from the <a href="https://www.iucnredlist.org/">IUCN Red List Categories</a>, an organization that catalogs species’ status.</p>
+
+  <ul>
+    <li>CR: Critically Endangered</li>
+    <li>EN: Endangered</li>
+    <li>EX: Extinct</li>
+    <li>LC: Least Concern</li>
+    <li>NT: Near Threatened</li>
+    <li>VU: Vulnerable</li>
+  </ul>
+</blockquote>
+
+<p>These are text-based values so you will need to do a transform to create a histogram. Using the filteredBirds dataframe, display its conservation status alongside its Minimum Wingspan. What do you see?</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">x1</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">EX</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">x2</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">CR</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">x3</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">EN</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">x4</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">NT</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">x5</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">VU</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">x6</span> <span class="o">=</span> <span class="n">filteredBirds</span><span class="p">.</span><span class="n">loc</span><span class="p">[</span><span class="n">filteredBirds</span><span class="p">.</span><span class="n">ConservationStatus</span><span class="o">==</span><span class="sh">'</span><span class="s">LC</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">]</span>
+
+<span class="n">kwargs</span> <span class="o">=</span> <span class="nf">dict</span><span class="p">(</span><span class="n">alpha</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">bins</span><span class="o">=</span><span class="mi">20</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">red</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Extinct</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x2</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">orange</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Critically Endangered</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x3</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">yellow</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Endangered</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x4</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">green</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Near Threatened</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x5</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">blue</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Vulnerable</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">hist</span><span class="p">(</span><span class="n">x6</span><span class="p">,</span> <span class="o">**</span><span class="n">kwargs</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="sh">'</span><span class="s">gray</span><span class="sh">'</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sh">'</span><span class="s">Least Concern</span><span class="sh">'</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">gca</span><span class="p">().</span><span class="nf">set</span><span class="p">(</span><span class="n">title</span><span class="o">=</span><span class="sh">'</span><span class="s">Conservation Status</span><span class="sh">'</span><span class="p">,</span> <span class="n">ylabel</span><span class="o">=</span><span class="sh">'</span><span class="s">Min Wingspan</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">legend</span><span class="p">();</span>
+</code></pre></div></div>
+
+<p><img src="/modules/10-visualization-distributions/images/histogram-conservation-wb.png" alt="wingspan and conservation collation" /></p>
+
+<p>There doesn’t seem to be a good correlation between minimum wingspan and conservation status. Test other elements of the dataset using this method. You can try different filters as well. Do you find any correlation?</p>
+
+<h2 id="density-plots">Density plots</h2>
+
+<p>You may have noticed that the histograms we have looked at so far are ‘stepped’ and do not flow smoothly in an arc. To show a smoother density chart, you can try a density plot.</p>
+
+<p>To work with density plots, familiarize yourself with a new plotting library, <a href="https://seaborn.pydata.org/generated/seaborn.kdeplot.html">Seaborn</a>.</p>
+
+<p>Loading Seaborn, try a basic density plot:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">seaborn</span> <span class="k">as</span> <span class="n">sns</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">sns</span><span class="p">.</span><span class="nf">kdeplot</span><span class="p">(</span><span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MinWingspan</span><span class="sh">'</span><span class="p">])</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/density1.png" alt="Density plot" /></p>
+
+<p>You can see how the plot echoes the previous one for Minimum Wingspan data; it’s just a bit smoother. According to Seaborn’s documentation, “Relative to a histogram, KDE can produce a plot that is less cluttered and more interpretable, especially when drawing multiple distributions. But it has the potential to introduce distortions if the underlying distribution is bounded or not smooth. Like a histogram, the quality of the representation also depends on the selection of good smoothing parameters.” <a href="https://seaborn.pydata.org/generated/seaborn.kdeplot.html">source</a> In other words, outliers as always will make your charts behave badly.</p>
+
+<p>If you wanted to revisit that jagged MaxBodyMass line in the second chart you built, you could smooth it out very well by recreating it using this method:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sns</span><span class="p">.</span><span class="nf">kdeplot</span><span class="p">(</span><span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">])</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/density2.png" alt="smooth bodymass line" /></p>
+
+<p>If you wanted a smooth, but not too smooth line, edit the <code class="language-plaintext highlighter-rouge">bw_adjust</code> parameter:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sns</span><span class="p">.</span><span class="nf">kdeplot</span><span class="p">(</span><span class="n">filteredBirds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxBodyMass</span><span class="sh">'</span><span class="p">],</span> <span class="n">bw_adjust</span><span class="o">=</span><span class="p">.</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/10-visualization-distributions/images/density3.png" alt="less smooth bodymass line" /></p>
+
+<p>✅ Read about the parameters available for this type of plot and experiment!</p>
+
+<p>This type of chart offers beautifully explanatory visualizations. With a few lines of code, for example, you can show the max body mass density per bird Order:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sns</span><span class="p">.</span><span class="nf">kdeplot</span><span class="p">(</span>
+   <span class="n">data</span><span class="o">=</span><span class="n">filteredBirds</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="sh">"</span><span class="s">MaxBodyMass</span><span class="sh">"</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="sh">"</span><span class="s">Order</span><span class="sh">"</span><span class="p">,</span>
+   <span class="n">fill</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span> <span class="n">common_norm</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span> <span class="n">palette</span><span class="o">=</span><span class="sh">"</span><span class="s">crest</span><span class="sh">"</span><span class="p">,</span>
+   <span class="n">alpha</span><span class="o">=</span><span class="p">.</span><span class="mi">5</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span>
+<span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/modules/10-visualization-distributions/images/density4.png" alt="bodymass per order" /></p>
+
+<p>You can also map the density of several variables in one chart. Text the MaxLength and MinLength of a bird compared to their conservation status:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">sns</span><span class="p">.</span><span class="nf">kdeplot</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">filteredBirds</span><span class="p">,</span> <span class="n">x</span><span class="o">=</span><span class="sh">"</span><span class="s">MinLength</span><span class="sh">"</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="sh">"</span><span class="s">MaxLength</span><span class="sh">"</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="sh">"</span><span class="s">ConservationStatus</span><span class="sh">"</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><img src="/modules/10-visualization-distributions/images/multi.png" alt="multiple densities, superimposed" /></p>
+
+<p>Perhaps it’s worth researching whether the cluster of ‘Vulnerable’ birds according to their lengths is meaningful or not.</p>
+
+<h2 id="review--self-study">Review &amp; Self Study</h2>
+
+<p>Histograms are a more sophisticated type of chart than basic scatterplots, bar charts, or line charts. Go on a search on the internet to find good examples of the use of histograms. How are they used, what do they demonstrate, and in what fields or areas of inquiry do they tend to be used?</p>
+
+<p>In this lesson, you used Matplotlib and started working with Seaborn to show more sophisticated charts. Do some research on <code class="language-plaintext highlighter-rouge">kdeplot</code> in Seaborn, a “continuous probability density curve in one or more dimensions”. Read through <a href="https://seaborn.pydata.org/generated/seaborn.kdeplot.html">the documentation</a> to understand how it works.</p>
+
+<h2 id="credits">Credits</h2>
+
+<p><strong>⚑ References</strong> <br /> This lesson was taken from the course <a href="https://github.com/microsoft/Data-Science-For-Beginners">“Data Science for Beginners”</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,454 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>HowTo: Git -</title>
+<meta name="description" content="Neue Impulse für die KI-Lehre">
+
+
+  <meta name="author" content="Christina Kratsch">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="HowTo: Git">
+<meta property="og:url" content="http://localhost:4000/modules/howto-git/git/">
+
+
+  <meta property="og:description" content="Neue Impulse für die KI-Lehre">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/modules/howto-git/git/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+<div style="color: #76B900;margin-bottom:-10px;font-weight: bold;"><h3>Data Science</h3></div>
+
+<div style="color: #858585;font-size:small;">Grundlegende Methoden für die Exploration und das Management von Daten.</div>
+
+
+
+
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
+</a>
+
+
+<div style="color: #858585;font-size:small;margin-top: -15px;">2024 | HTW Berlin</div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/authors/ck.png" alt="Christina Kratsch" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <div class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Christina Kratsch</a>
+    </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:kratsch@htw-berlin.de" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.htw-berlin.de/hochschule/personen/person/?eid=13856" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="HowTo: Git">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/modules/howto-git/git/" class="u-url" itemprop="url">HowTo: Git
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <h3 id="warum-git">Warum Git?</h3>
+
+<p>Durch die Verwendung von <em>Git</em> können Entwickler Änderungen verfolgen, Branches erstellen, verschiedene Versionen verwalten und problemlos zwischen ihnen wechseln. Das ist wichtig, weil es eine Versionskontrolle ermöglicht, welche die Zusammenarbeit an Softwareprojekten erleichtert und die Entwicklung effizienter gestaltet. Es ermöglicht auch das Zusammenführen von Codeänderungen mehrerer Entwickler und das effektive Management von Konflikten. Darüber hinaus bietet Git eine zuverlässige Sicherung der Projektgeschichte und ermöglicht es Teams, agil zu arbeiten, indem sie flexibel auf Anforderungsänderungen reagieren können. Insgesamt trägt Git dazu bei, den Entwicklungsprozess transparenter, nachvollziehbarer und kollaborativer zu gestalten.</p>
+
+<h3 id="git-lernen">Git lernen</h3>
+
+<p>Um Git zu erlernen, stehen im Internet unzählige Tutorials zur Verfügung, wir listen hier einige Empfehlungen:</p>
+<ul>
+  <li><a href="https://lerneprogrammieren.de/git/">einen Schnellkurs zum Durchlesen</a> oder</li>
+  <li><a href="https://learn.microsoft.com/de-de/training/paths/intro-to-vc-git/">einen detaillierten Lernpfad mit interaktiven Anwendungen</a></li>
+</ul>
+
+<p>Für alle Betriebssysteme finden Sie <a href="https://git-scm.com/">hier</a> gute Downloads und Anleitungen, um Git auf Ihrem Betriebssystem einzurichten.</p>
+
+<p>Darüber hinaus sollten die ersten fünf Kapitel <a href="https://git-scm.com/book/en/v2">dieses Onlinebuchs von Git-SCM</a> Sie auf alles vorbereiten, was es über Git im Alltag zu wissen gibt.</p>
+
+<p>Die Kurse von Git SCM gibt es auch als Video:</p>
+
+<p><a href="https://git-scm.com/video/what-is-version-control"><img src="https://git-scm.com/images/video/ep1.png" /></a> 
+<a href="https://git-scm.com/video/what-is-git"><img src="https://git-scm.com/images/video/ep2.png" /></a><br /><br />
+<a href="https://git-scm.com/video/get-going"><img src="https://git-scm.com/images/video/ep3.png" /></a>
+<a href="https://git-scm.com/video/quick-wins"><img src="https://git-scm.com/images/video/ep4.png" /></a><br /><br /></p>
+
+<p>Für Nutzer von Visual Studio ist vielleicht diese Seite interessant:</p>
+<ul>
+  <li><a href="https://learn.microsoft.com/en-us/visualstudio/version-control/git-with-visual-studio?view=vs-2022">How to use Visual Studio with Git</a></li>
+</ul>
+
+<p class="notice--warning"><strong>Aufgabe 1:</strong> Schließen Sie Ihre eigene Git-Schulung mit einer der hier genannten Ressourcen oder einen vergleichbaren Kurs ab. Stellen Sie sicher, dass Ihnen Konzepte wie <code class="language-plaintext highlighter-rouge">clone</code>, <code class="language-plaintext highlighter-rouge">commit</code>, <code class="language-plaintext highlighter-rouge">push</code>, <code class="language-plaintext highlighter-rouge">fetch</code> sowie Branches und das Entstehen von Merge Konflikten vertraut sind.</p>
+
+<p class="notice--warning"><strong>Aufgabe 2:</strong> Die meisten Kurse zu Git konzentrieren sich auf den Umgang mit der Konsole. Wenn Sie Git in Ihrer IDE verwenden möchten, stellen Sie sicher, dass Ihnen bewusst ist, welcher Button welchem Konsolenbefehl entspricht.</p>
+
+<h3 id="git-und-visual-studio">Git und Visual Studio</h3>
+
+<p>Auch wenn Ihnen die Theorie im Umgang mit Git bekannt ist, führt die konkrete Umsetzung mit Visual Studio manchmal zu Problemen. Folgen Sie einem der beiden Workflows unten, wenn Sie ein neues C#-Projekt unter Versionskontrolle bringen wollen.</p>
+
+<p class="notice--info"><strong>Hinweis:</strong> Wenn Sie in einem Team arbeiten, müssen die folgenden Schritte zur Initialisierung Ihres Projektes nur von einem einzigen Teammitglied ausgeführt werden. Sprechen Sie sich vorher im Team ab.</p>
+
+<h4 id="falls-noch-kein-remote-repository-exisitiert">Falls noch kein Remote Repository exisitiert</h4>
+
+<ol>
+  <li>Legen Sie ein neues Repository im GitLab an. Achten Sie darauf, dass das Repository leer ist (kein Template, keine Readme, keine Lizenz…).</li>
+  <li>Notieren Sie sich die URL des neuen Repositories (zugänglich über den Clone-Button), üblicherweise hat das die Form
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://gitlab.rz.htw-berlin.de/user/repo_name.git
+</code></pre></div>    </div>
+  </li>
+  <li>Öffnen Sie lokal auf Ihrem Rechner Ihr Visual Studio und legen Sie ein neues Projekt (C# Konsolenapp, Windows Forms, …) an.</li>
+  <li>Jetzt fügen wir Versionskontrolle zum Projekt hinzu. Wählen Sie im Visual Studio <strong>Git</strong> &gt; <strong>Create Git Repository</strong>.</li>
+  <li>Im nun geöffneten Fenster wählen Sie links unter “Other” ein <strong>Existing Remote</strong> und fügen dort die URL Ihres eben neu angelegten Repositories ein.</li>
+</ol>
+
+<p class="notice--danger"><strong>Achtung:</strong> Es ist <strong>sehr</strong> zu empfehlen, Ihr Projekt jetzt mit den wichtigsten Metadaten auszustatten. Wählen Sie im Dialog die Option “Add Readme”, wählen Sie schon jetzt eine Lizenz, und, vor allem, <strong>wählen Sie ein gitignore-Template</strong> (der <em>Visual Studio Default</em> genügt)! Sehr, sehr viel Ärger bleibt Ihnen an späterer Stelle dadurch erspart.</p>
+
+<ol>
+  <li>Wählen Sie “Create and Push”.</li>
+</ol>
+
+<h4 id="falls-bereits-ein-remote-repository-exisitiert">Falls bereits ein Remote Repository exisitiert</h4>
+
+<p>Manchmal wurde bereits - aus welchen Gründen auch immer, ein Repository für Sie angelegt. Eventuell befinden sich auch schon Dateien darin, aber keine Visual Studio Solution. Ein einfaches “Create &amp; Push” wie oben wird in diesem Fall zu Problemen führen. Gehen Sie dann stattdessen folgendermaßen vor:</p>
+
+<ol>
+  <li>Notieren Sie sich die URL des bestehenden Repositories (zugänglich über den Clone-Button), üblicherweise hat das die Form
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>https://gitlab.rz.htw-berlin.de/user/repo_name.git
+</code></pre></div>    </div>
+  </li>
+  <li>Öffnen Sie Visual Studio. Legen Sie KEIN neues Projekt an, sondern wählen Sie beim Start die Option “Clone from Repository”.</li>
+  <li>Clonen Sie das exisitierende Repository in einen passenden neuen Projektordner. Sie sollten nun einen Repository Explorer sehen, der Ihnen Ihre bestehenden Dateien zeigt.</li>
+  <li>Wählen Sie nun <strong>New</strong> &gt; <strong>Project</strong> und konfigurieren Sie das passende Projekt. Achten Sie darauf, dass Ihre Projekt- und Solution-Datei in den Ordner des eben geklonten Repositores gelegt werden.</li>
+</ol>
+
+<p class="notice--danger"><strong>Achtung:</strong> Bevor Sie nun die neu erstellen Projekt- und Solution-Dateien als Änderungen ins Repository pushen, empfiehlt es sich <strong>sehr</strong>, noch eine <code class="language-plaintext highlighter-rouge">.gitignore</code>-Datei hinzuzugügen, falls diese noch nicht existiert. Prüfen Sie auch im <em>Folder View</em> Ihres Solution Explorers (oder alternativ einfach im Windows Explorer), dass die Datei im Hauptverzeichnis liegt.</p>
+
+<p class="notice--info">Tipp: Als Einträge für Ihre <code class="language-plaintext highlighter-rouge">.gitignore</code> können Sie <a href="https://github.com/github/gitignore/blob/main/VisualStudio.gitignore">dieses Template</a> verwenden.</p>
+
+<ol>
+  <li>Nachdem Sie die <code class="language-plaintext highlighter-rouge">.gitignore</code> eingerichtet haben, sollten sich die getrackten Changes in Ihrem Git Explorer auf wenige Dateien beschränken. Diese können Sie nun committen und pushen.</li>
+</ol>
+
+<h3 id="git-und-python">Git und Python</h3>
+
+<p>Da Python mit deutlich weniger Projekt- und Konfigurationsdateien arbeitet als z.B. C#, wird der Umgang mit Python von vielen IDEs deutlich loser und Datei-basierter gehandhabt. Folgen Sie im Zweifel den Anweisungen Ihrer IDE und den etablierten best practices für eine Ordnerstruktur (z.B. bei graphischen oder Webanwendungen).</p>
+
+<p>Eine <code class="language-plaintext highlighter-rouge">.gitignore</code> zu haben empfiehlt sich hier aber ebenso, folgen Sie z.B. den <a href="https://github.com/github/gitignore/blob/main/Python.gitignore">offizellen Empfehlungen von GitHub für Python-Projekte</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

@@ -1,0 +1,693 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Working with Data: Data Preparation -</title>
+<meta name="description" content="Neue Impulse für die KI-Lehre">
+
+
+  <meta name="author" content="Christina Kratsch">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Working with Data: Data Preparation">
+<meta property="og:url" content="http://localhost:4000/modules/08-data-preparation/">
+
+
+  <meta property="og:description" content="Neue Impulse für die KI-Lehre">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/modules/08-data-preparation/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+<div style="color: #76B900;margin-bottom:-10px;font-weight: bold;"><h3>Data Science</h3></div>
+
+<div style="color: #858585;font-size:small;">Grundlegende Methoden für die Exploration und das Management von Daten.</div>
+
+
+
+
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
+</a>
+
+
+<div style="color: #858585;font-size:small;margin-top: -15px;">2024 | HTW Berlin</div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/authors/ck.png" alt="Christina Kratsch" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <div class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Christina Kratsch</a>
+    </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:kratsch@htw-berlin.de" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.htw-berlin.de/hochschule/personen/person/?eid=13856" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Working with Data: Data Preparation">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/modules/08-data-preparation/" class="u-url" itemprop="url">Working with Data: Data Preparation
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>Depending on its source, raw data may contain some inconsistencies that will cause challenges in analysis and modeling. In other words, this data can be categorized as “dirty” and will need to be cleaned up. This lesson focuses on techniques for cleaning and transforming the data to handle challenges of missing, inaccurate, or incomplete data. Topics covered in this lesson will utilize Python and the Pandas library and will be <a href="/modules/08-data-preparation/notebook.ipynb">demonstrated in the notebook</a> within this directory.</p>
+
+<h2 id="the-importance-of-cleaning-data">The importance of cleaning data</h2>
+
+<ul>
+  <li>
+    <p><strong>Ease of use and reuse</strong>: When data is properly organized and normalized it’s easier to search, use, and share with others.</p>
+  </li>
+  <li>
+    <p><strong>Consistency</strong>: Data science often requires working with more than one dataset, where datasets from different sources need to be joined together. Making sure that each individual data set has common standardization will ensure that the data is still useful when they are all merged into one dataset.</p>
+  </li>
+  <li>
+    <p><strong>Model accuracy</strong>: Data that has been cleaned improves the accuracy of models that rely on it.</p>
+  </li>
+</ul>
+
+<h2 id="common-cleaning-goals-and-strategies">Common cleaning goals and strategies</h2>
+
+<ul>
+  <li>
+    <p><strong>Exploring a dataset</strong>: Data exploration can help you discover data that needs to be cleaned up. Visually observing values within a dataset can set expectations of what that rest of it will look like, or provide an idea of the problems that can be resolved. Exploration can involve basic querying, visualizations, and sampling.</p>
+  </li>
+  <li>
+    <p><strong>Formatting</strong>: Depending on the source, data can have inconsistencies in how it’s presented. This can cause problems in searching for and representing the value, where it’s seen within the dataset but is not properly represented in visualizations or query results. Common formatting problems involve resolving whitespace, dates, and data types. Resolving formatting issues is typically up to the people who are using the data. For example, standards on how dates and numbers are presented can differ by country.</p>
+  </li>
+  <li>
+    <p><strong>Duplications</strong>: Data that has more than one occurrence can produce inaccurate results and usually should be removed. This can be a common occurrence when joining two or more datasets together. However, there are instances where duplication in joined datasets contain pieces that can provide additional information and may need to be preserved.</p>
+  </li>
+  <li>
+    <p><strong>Missing Data</strong>: Missing data can cause inaccuracies as well as weak or biased results. Sometimes these can be resolved by a “reload” of the data, filling in the missing values with computation and code like Python, or simply just removing the value and corresponding data. There are numerous reasons for why data may be missing and the actions that are taken to resolve these missing values can be dependent on how and why they went missing in the first place.</p>
+  </li>
+</ul>
+
+<h2 id="exploring-dataframe-information">Exploring DataFrame information</h2>
+<blockquote>
+  <p><strong>Learning goal:</strong> By the end of this subsection, you should be comfortable finding general information about the data stored in pandas DataFrames.</p>
+</blockquote>
+
+<p>Once you have loaded your data into pandas, it will more likely than not be in a DataFrame. However, if the data set in your DataFrame has 60,000 rows and 400 columns, how do you even begin to get a sense of what you’re working with? Fortunately, <a href="https://pandas.pydata.org/">pandas</a> provides some convenient tools to quickly look at overall information about a DataFrame in addition to the first few and last few rows.</p>
+
+<p>In order to explore this functionality, we will import the Python scikit-learn library and use an iconic dataset: the <a href="https://en.wikipedia.org/wiki/Iris_flower_data_set">Iris data set</a>.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">from</span> <span class="n">sklearn.datasets</span> <span class="kn">import</span> <span class="n">load_iris</span>
+
+<span class="n">iris</span> <span class="o">=</span> <span class="nf">load_iris</span><span class="p">()</span>
+<span class="n">iris_df</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">iris</span><span class="p">[</span><span class="sh">'</span><span class="s">data</span><span class="sh">'</span><span class="p">],</span> <span class="n">columns</span><span class="o">=</span><span class="n">iris</span><span class="p">[</span><span class="sh">'</span><span class="s">feature_names</span><span class="sh">'</span><span class="p">])</span>
+</code></pre></div></div>
+<p>|                                        |sepal length (cm)|sepal width (cm)|petal length (cm)|petal width (cm)|
+|—————————————-|—————–|—————-|—————–|—————-|
+|0                                       |5.1              |3.5             |1.4              |0.2             |
+|1                                       |4.9              |3.0             |1.4              |0.2             |
+|2                                       |4.7              |3.2             |1.3              |0.2             |
+|3                                       |4.6              |3.1             |1.5              |0.2             |
+|4                                       |5.0              |3.6             |1.4              |0.2             |</p>
+
+<ul>
+  <li><strong>DataFrame.info</strong>: To start off, the <code class="language-plaintext highlighter-rouge">info()</code> method is used to print a summary of the content present in a <code class="language-plaintext highlighter-rouge">DataFrame</code>. Let’s take a look at this dataset to see what we have:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iris_df</span><span class="p">.</span><span class="nf">info</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>RangeIndex: 150 entries, 0 to 149
+Data columns (total 4 columns):
+ #   Column             Non-Null Count  Dtype  
+---  ------             --------------  -----  
+ 0   sepal length (cm)  150 non-null    float64
+ 1   sepal width (cm)   150 non-null    float64
+ 2   petal length (cm)  150 non-null    float64
+ 3   petal width (cm)   150 non-null    float64
+dtypes: float64(4)
+memory usage: 4.8 KB
+</code></pre></div>    </div>
+    <p>From this, we know that the <em>Iris</em> dataset has 150 entries in four columns with no null entries. All of the data is stored as 64-bit floating-point numbers.</p>
+  </li>
+  <li><strong>DataFrame.head()</strong>: Next, to check the actual content of the <code class="language-plaintext highlighter-rouge">DataFrame</code>, we use the <code class="language-plaintext highlighter-rouge">head()</code> method. Let’s see what the first few rows of our <code class="language-plaintext highlighter-rouge">iris_df</code> look like:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iris_df</span><span class="p">.</span><span class="nf">head</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
+0                5.1               3.5                1.4               0.2
+1                4.9               3.0                1.4               0.2
+2                4.7               3.2                1.3               0.2
+3                4.6               3.1                1.5               0.2
+4                5.0               3.6                1.4               0.2
+</code></pre></div>    </div>
+  </li>
+  <li><strong>DataFrame.tail()</strong>: Conversely, to check the last few rows of the <code class="language-plaintext highlighter-rouge">DataFrame</code>, we use the <code class="language-plaintext highlighter-rouge">tail()</code> method:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">iris_df</span><span class="p">.</span><span class="nf">tail</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>   sepal length (cm)  sepal width (cm)  petal length (cm)  petal width (cm)
+145                6.7               3.0                5.2               2.3
+146                6.3               2.5                5.0               1.9
+147                6.5               3.0                5.2               2.0
+148                6.2               3.4                5.4               2.3
+149                5.9               3.0                5.1               1.8
+</code></pre></div>    </div>
+    <blockquote>
+      <p><strong>Takeaway:</strong> Even just by looking at the metadata about the information in a DataFrame or the first and last few values in one, you can get an immediate idea about the size, shape, and content of the data you are dealing with.</p>
+    </blockquote>
+  </li>
+</ul>
+
+<h2 id="dealing-with-missing-data">Dealing with Missing Data</h2>
+<blockquote>
+  <p><strong>Learning goal:</strong> By the end of this subsection, you should know how to replace or remove null values from DataFrames.</p>
+</blockquote>
+
+<p>Most of the time the datasets you want to use (of have to use) have missing values in them. How missing data is handled carries with it subtle tradeoffs that can affect your final analysis and real-world outcomes.</p>
+
+<p>Pandas handles missing values in two ways. The first you’ve seen before in previous sections: <code class="language-plaintext highlighter-rouge">NaN</code>, or Not a Number. This is a actually a special value that is part of the IEEE floating-point specification and it is only used to indicate missing floating-point values.</p>
+
+<p>For missing values apart from floats, pandas uses the Python <code class="language-plaintext highlighter-rouge">None</code> object. While it might seem confusing that you will encounter two different kinds of values that say essentially the same thing, there are sound programmatic reasons for this design choice and, in practice, going this route enables pandas to deliver a good compromise for the vast majority of cases. Notwithstanding this, both <code class="language-plaintext highlighter-rouge">None</code> and <code class="language-plaintext highlighter-rouge">NaN</code> carry restrictions that you need to be mindful of with regards to how they can be used.</p>
+
+<ul>
+  <li><strong>Detecting null values</strong>: In <code class="language-plaintext highlighter-rouge">pandas</code>, the <code class="language-plaintext highlighter-rouge">isnull()</code> and <code class="language-plaintext highlighter-rouge">notnull()</code> methods are your primary methods for detecting null data. Both return Boolean masks over your data. We will be using <code class="language-plaintext highlighter-rouge">numpy</code> for <code class="language-plaintext highlighter-rouge">NaN</code> values:
+```python
+import numpy as np</li>
+</ul>
+
+<p>example1 = pd.Series([0, np.nan, ‘’, None])
+example1.isnull()</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code></code></pre></div></div>
+<p>0    False
+1     True
+2    False
+3     True
+dtype: bool</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Look closely at the output. Does any of it surprise you? While `0` is an arithmetic null, it's nevertheless a perfectly good integer and pandas treats it as such. `''` is a little more subtle. While we used it in Section 1 to represent an empty string value, it is nevertheless a string object and not a representation of null as far as pandas is concerned.
+
+Now, let's turn this around and use these methods in a manner more like you will use them in practice. You can use Boolean masks  directly as a ``Series`` or ``DataFrame`` index, which can be useful when trying to work with isolated missing (or present) values.
+
+&gt; **Takeaway**: Both the `isnull()` and `notnull()` methods produce similar results when you use them in `DataFrame`s: they show the results and the index of those results, which will help you enormously as you wrestle with your data.
+
+- **Dropping null values**: Beyond identifying missing values, pandas provides a convenient means to remove null values from `Series` and `DataFrame`s. (Particularly on large data sets, it is often more advisable to simply remove missing [NA] values from your analysis than deal with them in other ways.) To see this in action, let's return to `example1`:
+```python
+example1 = example1.dropna()
+example1
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0    0
+2     
+dtype: object
+</code></pre></div></div>
+<p>Note that this should look like your output from <code class="language-plaintext highlighter-rouge">example3[example3.notnull()]</code>. The difference here is that, rather than just indexing on the masked values, <code class="language-plaintext highlighter-rouge">dropna</code> has removed those missing values from the <code class="language-plaintext highlighter-rouge">Series</code> <code class="language-plaintext highlighter-rouge">example1</code>.</p>
+
+<p>Because <code class="language-plaintext highlighter-rouge">DataFrame</code>s have two dimensions, they afford more options for dropping data.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">DataFrame</span><span class="p">([[</span><span class="mi">1</span><span class="p">,</span>      <span class="n">np</span><span class="p">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">7</span><span class="p">],</span> 
+                         <span class="p">[</span><span class="mi">2</span><span class="p">,</span>      <span class="mi">5</span><span class="p">,</span>      <span class="mi">8</span><span class="p">],</span> 
+                         <span class="p">[</span><span class="n">np</span><span class="p">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span>      <span class="mi">9</span><span class="p">]])</span>
+<span class="n">example2</span>
+</code></pre></div></div>
+<p>|      | 0 | 1 | 2 |
+|——|—|—|—|
+|0     |1.0|NaN|7  |
+|1     |2.0|5.0|8  |
+|2     |NaN|6.0|9  |</p>
+
+<p>(Did you notice that pandas upcast two of the columns to floats to accommodate the <code class="language-plaintext highlighter-rouge">NaN</code>s?)</p>
+
+<p>You cannot drop a single value from a <code class="language-plaintext highlighter-rouge">DataFrame</code>, so you have to drop full rows or columns. Depending on what you are doing, you might want to do one or the other, and so pandas gives you options for both. Because in data science, columns generally represent variables and rows represent observations, you are more likely to drop rows of data; the default setting for <code class="language-plaintext highlighter-rouge">dropna()</code> is to drop all rows that contain any null values:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span><span class="p">.</span><span class="nf">dropna</span><span class="p">()</span>
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0	1	2
+1	2.0	5.0	8
+</code></pre></div></div>
+<p>If necessary, you can drop NA values from columns. Use <code class="language-plaintext highlighter-rouge">axis=1</code> to do so:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span><span class="p">.</span><span class="nf">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="sh">'</span><span class="s">columns</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	2
+0	7
+1	8
+2	9
+</code></pre></div></div>
+<p>Notice that this can drop a lot of data that you might want to keep, particularly in smaller datasets. What if you just want to drop rows or columns that contain several or even just all null values? You specify those setting in <code class="language-plaintext highlighter-rouge">dropna</code> with the <code class="language-plaintext highlighter-rouge">how</code> and <code class="language-plaintext highlighter-rouge">thresh</code> parameters.</p>
+
+<p>By default, <code class="language-plaintext highlighter-rouge">how='any'</code> (if you would like to check for yourself or see what other parameters the method has, run <code class="language-plaintext highlighter-rouge">example4.dropna?</code> in a code cell). You could alternatively specify <code class="language-plaintext highlighter-rouge">how='all'</code> so as to drop only rows or columns that contain all null values. Let’s expand our example <code class="language-plaintext highlighter-rouge">DataFrame</code> to see this in action.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span><span class="p">[</span><span class="mi">3</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="p">.</span><span class="n">nan</span>
+<span class="n">example2</span>
+</code></pre></div></div>
+<p>|      |0  |1  |2  |3  |
+|——|—|—|—|—|
+|0     |1.0|NaN|7  |NaN|
+|1     |2.0|5.0|8  |NaN|
+|2     |NaN|6.0|9  |NaN|</p>
+
+<p>The <code class="language-plaintext highlighter-rouge">thresh</code> parameter gives you finer-grained control: you set the number of <em>non-null</em> values that a row or column needs to have in order to be kept:</p>
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span><span class="p">.</span><span class="nf">dropna</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="sh">'</span><span class="s">rows</span><span class="sh">'</span><span class="p">,</span> <span class="n">thresh</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>	0	1	2	3
+1	2.0	5.0	8	NaN
+</code></pre></div></div>
+<p>Here, the first and last row have been dropped, because they contain only two non-null values.</p>
+
+<ul>
+  <li><strong>Filling null values</strong>: Depending on your dataset, it can sometimes make more sense to fill null values with valid ones rather than drop them. You could use <code class="language-plaintext highlighter-rouge">isnull</code> to do this in place, but that can be laborious, particularly if you have a lot of values to fill. Because this is such a common task in data science, pandas provides <code class="language-plaintext highlighter-rouge">fillna</code>, which returns a copy of the <code class="language-plaintext highlighter-rouge">Series</code> or <code class="language-plaintext highlighter-rouge">DataFrame</code> with the missing values replaced with one of your choosing. Let’s create another example <code class="language-plaintext highlighter-rouge">Series</code> to see how this works in practice.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example3</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">Series</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span> <span class="n">np</span><span class="p">.</span><span class="n">nan</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="bp">None</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="n">index</span><span class="o">=</span><span class="nf">list</span><span class="p">(</span><span class="sh">'</span><span class="s">abcde</span><span class="sh">'</span><span class="p">))</span>
+<span class="n">example3</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a    1.0
+b    NaN
+c    2.0
+d    NaN
+e    3.0
+dtype: float64
+</code></pre></div>    </div>
+    <p>You can fill all of the null entries with a single value, such as <code class="language-plaintext highlighter-rouge">0</code>:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example3</span><span class="p">.</span><span class="nf">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a    1.0
+b    0.0
+c    2.0
+d    0.0
+e    3.0
+dtype: float64
+</code></pre></div>    </div>
+    <p>You can <strong>forward-fill</strong> null values, which is to use the last valid value to fill a null:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example3</span><span class="p">.</span><span class="nf">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="sh">'</span><span class="s">ffill</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a    1.0
+b    1.0
+c    2.0
+d    2.0
+e    3.0
+dtype: float64
+</code></pre></div>    </div>
+    <p>You can also <strong>back-fill</strong> to propagate the next valid value backward to fill a null:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example3</span><span class="p">.</span><span class="nf">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="sh">'</span><span class="s">bfill</span><span class="sh">'</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a    1.0
+b    2.0
+c    2.0
+d    3.0
+e    3.0
+dtype: float64
+</code></pre></div>    </div>
+    <p>As you might guess, this works the same with <code class="language-plaintext highlighter-rouge">DataFrame</code>s, but you can also specify an <code class="language-plaintext highlighter-rouge">axis</code> along which to fill null values. taking the previously used <code class="language-plaintext highlighter-rouge">example2</code> again:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example2</span><span class="p">.</span><span class="nf">fillna</span><span class="p">(</span><span class="n">method</span><span class="o">=</span><span class="sh">'</span><span class="s">ffill</span><span class="sh">'</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  0	1	2	3
+0	1.0	1.0	7.0	7.0
+1	2.0	5.0	8.0	8.0
+2	NaN	6.0	9.0	9.0
+</code></pre></div>    </div>
+    <p>Notice that when a previous value is not available for forward-filling, the null value remains.</p>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Takeaway:</strong> There are multiple ways to deal with missing values in your datasets. The specific strategy you use (removing them, replacing them, or even how you replace them) should be dictated by the particulars of that data. You will develop a better sense of how to deal with missing values the more you handle and interact with datasets.</p>
+</blockquote>
+
+<h2 id="removing-duplicate-data">Removing duplicate data</h2>
+
+<blockquote>
+  <p><strong>Learning goal:</strong> By the end of this subsection, you should be comfortable identifying and removing duplicate values from DataFrames.</p>
+</blockquote>
+
+<p>In addition to missing data, you will often encounter duplicated data in real-world datasets. Fortunately, <code class="language-plaintext highlighter-rouge">pandas</code> provides an easy means of detecting and removing duplicate entries.</p>
+
+<ul>
+  <li><strong>Identifying duplicates: <code class="language-plaintext highlighter-rouge">duplicated</code></strong>: You can easily spot duplicate values using the <code class="language-plaintext highlighter-rouge">duplicated</code> method in pandas, which returns a Boolean mask indicating whether an entry in a <code class="language-plaintext highlighter-rouge">DataFrame</code> is a duplicate of an earlier one. Let’s create another example <code class="language-plaintext highlighter-rouge">DataFrame</code> to see this in action.
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example4</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nc">DataFrame</span><span class="p">({</span><span class="sh">'</span><span class="s">letters</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span><span class="sh">'</span><span class="s">A</span><span class="sh">'</span><span class="p">,</span><span class="sh">'</span><span class="s">B</span><span class="sh">'</span><span class="p">]</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">+</span> <span class="p">[</span><span class="sh">'</span><span class="s">B</span><span class="sh">'</span><span class="p">],</span>
+                       <span class="sh">'</span><span class="s">numbers</span><span class="sh">'</span><span class="p">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">3</span><span class="p">]})</span>
+<span class="n">example4</span>
+</code></pre></div>    </div>
+    <p>|      |letters|numbers|
+|——|——-|——-|
+|0     |A      |1      |
+|1     |B      |2      |
+|2     |A      |1      |
+|3     |B      |3      |
+|4     |B      |3      |</p>
+  </li>
+</ul>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example4</span><span class="p">.</span><span class="nf">duplicated</span><span class="p">()</span>
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>0    False
+1    False
+2     True
+3    False
+4     True
+dtype: bool
+</code></pre></div></div>
+<ul>
+  <li><strong>Dropping duplicates: <code class="language-plaintext highlighter-rouge">drop_duplicates</code>:</strong> simply returns a copy of the data for which all of the <code class="language-plaintext highlighter-rouge">duplicated</code> values are <code class="language-plaintext highlighter-rouge">False</code>:
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example4</span><span class="p">.</span><span class="nf">drop_duplicates</span><span class="p">()</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>  letters	numbers
+0	A	1
+1	B	2
+3	B	3
+</code></pre></div>    </div>
+    <p>Both <code class="language-plaintext highlighter-rouge">duplicated</code> and <code class="language-plaintext highlighter-rouge">drop_duplicates</code> default to consider all columns but you can specify that they examine only a subset of columns in your <code class="language-plaintext highlighter-rouge">DataFrame</code>:</p>
+    <div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">example4</span><span class="p">.</span><span class="nf">drop_duplicates</span><span class="p">([</span><span class="sh">'</span><span class="s">letters</span><span class="sh">'</span><span class="p">])</span>
+</code></pre></div>    </div>
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>letters	numbers
+0	A	1
+1	B	2
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<blockquote>
+  <p><strong>Takeaway:</strong> Removing duplicate data is an essential part of almost every data-science project. Duplicate data can change the results of your analyses and give you inaccurate results!</p>
+</blockquote>
+
+<h2 id="review--self-study">Review &amp; Self Study</h2>
+
+<p>There are many ways to discover and approach preparing your data for analysis and modeling and cleaning the data is an important step that is a “hands on” experience. Try these challenges from Kaggle to explore techniques that this lesson didn’t cover.</p>
+
+<ul>
+  <li>
+    <p><a href="https://www.kaggle.com/rtatman/data-cleaning-challenge-parsing-dates/">Data Cleaning Challenge: Parsing Dates</a></p>
+  </li>
+  <li>
+    <p><a href="https://www.kaggle.com/rtatman/data-cleaning-challenge-scale-and-normalize-data">Data Cleaning Challenge: Scale and Normalize Data</a></p>
+  </li>
+</ul>
+
+<h2 id="credits">Credits</h2>
+
+<p class="notice--info"><strong>⚑ References</strong> <br /> This lesson was taken from the course <a href="https://github.com/microsoft/Data-Science-For-Beginners">“Data Science for Beginners”</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>

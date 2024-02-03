@@ -1,0 +1,655 @@
+<!doctype html>
+<!--
+  Minimal Mistakes Jekyll Theme 4.24.0 by Michael Rose
+  Copyright 2013-2020 Michael Rose - mademistakes.com | @mmistakes
+  Free for personal and commercial use under the MIT license
+  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE
+-->
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="utf-8">
+
+<!-- begin _includes/seo.html --><title>Visualizing Quantities -</title>
+<meta name="description" content="Neue Impulse für die KI-Lehre">
+
+
+  <meta name="author" content="Christina Kratsch">
+  
+
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
+<meta property="og:site_name" content="">
+<meta property="og:title" content="Visualizing Quantities">
+<meta property="og:url" content="http://localhost:4000/modules/09-visualization-quantities/">
+
+
+  <meta property="og:description" content="Neue Impulse für die KI-Lehre">
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<link rel="canonical" href="http://localhost:4000/modules/09-visualization-quantities/">
+
+
+
+
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    
+      "@type": "Person",
+      "name": "",
+      "url": "http://localhost:4000/"
+    
+  }
+</script>
+
+
+
+
+
+
+
+<!-- end _includes/seo.html -->
+
+
+
+  <link href="/feed.xml" type="application/atom+xml" rel="alternate" title=" Feed">
+
+
+<!-- https://t.co/dKP3o1e -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<script>
+  document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+</script>
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
+
+
+
+    <!-- start custom head snippets -->
+
+<!-- insert favicons. use https://realfavicongenerator.net/ -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body class="layout--single wide">
+    <nav class="skip-links">
+  <ul>
+    <li><a href="#site-nav" class="screen-reader-shortcut">Skip to primary navigation</a></li>
+    <li><a href="#main" class="screen-reader-shortcut">Skip to content</a></li>
+    <li><a href="#footer" class="screen-reader-shortcut">Skip to footer</a></li>
+  </ul>
+</nav>
+
+    
+
+<div class="masthead">
+  <div class="masthead__inner-wrap">
+    <div class="masthead__menu">
+      <nav id="site-nav" class="greedy-nav">
+        
+          <a class="site-logo" href="/"><img src="/assets/images/logo.png" alt=""></a>
+        
+        <a class="site-title" href="/">
+          
+          
+        </a>
+        <ul class="visible-links"><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/">Quick-Start Guide</a>
+            </li><li class="masthead__menu-item">
+              <a href="https://mmistakes.github.io/minimal-mistakes/about/">About</a>
+            </li><li class="masthead__menu-item">
+              <a href="/year-archive/">Sample Posts</a>
+            </li><li class="masthead__menu-item">
+              <a href="/collection-archive/">Sample Collections</a>
+            </li><li class="masthead__menu-item">
+              <a href="/sitemap/">Sitemap</a>
+            </li></ul>
+        
+        <button class="greedy-nav__toggle hidden" type="button">
+          <span class="visually-hidden">Toggle menu</span>
+          <div class="navicon"></div>
+        </button>
+        <ul class="hidden-links hidden"></ul>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="initial-content">
+      
+
+
+
+
+
+<div id="main" role="main">
+  
+  <div class="sidebar sticky">
+  
+
+
+
+<div style="color: #76B900;margin-bottom:-10px;font-weight: bold;"><h3>Data Science</h3></div>
+
+<div style="color: #858585;font-size:small;">Grundlegende Methoden für die Exploration und das Management von Daten.</div>
+
+
+
+
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
+</a>
+
+
+<div style="color: #858585;font-size:small;margin-top: -15px;">2024 | HTW Berlin</div>
+
+
+
+
+<div itemscope itemtype="https://schema.org/Person" class="h-card">
+
+  
+    <div class="author__avatar">
+      <a href="http://localhost:4000/">
+        <img src="/assets/images/authors/ck.png" alt="Christina Kratsch" itemprop="image" class="u-photo">
+      </a>
+    </div>
+  
+
+  <div class="author__content">
+    <div class="author__name p-name" itemprop="name">
+      <a class="u-url" rel="me" href="http://localhost:4000/" itemprop="url">Christina Kratsch</a>
+    </div>
+    
+  </div>
+
+  <div class="author__urls-wrapper">
+    <button class="btn btn--inverse">Follow</button>
+    <ul class="author__urls social-icons">
+      
+
+      
+        
+          
+            <li><a href="mailto:kratsch@htw-berlin.de" rel="nofollow noopener noreferrer me"><i class="fas fa-fw fa-envelope-square" aria-hidden="true"></i><span class="label">Email</span></a></li>
+          
+        
+          
+            <li><a href="https://www.htw-berlin.de/hochschule/personen/person/?eid=13856" rel="nofollow noopener noreferrer me" itemprop="sameAs"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span class="label">Website</span></a></li>
+          
+        
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      <!--
+  <li>
+    <a href="http://link-to-whatever-social-network.com/user/" itemprop="sameAs" rel="nofollow noopener noreferrer me">
+      <i class="fas fa-fw" aria-hidden="true"></i> Custom Social Profile Link
+    </a>
+  </li>
+-->
+    </ul>
+  </div>
+</div>
+
+  
+  </div>
+
+
+
+  <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
+    <meta itemprop="headline" content="Visualizing Quantities">
+    
+    
+    
+
+    <div class="page__inner-wrap">
+      
+        <header>
+          <h1 id="page-title" class="page__title p-name" itemprop="headline">
+            <a href="http://localhost:4000/modules/09-visualization-quantities/" class="u-url" itemprop="url">Visualizing Quantities
+</a>
+          </h1>
+          
+
+
+        </header>
+      
+
+      <section class="page__content e-content" itemprop="text">
+        
+        <p>In this lesson you will explore how to use one of the many available Python libraries to learn how to create interesting visualizations all around the concept of quantity. Using a cleaned dataset about the birds of Minnesota, you can learn many interesting facts about local wildlife.</p>
+
+<h2 id="observe-wingspan-with-matplotlib">Observe wingspan with Matplotlib</h2>
+
+<p>An excellent library to create both simple and sophisticated plots and charts of various kinds is <a href="https://matplotlib.org/stable/index.html">Matplotlib</a>. In general terms, the process of plotting data using these libraries includes identifying the parts of your dataframe that you want to target, performing any transforms on that data necessary, assigning its x and y axis values, deciding what kind of plot to show, and then showing the plot. Matplotlib offers a large variety of visualizations, but for this lesson, let’s focus on the ones most appropriate for visualizing quantity: line charts, scatterplots, and bar plots.</p>
+
+<blockquote>
+  <p>✅ Use the best chart to suit your data’s structure and the story you want to tell.</p>
+  <ul>
+    <li>To analyze trends over time: line</li>
+    <li>To compare values: bar, column, pie, scatterplot</li>
+    <li>To show how parts relate to a whole: pie</li>
+    <li>To show distribution of data: scatterplot, bar</li>
+    <li>To show trends: line, column</li>
+    <li>To show relationships between values: line, scatterplot, bubble</li>
+  </ul>
+</blockquote>
+
+<p>If you have a dataset and need to discover how much of a given item is included, one of the first tasks you have at hand will be to inspect its values.</p>
+
+<p>✅ There are very good ‘cheat sheets’ available for Matplotlib <a href="https://matplotlib.org/cheatsheets/cheatsheets.pdf">here</a>.</p>
+
+<h2 id="build-a-line-plot-about-bird-wingspan-values">Build a line plot about bird wingspan values</h2>
+
+<p>Open the <code class="language-plaintext highlighter-rouge">notebook.ipynb</code> file at the root of this lesson folder and add a cell. You can also <a href="'../../data/birds.csv'">download the data</a> here.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kn">import</span> <span class="n">pandas</span> <span class="k">as</span> <span class="n">pd</span>
+<span class="kn">import</span> <span class="n">matplotlib.pyplot</span> <span class="k">as</span> <span class="n">plt</span>
+<span class="n">birds</span> <span class="o">=</span> <span class="n">pd</span><span class="p">.</span><span class="nf">read_csv</span><span class="p">(</span><span class="sh">'</span><span class="s">../../data/birds.csv</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">birds</span><span class="p">.</span><span class="nf">head</span><span class="p">()</span>
+</code></pre></div></div>
+<p>This data is a mix of text and numbers:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right"> </th>
+      <th style="text-align: left">Name</th>
+      <th style="text-align: left">ScientificName</th>
+      <th style="text-align: left">Category</th>
+      <th style="text-align: left">Order</th>
+      <th style="text-align: left">Family</th>
+      <th style="text-align: left">Genus</th>
+      <th style="text-align: left">ConservationStatus</th>
+      <th style="text-align: right">MinLength</th>
+      <th style="text-align: right">MaxLength</th>
+      <th style="text-align: right">MinBodyMass</th>
+      <th style="text-align: right">MaxBodyMass</th>
+      <th style="text-align: right">MinWingspan</th>
+      <th style="text-align: right">MaxWingspan</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right">0</td>
+      <td style="text-align: left">Black-bellied whistling-duck</td>
+      <td style="text-align: left">Dendrocygna autumnalis</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Dendrocygna</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">47</td>
+      <td style="text-align: right">56</td>
+      <td style="text-align: right">652</td>
+      <td style="text-align: right">1020</td>
+      <td style="text-align: right">76</td>
+      <td style="text-align: right">94</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">1</td>
+      <td style="text-align: left">Fulvous whistling-duck</td>
+      <td style="text-align: left">Dendrocygna bicolor</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Dendrocygna</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">45</td>
+      <td style="text-align: right">53</td>
+      <td style="text-align: right">712</td>
+      <td style="text-align: right">1050</td>
+      <td style="text-align: right">85</td>
+      <td style="text-align: right">93</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">2</td>
+      <td style="text-align: left">Snow goose</td>
+      <td style="text-align: left">Anser caerulescens</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">79</td>
+      <td style="text-align: right">2050</td>
+      <td style="text-align: right">4050</td>
+      <td style="text-align: right">135</td>
+      <td style="text-align: right">165</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">3</td>
+      <td style="text-align: left">Ross’s goose</td>
+      <td style="text-align: left">Anser rossii</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">57.3</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">1066</td>
+      <td style="text-align: right">1567</td>
+      <td style="text-align: right">113</td>
+      <td style="text-align: right">116</td>
+    </tr>
+    <tr>
+      <td style="text-align: right">4</td>
+      <td style="text-align: left">Greater white-fronted goose</td>
+      <td style="text-align: left">Anser albifrons</td>
+      <td style="text-align: left">Ducks/Geese/Waterfowl</td>
+      <td style="text-align: left">Anseriformes</td>
+      <td style="text-align: left">Anatidae</td>
+      <td style="text-align: left">Anser</td>
+      <td style="text-align: left">LC</td>
+      <td style="text-align: right">64</td>
+      <td style="text-align: right">81</td>
+      <td style="text-align: right">1930</td>
+      <td style="text-align: right">3310</td>
+      <td style="text-align: right">130</td>
+      <td style="text-align: right">165</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Let’s start by plotting some of the numeric data using a basic line plot. Suppose you wanted a view of the maximum wingspan for these interesting birds.</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">wingspan</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxWingspan</span><span class="sh">'</span><span class="p">]</span> 
+<span class="n">wingspan</span><span class="p">.</span><span class="nf">plot</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/09-visualization-quantities/images/max-wingspan-02.png" alt="Max Wingspan" /></p>
+
+<p>What do you notice immediately? There seems to be at least one outlier - that’s quite a wingspan! A 2300 centimeter wingspan equals 23 meters - are there Pterodactyls roaming Minnesota? Let’s investigate.</p>
+
+<p>While you could  do a quick sort in Excel to find those outliers, which are probably typos, continue the visualization process by working from within the plot.</p>
+
+<p>Add labels to the x-axis to show what kind of birds are in question:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>plt.title('Max Wingspan in Centimeters')
+plt.ylabel('Wingspan (CM)')
+plt.xlabel('Birds')
+plt.xticks(rotation=45)
+x = birds['Name'] 
+y = birds['MaxWingspan']
+
+plt.plot(x, y)
+
+plt.show()
+</code></pre></div></div>
+<p><img src="/modules/09-visualization-quantities/images/max-wingspan-labels-02.png" alt="wingspan with labels" /></p>
+
+<p>Even with the rotation of the labels set to 45 degrees, there are too many to read. Let’s try a different strategy: label only those outliers and set the labels within the chart. You can use a scatter chart to make more room for the labeling:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">'</span><span class="s">Max Wingspan in Centimeters</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Wingspan (CM)</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="sh">'</span><span class="s">both</span><span class="sh">'</span><span class="p">,</span><span class="n">which</span><span class="o">=</span><span class="sh">'</span><span class="s">both</span><span class="sh">'</span><span class="p">,</span><span class="n">labelbottom</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">birds</span><span class="p">)):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Name</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxWingspan</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">plt</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="sh">'</span><span class="s">bo</span><span class="sh">'</span><span class="p">)</span>
+    <span class="k">if</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxWingspan</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">&gt;</span> <span class="mi">500</span><span class="p">:</span>
+        <span class="n">plt</span><span class="p">.</span><span class="nf">text</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">*</span> <span class="p">(</span><span class="mi">1</span> <span class="o">-</span> <span class="mf">0.05</span><span class="p">),</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Name</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">],</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">)</span>
+    
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p>What’s going on here? You used <code class="language-plaintext highlighter-rouge">tick_params</code> to hide the bottom labels and then created a loop over your birds dataset. Plotting the chart with small round blue dots by using <code class="language-plaintext highlighter-rouge">bo</code>, you checked for any bird with a maximum wingspan over 500 and displayed their label next to the dot if so. You offset the labels a little on the y axis (<code class="language-plaintext highlighter-rouge">y * (1 - 0.05)</code>) and used the bird name as a label.</p>
+
+<p>What did you discover?</p>
+
+<p><img src="/modules/09-visualization-quantities/images/labeled-wingspan-02.png" alt="outliers" /></p>
+<h2 id="filter-your-data">Filter your data</h2>
+
+<p>Both the Bald Eagle and the Prairie Falcon, while probably very large birds, appear to be mislabeled, with an extra <code class="language-plaintext highlighter-rouge">0</code> added to their maximum wingspan. It’s unlikely that you’ll meet a Bald Eagle with a 25 meter wingspan, but if so, please let us know! Let’s create a new dataframe without those two outliers:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">plt</span><span class="p">.</span><span class="nf">title</span><span class="p">(</span><span class="sh">'</span><span class="s">Max Wingspan in Centimeters</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">ylabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Wingspan (CM)</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">xlabel</span><span class="p">(</span><span class="sh">'</span><span class="s">Birds</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">tick_params</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="sh">'</span><span class="s">both</span><span class="sh">'</span><span class="p">,</span><span class="n">which</span><span class="o">=</span><span class="sh">'</span><span class="s">both</span><span class="sh">'</span><span class="p">,</span><span class="n">labelbottom</span><span class="o">=</span><span class="bp">False</span><span class="p">,</span><span class="n">bottom</span><span class="o">=</span><span class="bp">False</span><span class="p">)</span>
+<span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nf">range</span><span class="p">(</span><span class="nf">len</span><span class="p">(</span><span class="n">birds</span><span class="p">)):</span>
+    <span class="n">x</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Name</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="n">y</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxWingspan</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span>
+    <span class="k">if</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Name</span><span class="sh">'</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="ow">not</span> <span class="ow">in</span> <span class="p">[</span><span class="sh">'</span><span class="s">Bald eagle</span><span class="sh">'</span><span class="p">,</span> <span class="sh">'</span><span class="s">Prairie falcon</span><span class="sh">'</span><span class="p">]:</span>
+        <span class="n">plt</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="sh">'</span><span class="s">bo</span><span class="sh">'</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+
+<p>By filtering out outliers, your data is now more cohesive and understandable.</p>
+
+<p><img src="/modules/09-visualization-quantities/images/scatterplot-wingspan-02.png" alt="scatterplot of wingspans" /></p>
+
+<p>Now that we have a cleaner dataset at least in terms of wingspan, let’s discover more about these birds.</p>
+
+<p>While line and scatter plots can display information about data values and their distributions, we want to think about the values inherent in this dataset. You could create visualizations to answer the following questions about quantity:</p>
+
+<blockquote>
+  <p>How many categories of birds are there, and what are their numbers?
+How many birds are extinct, endangered, rare, or common?
+How many are there of the various genus and orders in Linnaeus’s terminology?</p>
+</blockquote>
+
+<h2 id="explore-bar-charts">Explore bar charts</h2>
+
+<p>Bar charts are practical when you need to show groupings of data. Let’s explore the categories of birds that exist in this dataset to see which is the most common by number.</p>
+
+<p>In the notebook file, create a basic bar chart</p>
+
+<p>✅ Note, you can either filter out the two outlier birds we identified in the previous section, edit the typo in their wingspan, or leave them in for these exercises which do not depend on wingspan values.</p>
+
+<p>If you want to create a bar chart, you can select the data you want to focus on. Bar charts can be created from raw data:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">birds</span><span class="p">.</span><span class="nf">plot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="sh">'</span><span class="s">Category</span><span class="sh">'</span><span class="p">,</span>
+        <span class="n">kind</span><span class="o">=</span><span class="sh">'</span><span class="s">bar</span><span class="sh">'</span><span class="p">,</span>
+        <span class="n">stacked</span><span class="o">=</span><span class="bp">True</span><span class="p">,</span>
+        <span class="n">title</span><span class="o">=</span><span class="sh">'</span><span class="s">Birds of Minnesota</span><span class="sh">'</span><span class="p">)</span>
+
+</code></pre></div></div>
+<p><img src="/modules/09-visualization-quantities/images/full-data-bar-02.png" alt="full data as a bar chart" /></p>
+
+<p>This bar chart, however, is unreadable because there is too much non-grouped data. You need to select only the data that you want to plot, so let’s look at the length of birds based on their category.</p>
+
+<p>Filter your data to include only the bird’s category.</p>
+
+<p>✅ Notice that you use Pandas to manage the data, and then let Matplotlib do the charting.</p>
+
+<p>Since there are many categories, you can display this chart vertically and tweak its height to account for all the data:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">category_count</span> <span class="o">=</span> <span class="n">birds</span><span class="p">.</span><span class="nf">value_counts</span><span class="p">(</span><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Category</span><span class="sh">'</span><span class="p">].</span><span class="n">values</span><span class="p">,</span> <span class="n">sort</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="sh">'</span><span class="s">figure.figsize</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="n">category_count</span><span class="p">.</span><span class="n">plot</span><span class="p">.</span><span class="nf">barh</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/09-visualization-quantities/images/category-counts-02.png" alt="category and length" /></p>
+
+<p>This bar chart shows a good view of the number of birds in each category. In a blink of an eye, you see that the largest number of birds in this region are in the Ducks/Geese/Waterfowl category. Minnesota is the ‘land of 10,000 lakes’ so this isn’t surprising!</p>
+
+<p>✅ Try some other counts on this dataset. Does anything surprise you?</p>
+
+<h2 id="comparing-data">Comparing data</h2>
+
+<p>You can try different comparisons of grouped data by creating new axes. Try a comparison of the MaxLength of a bird, based on its category:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">maxlength</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxLength</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">barh</span><span class="p">(</span><span class="n">y</span><span class="o">=</span><span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Category</span><span class="sh">'</span><span class="p">],</span> <span class="n">width</span><span class="o">=</span><span class="n">maxlength</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="n">rcParams</span><span class="p">[</span><span class="sh">'</span><span class="s">figure.figsize</span><span class="sh">'</span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span> <span class="mi">12</span><span class="p">]</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p><img src="/modules/09-visualization-quantities/images/category-length-02.png" alt="comparing data" /></p>
+
+<p>Nothing is surprising here: hummingbirds have the least MaxLength compared to Pelicans or Geese. It’s good when data makes logical sense!</p>
+
+<p>You can create more interesting visualizations of bar charts by superimposing data. Let’s superimpose Minimum and Maximum Length on a given bird category:</p>
+
+<div class="language-python highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="n">minLength</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MinLength</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">maxLength</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">MaxLength</span><span class="sh">'</span><span class="p">]</span>
+<span class="n">category</span> <span class="o">=</span> <span class="n">birds</span><span class="p">[</span><span class="sh">'</span><span class="s">Category</span><span class="sh">'</span><span class="p">]</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">barh</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">maxLength</span><span class="p">)</span>
+<span class="n">plt</span><span class="p">.</span><span class="nf">barh</span><span class="p">(</span><span class="n">category</span><span class="p">,</span> <span class="n">minLength</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="p">.</span><span class="nf">show</span><span class="p">()</span>
+</code></pre></div></div>
+<p>In this plot, you can see the range per bird category of the Minimum Length and Maximum length. You can safely say that, given this data, the bigger the bird, the larger its length range. Fascinating!</p>
+
+<p><img src="/modules/09-visualization-quantities/images/superimposed-02.png" alt="superimposed values" /></p>
+
+<p>This bird dataset offers a wealth of information about different types of birds within a particular ecosystem. Search around the internet and see if you can find other bird-oriented datasets. Practice building charts and graphs around these birds to discover facts you didn’t realize.</p>
+
+<h2 id="review--self-study">Review &amp; Self Study</h2>
+
+<p>This first lesson has given you some information about how to use Matplotlib to visualize quantities. Do some research around other ways to work with datasets for visualization. <a href="https://github.com/plotly/plotly.py">Plotly</a> is one that we won’t cover in these lessons, so take a look at what it can offer.</p>
+
+<h2 id="credits">Credits</h2>
+
+<p><strong>⚑ References</strong> <br /> This lesson was taken from the course <a href="https://github.com/microsoft/Data-Science-For-Beginners">“Data Science for Beginners”</a>.</p>
+
+        
+      </section>
+
+      <footer class="page__meta">
+        
+        
+
+
+        
+
+      </footer>
+
+      
+
+      
+    </div>
+
+    
+  </article>
+
+  
+  
+</div>
+
+    </div>
+
+    
+
+    <div id="footer" class="page__footer">
+      <footer>
+        <!-- start custom footer snippets -->
+
+<!-- end custom footer snippets -->
+        <div class="page__footer-follow">
+  <ul class="social-icons">
+    
+      <li><strong>Follow:</strong></li>
+    
+
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+
+    
+      <li><a href="/feed.xml"><i class="fas fa-fw fa-rss-square" aria-hidden="true"></i> Feed</a></li>
+    
+  </ul>
+</div>
+
+<div class="page__footer-copyright">&copy; 2024 . Powered by <a href="https://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+
+      </footer>
+    </div>
+
+    
+  <script src="/assets/js/main.min.js"></script>
+
+
+
+
+
+
+
+
+
+
+  </body>
+</html>
