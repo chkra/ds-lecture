@@ -1,6 +1,6 @@
 # Vorlesung Data Science
 
-Dieses Repository enthält die Unterlagen zum Kurs <em>Data Science</em> im Master Informatik in den Ingenierwissenschaften an der HTW Berlin. Dieses Repository ist work-in-progress.
+Dieses Repository enthält die Unterlagen zum Kurs <em>Data Science</em> im Master Informatik in den Ingenieurwissenschaften an der HTW Berlin. Dieses Repository ist work-in-progress.
 
 
 ## Aufbau des Repositories
@@ -39,4 +39,4 @@ Der Output findet sich als HTML-Seite im Unterordner `/site`.
 
 ## Copyright
 
-Alle Rechte vorbehalten | 2024 | HTW Berlin / CK.
+Alle Rechte vorbehalten | 2024 | KI Werkstatt @ HTW Berlin / CK.
