@@ -9,7 +9,7 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>HowTo: Anaconda für virtuelle Umgebungen -</title>
+<!-- begin _includes/seo.html --><title>Workshop: 01 Ankommen und Kennenlernen -</title>
 <meta name="description" content="Neue Impulse für die KI-Lehre">
 
 
@@ -20,14 +20,16 @@
 <meta property="og:type" content="website">
 <meta property="og:locale" content="en_US">
 <meta property="og:site_name" content="">
-<meta property="og:title" content="HowTo: Anaconda für virtuelle Umgebungen">
-<meta property="og:url" content="http://localhost:4000/modules/howto-anaconda/anaconda/">
+<meta property="og:title" content="Workshop: 01 Ankommen und Kennenlernen">
+<meta property="og:url" content="http://localhost:4000/workshops/01-Ankommen/">
 
 
   <meta property="og:description" content="Neue Impulse für die KI-Lehre">
 
 
 
+  <meta property="og:image" content="http://localhost:4000/assets/images/mm-home-page-feature.jpg">
+
 
 
 
@@ -41,7 +43,7 @@
   
 
 
-<link rel="canonical" href="http://localhost:4000/modules/howto-anaconda/anaconda/">
+<link rel="canonical" href="http://localhost:4000/workshops/01-Ankommen/">
 
 
 
@@ -139,6 +141,37 @@
 
     <div class="initial-content">
       
+  
+
+
+
+
+
+
+
+<div class="page__hero--overlay"
+  style="background-color: #5e616c; background-image: url('/assets/images/mm-home-page-feature.jpg');"
+>
+  
+    <div class="wrapper">
+      <h1 id="page-title" class="page__title" itemprop="headline">
+        
+          Workshop: 01 Ankommen und Kennenlernen
+
+        
+      </h1>
+      
+      
+
+
+      
+      
+    </div>
+  
+  
+</div>
+
+
 
 
 
@@ -267,88 +300,69 @@
 
 
   <article class="page h-entry" itemscope itemtype="https://schema.org/CreativeWork">
-    <meta itemprop="headline" content="HowTo: Anaconda für virtuelle Umgebungen">
+    <meta itemprop="headline" content="Workshop: 01 Ankommen und Kennenlernen">
     
     
     
 
     <div class="page__inner-wrap">
       
-        <header>
-          <h1 id="page-title" class="page__title p-name" itemprop="headline">
-            <a href="http://localhost:4000/modules/howto-anaconda/anaconda/" class="u-url" itemprop="url">HowTo: Anaconda für virtuelle Umgebungen
-</a>
-          </h1>
-          
-
-
-        </header>
-      
 
       <section class="page__content e-content" itemprop="text">
         
-        <h3 id="einführung-in-anaconda">Einführung in Anaconda</h3>
+        <p class="notice--primary">Im diesem Workshop machen wir erste Gehversuche mit Miro und suchen nach spannenden Datensätzen.</p>
 
-<p>In der Welt der Datenwissenschaft und Python-Entwicklung ist Anaconda zu einem unverzichtbaren Werkzeug geworden. In diesem Artikel werden wir uns damit befassen, warum virtuelle Umgebungen wichtig sind, was Anaconda ist, wie man es installiert und wie man es verwendet.</p>
+<h3 id="-challenge-1-miro">🚀 Challenge #1: Miro</h3>
 
-<h3 id="1-warum-virtuelle-umgebungen">1. Warum virtuelle Umgebungen?</h3>
+<p class="notice--warning"><strong>Aufgabe:</strong> Besuchen Sie das Miroboard unter dem im Moodle angegebenen Link. Sehen Sie sich um und lernen Sie die Oberfläche kennen.</p>
 
-<p>Virtuelle Umgebungen sind entscheidend, um Projektabhängigkeiten zu verwalten und Konflikte zwischen verschiedenen Projekten zu vermeiden. Es ist realistisch, dass Sie Python gleichzeitig für ganz unterschiedliche Projekte (z.B. Data Science, Webentwicklung, Skripte) verwenden. Früher oder später kommen sich die dafür benötigten Libraries und Abhängigkeiten in die Quere.</p>
+<h3 id="-challenge-2-story-telling">🚀 Challenge #2: Story Telling</h3>
 
-<p>Indem Sie für jedes Projekt eine eigene, isolierte Python-Umgebung einrichten, in der Sie Bibliotheken und Pakete installieren können ohne die Systeminstallation zu beeinträchtigen, schaffen Sie Ordnung und Effizienz in der Ausführung und vermeiden Konflikte und Abhängigkeiten.</p>
+<p>Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema <a href="/modules/ex-bahn-ds/">“BahnMining - Pünktlichkeit ist eine Zier”</a> beim 36C3 des Chaos Computer Clubs.</p>
 
-<h3 id="2-was-ist-anaconda">2. Was ist Anaconda?</h3>
+<p class="notice--warning"><strong>Aufgabe:</strong> Betrachten Sie noch einmal Ihre Notizen zum Vortrag. Einigen Sie sich in der Gruppe auf Ihre Top 5 Best Practices sowie Ihre Top 5 Worst Practices für Story Telling. Dokumentieren Sie Ihre Ergebnisse im Miro.</p>
 
-<p>Anaconda ist eine Open-Source-Distribution von Python und R, die speziell für Datenwissenschaft, maschinelles Lernen und wissenschaftliches Rechnen entwickelt wurde. Die Distribution wird mit einer Vielzahl von vorinstallierten Bibliotheken geliefert, darunter NumPy, pandas, matplotlib und viele mehr. Vor allem aber bietet Anaconda ein eigenes Paketverwaltungssystem, das es einfach macht, virtuelle Umgbungen zu verwalten und zusätzliche Pakete zu installieren.</p>
+<h3 id="-challenge-3-steckbriefe-für-alltagsfragen">🚀 Challenge #3: Steckbriefe für Alltagsfragen</h3>
 
-<p>Anaconda bietet den Konsolenbefehl <code class="language-plaintext highlighter-rouge">conda</code>, den Sie in vielen Tutorials finden werden:</p>
+<p class="notice--warning"><strong>Aufgabe:</strong> Überlegen Sie in Ihrer Gruppe drei Alltags- oder Domänenprobleme, die mit Daten addressiert, verbessert oder gelöst werden können. Notieren Sie im Miro Board für jedes Problem so konkret und realitätsnah wie möglich einen Steckbrief.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nt">--help</span>
-</code></pre></div></div>
-
-<p>Mit dem Anaconda Navigator steht Ihnen aber eine ebenso mächtige graphische Umgebung zur Verwaltung Ihrer virtuellen Umgebungen zur Verfügung.</p>
-
-<h3 id="3-wie-installiere-ich-anaconda">3. Wie installiere ich Anaconda?</h3>
-
-<p>Die Installation von Anaconda ist einfach und unkompliziert. Gehen Sie auf die <a href="https://www.anaconda.com/products/distribution">Anaconda-Website</a> und laden Sie das entsprechende Installationspaket für Ihr Betriebssystem herunter. Folgen Sie dann den Anweisungen des Installationsassistenten.</p>
-
-<h3 id="4-wie-verwende-ich-anaconda">4. Wie verwende ich Anaconda?</h3>
-
-<p>Nach der Installation können Sie Anaconda Navigator oder die Anaconda-Befehlszeile verwenden, um auf verschiedene Funktionen zuzugreifen. Mit dem Anaconda Navigator können Sie problemlos virtuelle Umgebungen erstellen, Pakete installieren und Anwendungen wie Jupyter Notebook starten. Die Anaconda-Befehlszeile bietet ähnliche Funktionen.</p>
-
-<p>Ein Beispiel für die Erstellung einer virtuellen Umgebung mit Anaconda:</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda create <span class="nt">--name</span> myenv <span class="nv">python</span><span class="o">=</span>3.9
-</code></pre></div></div>
-
-<p>Aktivieren Sie dann die Umgebung:</p>
-
+<p>In einen Steckbrief für Alltagsfragen gehören folgende Aspekte:</p>
 <ul>
-  <li>Unter Windows:</li>
+  <li>Die Problembeschreibung</li>
+  <li>Wie groß ist das Problem? Wer ist davon betroffen?</li>
+  <li>Legen Sie eine Link-Sammlung an: Wo findet man Daten zum Problem? Alternativ: wo oder wie würden Sie die Daten sammeln? Wie würden Sie dabei vorgehen?</li>
+  <li>Wo sind die Daten gespeichert oder wie würden Sie die Daten speichern? Wie groß sind die Daten?</li>
+  <li>Welche Entscheidungen kann man mit den Daten treffen? Welche Fragen beantworten? Wie?</li>
+  <li>Gibt es ethische Bedenken bei Ihrer Fragestellung? Welche Aspekte sind besonders kritisch und warum?</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>activate myenv
-</code></pre></div></div>
-
+<p>Einige Inspirationen für Ihr Vorgehen:</p>
 <ul>
-  <li>Unter macOS und Linux:</li>
+  <li>Wie kann man das Lernen an der Hochschule verbessern?</li>
+  <li>Wie hätte man mit Daten die Impfquoten während der Pandemie verbessern können?</li>
+  <li>Wie können Sie mit Daten Ihre persönliche Produktivität verbessern?</li>
 </ul>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">source </span>activate myenv
-</code></pre></div></div>
+<h3 id="-challenge-4-datenschatzkiste">🚀 Challenge #4: Datenschatzkiste</h3>
 
-<p>Nun sind Sie in der virtuellen Umgebung, hier steht Ihnen das eben frisch installierte Python (hier in der gewünschten Version 3.9) zur Verfügung. Sie können nun Pakete in Ihrer virtuellen Umgebung installieren und verwenden, ohne die Systeminstallation zu beeinträchtigen, hier exemplarisch für das Paket <code class="language-plaintext highlighter-rouge">pandas</code>:</p>
+<p class="notice--warning">Recherchieren Sie auch eigene Quellen für Datensätze. Erstellen Sie eine <em>Top 5 der spannendsten Datensätze</em>, die Sie in diesem Kurs vielleicht analysieren möchten. Notieren Sie im Miroboard zu jedem Datensatz einen Mini-Steckbrief.</p>
 
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>conda <span class="nb">install </span>pandas
-</code></pre></div></div>
+<p>In einen Mini-Steckbrief für einen Datensatz gehören folgende Aspekte:</p>
+<ul>
+  <li>einen Namen</li>
+  <li>eine aussagekräftige Größenangabe (in Kilobyte, in Seiten, in Fantastillionen)</li>
+  <li>die URL</li>
+  <li>eine Auswahl an möglichen Fragestellungen, die sich mit den Daten realistisch beantworten lassen.</li>
+</ul>
 
-<p>Wenn Sie in der virtuellen Umgebung zu einem beliebigen Zeitpunkt Python starten, steht Ihnen eine Python-Konfiguration mit genau den von Ihnen hier installierten Paketen zur Verfügung.</p>
-
-<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c"># python nutzen im conda environment</span>
-python myprogram.py
-</code></pre></div></div>
-
-<p>In diesem Artikel haben wir einen kurzen Überblick über Anaconda gegeben und warum es ein wichtiges Werkzeug für Python-Entwickler und Datenwissenschaftler ist. Von der Verwaltung virtueller Umgebungen bis zur Installation und Nutzung von Paketen bietet Anaconda eine benutzerfreundliche Plattform für die Entwicklung und Ausführung von Python-Anwendungen. Für weiterführende Themen verweisen wir auf den <a href="https://docs.conda.io/projects/conda/en/latest/user-guide/getting-started.html">User Guide der Anaconda Website</a>.</p>
+<p>Verwenden Sie zur Inspiration ChatGPT oder offene Datenquellen wie zum Beispiel:</p>
+<ul>
+  <li><a href="https://de.statista.com">Statista</a></li>
+  <li><a href="https://www.berlin.de/sen/wirtschaft/digitalisierung/open-data/">Open Data Berlin</a></li>
+  <li><a href="https://fivethirtyeight.com/">Fivethirtyeight</a></li>
+  <li><a href="https://data.world/datasets/instagram">Datensätze zu Social Media</a></li>
+  <li>die Seite Ihres Lieblings-Sportvereins / -Künstlers / -Projektes</li>
+</ul>
 
         
       </section>

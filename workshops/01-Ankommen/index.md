@@ -1,0 +1,66 @@
+---
+title: "Workshop 01: Ankommen und Kennenlernen"
+layout: single
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+author_profile: true
+author: Christina Kratsch
+lecture_name: "Data Science"
+lecture_desc: "Grundlegende Methoden für die Exploration und das Management von Daten."
+licence: "CC-BY"
+licence_desc: 2024 | HTW Berlin 
+classes: wide
+---
+
+
+Im diesem Workshop machen wir erste Gehversuche mit Miro und suchen nach spannenden Datensätzen.
+{: .notice--primary}
+
+## 🚀 Challenge #1: Miro
+
+**Aufgabe:** Besuchen Sie das Miroboard unter dem im Moodle angegebenen Link. Sehen Sie sich um und lernen Sie die Oberfläche kennen.
+{: .notice--warning} 
+
+## 🚀 Challenge #2: Story Telling
+
+Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema ["BahnMining - Pünktlichkeit ist eine Zier"](/modules/ex-bahn-ds/index.md) beim 36C3 des Chaos Computer Clubs. 
+
+**Aufgabe:** Betrachten Sie noch einmal Ihre Notizen zum Vortrag. Einigen Sie sich in der Gruppe auf Ihre Top 5 Best Practices sowie Ihre Top 5 Worst Practices für Story Telling. Dokumentieren Sie Ihre Ergebnisse im Miro.
+{: .notice--warning}
+
+## 🚀 Challenge #3: Steckbriefe für Alltagsfragen
+
+**Aufgabe:** Überlegen Sie in Ihrer Gruppe drei Alltags- oder Domänenprobleme, die mit Daten addressiert, verbessert oder gelöst werden können. Notieren Sie im Miro Board für jedes Problem so konkret und realitätsnah wie möglich einen Steckbrief.
+{: .notice--warning} 
+
+In einen Steckbrief für Alltagsfragen gehören folgende Aspekte:
+* Die Problembeschreibung
+* Wie groß ist das Problem? Wer ist davon betroffen?
+* Legen Sie eine Link-Sammlung an: Wo findet man Daten zum Problem? Alternativ: wo oder wie würden Sie die Daten sammeln? Wie würden Sie dabei vorgehen?
+* Wo sind die Daten gespeichert oder wie würden Sie die Daten speichern? Wie groß sind die Daten?
+* Welche Entscheidungen kann man mit den Daten treffen? Welche Fragen beantworten? Wie?
+* Gibt es ethische Bedenken bei Ihrer Fragestellung? Welche Aspekte sind besonders kritisch und warum?
+
+Einige Inspirationen für Ihr Vorgehen:
+* Wie kann man das Lernen an der Hochschule verbessern?
+* Wie hätte man mit Daten die Impfquoten während der Pandemie verbessern können?
+* Wie können Sie mit Daten Ihre persönliche Produktivität verbessern?
+
+## 🚀 Challenge #4: Datenschatzkiste
+
+Recherchieren Sie auch eigene Quellen für Datensätze. Erstellen Sie eine <em>Top 5 der spannendsten Datensätze</em>, die Sie in diesem Kurs vielleicht analysieren möchten. Notieren Sie im Miroboard zu jedem Datensatz einen Mini-Steckbrief.
+{: .notice--warning} 
+
+In einen Mini-Steckbrief für einen Datensatz gehören folgende Aspekte:
+* einen Namen
+* eine aussagekräftige Größenangabe (in Kilobyte, in Seiten, in Fantastillionen)
+* die URL
+* eine Auswahl an möglichen Fragestellungen, die sich mit den Daten realistisch beantworten lassen.
+
+Verwenden Sie zur Inspiration ChatGPT oder offene Datenquellen wie zum Beispiel:
+* [Statista](https://de.statista.com)
+* [Open Data Berlin](https://www.berlin.de/sen/wirtschaft/digitalisierung/open-data/)
+* [Fivethirtyeight](https://fivethirtyeight.com/)
+* [Datensätze zu Social Media](https://data.world/datasets/instagram)
+* die Seite Ihres Lieblings-Sportvereins / -Künstlers / -Projektes
