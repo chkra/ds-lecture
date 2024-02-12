@@ -38,8 +38,8 @@ Hier finden Sie weiterführende Links zu den Inhalten der Vorlesung:
 1. [Grundlagen, Organisatorisches, Daten](lectures/01/01.md)
 2. [Werkzeuge für Data Science](lectures/02/02.md)
 3. [Daten  verstehen als Projekt](lectures/03/03.md)
-4. Einfache Visualisierungen
-5. Fortgeschrittene Visualisierungen
+4. [Einfache Visualisierungen](lectures/04/04.md)
+5. [Fortgeschrittene Visualisierungen](lectures/05/05.md)
 
 ### Blaue Phase: Echte Problem analysieren und Lösungen organisieren
 

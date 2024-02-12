@@ -15,17 +15,47 @@ classes: wide
 
 In diesem Workshop erzählen wir Geschichten mit Daten.
 
-### 🚀 Challenge #1: Die Geschichte der Vögel
+## 🚀 Challenge #1: Die Geschichte der Vögel
 
-Sie haben in diesem Modul viel über Vögel gelernt. Tauchen Sie tiefer in die Daten ein. Vielleicht fokussieren Sie sich auf eine Art von Vogel? Finden Sie weitere spannende Aussagen über Ihre Vogelart und visualisieren Sie Ihre Geschichte mit den Ihnen bekannten Visualisierungstypen. Welche spannenden Beobachtungen können Sie machen?
+Sie haben in diesem Modul viel über Vögel gelernt. Tauchen Sie tiefer in die Daten ein. Vielleicht fokussieren Sie sich auf eine Art von Vogel? Finden Sie vielleicht andere Datensätze, die hier spannend sein könnten (Sie dürfen gern sehr großzügig auslegen, was ein "Vogel" ist). 
 
-### 🚀 Challenge #2: Histogramme
+**Aufgabe:** Finden Sie weitere spannende Aussagen über Ihre Vogelart und visualisieren Sie Ihre Geschichte mit Linienplots, Punktwolken, Barcharts und Histogrammen. Welche spannenden Beobachtungen können Sie machen?
+{: .notice--warning}
 
-Mit Histogrammen kann man viele spannende Beobachtungen machen. Gehen Sie bei [Statista](https://de.statista.com) auf Entdeckungstour und wählen Sie ein interessantes aktuelles Thema  (vermeiden Sie bitte politische oder religiöse Inhalte), welches bei Statista mit drei oder mehr Histogrammen unterlegt ist. Erzählen Sie eine Geschichte anhand der Histogramme. Wenn nötig, ergänzen Sie Ihre Geschichte mit eigenen Visualisierungen der hinterlegten Daten oder inhaltlichen Recherchen.
+Falls Ihnen nichts einfällt, sind hier ein paar Inspirationen:
+* *Schlechte Nachrichten:* erzählen Sie eine Geschichte über eine vom Aussterben bedrohte Spezies, stellen Sie die größten Probleme dar und machen Sie Handlungsempfehlungen.
+* *Weltrekorde:* (extra-einfach, deshalb bitte schöne Visualisierungen!) Erstellen Sie eine Sammlung der schrägsten / größten / tollsten Vögel.
 
-* [Excel](../Lektionen/11-visualization-proportions/assignment.md): Arbeiten Sie mit Pivots in Excel.
+
+## 🚀 Challenge #2: Histogramme
+
+Mit Histogrammen kann man viele spannende Beobachtungen machen. Gehen Sie bei [Statista](https://de.statista.com) auf Entdeckungstour und wählen Sie ein interessantes, tagesaktuelles Thema  (vermeiden Sie bitte allzu konfliktlastige politische oder religiöse Inhalte), welches bei Statista mit drei oder mehr Histogrammen unterlegt ist. 
+
+**Aufgabe:** Erzählen Sie eine Geschichte anhand der Histogramme. Wenn nötig, ergänzen Sie Ihre Geschichte mit eigenen Visualisierungen der hinterlegten Daten, Pressemeldungen oder inhaltlichen Recherchen.
+{: .notice--warning}
+
+## Challenge #3: Teure Städte
+
+Eine **Pivot-Tabelle** ist ein leistungsstarkes Tool in Excel, mit dem Sie Daten aus einer Tabelle zusammenfassen und analysieren können. Es ermöglicht Ihnen, Daten in verschiedenen Kombinationen zu gruppieren, zu filtern und zu aggregieren, um Muster und Trends in Ihren Daten zu erkennen. Besonders hilfreich ist Excel, wenn Sie ganz schnell Ergebnisse auf überschaubaren Datensätzen benötigen.
+
+Um eine Pivot-Tabelle in Excel zu erstellen, befolgen Sie diese Schritte:
+1. Öffnen Sie das Excel-Arbeitsblatt, das die Daten enthält, die Sie in der Pivot-Tabelle verwenden möchten.
+2. Wählen Sie die Daten aus, die Sie in der Pivot-Tabelle verwenden möchten.
+3. Klicken Sie auf der Registerkarte “Einfügen” auf “PivotTable”.
+4. Wählen Sie die Option “Bereich auswählen” und geben Sie den Bereich der Daten ein, die Sie in der Pivot-Tabelle verwenden möchten.
+5. Wählen Sie den Speicherort für die Pivot-Tabelle aus und klicken Sie auf “OK”.
+6. Ziehen Sie die Felder aus der Liste “Felder” in die entsprechenden Bereiche der Pivot-Tabelle (Zeilen, Spalten, Werte).
+7. Passen Sie die Pivot-Tabelle nach Bedarf an, indem Sie Filter hinzufügen oder entfernen, die Anzeige ändern oder die Berechnungen anpassen.
 
 
-## Assignment
+**Aufgabe 1 (alle zusammen):** Laden Sie den Datensatz [Gehälter.xlsx](data/Gehälter.xlsx) herunter. Nutzen Sie eine Pivottabelle und zählen Sie damit, wie viele Personen in jeder Stadt leben. 
+{: .notice--warning}
 
-[Lines, Scatters, and Bars](assignment.md)
+**Aufgabe 2 (schnellstes Team gewinnt):** 
+
+Beantworten Sie auch die folgenden Fragen:
+Wie hoch ist das durchschnittliche Gehalt für Männer und Frauen?
+Wie viele Personen sind in jeder Altersgruppe?
+Welche Stadt hat das höchste durchschnittliche Gehalt?
+Wie viele Männer und Frauen sind in jeder Stadt?
+{: .notice--warning}

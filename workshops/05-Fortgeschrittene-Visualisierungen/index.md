@@ -13,7 +13,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-In diesem Workshop erzählen wir Geschichten von Bienen und Blumen, lügen mit Daten und untersuchen eigene Themen.
+In diesem Workshop erzählen wir Geschichten von Bienen und Blumen, lügen mit Daten und untersuchen soziale Medien.
 
 ### 🚀 Challenge #1: Von Bienen und Blüten
 
@@ -21,8 +21,18 @@ Sie haben in diesem Modul viel über das Verhalten von Bienen gelernt. Tauchen S
 
 ### 🚀 Challenge #2: Bis sich die Balken biegen
 
-Wählen Sie ein interessantes aktuelles Thema (vermeiden Sie bitte politische oder religiöse Inhalte), wählen Sie einen dazu passenden Datensatz aus und __lügen Sie, dass sich die Balken biegen__.  Erstellen Sie mit den Ihnen bekannten "Techniken" neue Visualisierungen, die scheinbar Ihre wilden Thesen hinterlegen. Wahlweise können Sie Ihre Geschichte mit Pressemitteilungen, Deep Fakes und Verschwörungstheorien ausschmücken. Sie können sich auch mit ChatGPT ganze Datensätze fälschen lassen. Bewahren Sie dabei eine wissenschaftlich-seriöse Optik.
+Wählen Sie ein interessantes aktuelles Thema (vermeiden Sie bitte stark polarisierende politische oder religiöse Inhalte), wählen Sie einen dazu passenden Datensatz aus und __lügen Sie, dass sich die Balken biegen__.  Erstellen Sie mit den Ihnen nun bekannten "Techniken" neue Visualisierungen, die scheinbar Ihre wilden Thesen hinterlegen. Fassen Sie Ihre Lügen zu einer überzeugenden Geschichte zusammen. Wahlweise können Sie Ihre Geschichte mit Pressemitteilungen, Deep Fakes und Verschwörungstheorien ausschmücken. 
 
-### 🚀 Challenge #3: TikTok, Hochschule, Batman
+**Wichtig:** Achten Sie unbedingt darauf, eine wissenschaftlich-seriöse Optik zu bewahren.
 
-Werfen Sie einen Blick auf interessante Datensätze, die Sie in diesem Kurs kennengelernt haben, oder finden Sie in den Ihnen bekannten Quellen ein neues Thema. Gibt es eine Fragestellung, die Sie besonders interessiert? Erstellen Sie mit den Ihnen bekannten Werkzeugen eine umfangreiche Analyse des Datensatzes!
+**Hinweis:** Arbeiten Sie wie die Profis - [Sie können sich mit ChatGPT ganze Datensätze fälschen lassen](https://www.nature.com/articles/d41586-023-03635-w). 
+
+### Challenge #3: Cambridge Analytics reloaded: Spaß mit Social Media
+
+![](https://networkx.org/nx-guides/_images/15c33ce8168d29e55b16760834a21026ad643f70289332357b0cd703b5d7f966.png)
+
+In [diesem Artikel](https://towardsdatascience.com/identifying-influencers-on-social-media-a-guide-to-social-network-analysis-using-python-e05f4da151b8 ) wird beschrieben, wie Sie mit dem Python-Paket NetworkX soziale Netzwerke nach führenden Themen oder Influencern durchsuchen können. Das Tutorial verwendet ein mitgeliefertes Beispiel aus einem *Karate Club*.
+
+Laden Sie sich stattdessen [diesen Facebook-Datensatz](https://snap.stanford.edu/data/ego-Facebook.html) herunter und versuchen Sie, sich mit den Methoden aus dem Tutorial einen Reim auf die Daten zu machen. Berichten Sie von allen Methoden und Erkenntnissen, die Sie nachvollziehen konnten. 
+
+**Hinweis:** für den Facebook-Datensatz liefert NetworkX selbst [ein umfangreiches Demo-Notebook](https://networkx.org/nx-guides/content/exploratory_notebooks/facebook_notebook.html).
