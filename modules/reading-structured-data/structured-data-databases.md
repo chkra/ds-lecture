@@ -1,119 +1,14 @@
-
-
-Ziemlich banal: die Basis jeder Datenanalyse sind *Daten*. Die Formate und Quellen, aus denen diese Daten stammen, sind dabei so vielfältig wie die Fragestellungen dahinter. In diesem Kapitel wollen wir uns mit den verschiedenen Möglichkeiten des Lesens von strukturierten Daten beschäftigen. 
-
-**Strukturierte Daten** sind Daten, die in einem bestimmten Format vorliegen, das es einfach macht, sie in Datenbanken oder Tabellen zu organisieren. Diese Daten sind in klar definierten Spalten und Zeilen angeordnet und folgen einem einheitlichen **Schema**. Beispiele für strukturierte Daten sind Datenbanken, Excel-Tabellen oder CSV-Dateien. Sie sind leicht zu durchsuchen, zu analysieren und zu verarbeiten, da die Datenfelder und ihre Beziehungen gut definiert sind.
-
-Im Gegensatz dazu sind unstrukturierte Daten nicht in einem vordefinierten Format organisiert. Sie können Textdokumente, Bilder, Videos, Social-Media-Beiträge, E-Mails und andere Arten von Informationen umfassen, die nicht einfach in Tabellen oder Datenbanken eingeteilt werden können. 
-
-In dieser Lektion lernen und wiederholen wir
-* Daten aus gewöhnlichen Textdateien zu laden
-* den Umgang mit `sqlite3` und grundlegende SQL-Befehle
-* den Einsatz von `SQLAlchemy`.
-
-## Einfache Dateien laden, lesen, schreiben
-
-Wie jede Programmiersprache bietet Python einfache Boardmittel zum Öffnen und Lesen von Dateien:
-
-```python
-file = open(file='textfile.txt', mode='r')
-text = file.readlines()
-print(text)
-``` 
-
-Hier öffnen wir `textfile.txt` im Lese-Modus (ohne Schreibrechte) in einem relativen Pfad. 
-
-**Hinweis:** Gerade zwischen unterschiedlichen Betriebssystemen macht die Schreibweise von Pfaden und der Zugriff auf Dateien immer mal Probleme. Ein Blick auf die detaillierte [Dokumentation der `open()` Funkion](https://docs.python.org/3/library/functions.html#open) kann hier vielleicht helfen.
-
-Der Output der Funktion `readlines()` liefert uns in unserem Beispiel folgenden Text mit dem mittleren *Escsape Character* (hier: Zeilenumbruch) `\n`:
-```
-['This is a text file.\n', 'Now you can read it!']
-```
-
-Wir sollten abschließend nicht vergessen, die Datei auch wieder zu schließen:
-```python
-file.close()
-```
-
-Grundsätzlich gibt es aber auch elegantere Methoden zum Arbeiten mit Dateien mit Hilfe des `with` Statements:
-
-```python
-with open(file='textfile.txt', mode='r') as f:
-    text = f.readlines()
-print(text)
-```
-
-## JSON
-
-JavaScript Object Notation (JSON) ist ein textbasiertes Format zur Darstellung und Speicherung von Daten und wird hauptsächlich für Webanwendungen verwendet. Wir können JSON verwenden, um Daten in einer Textdatei zu speichern oder Daten an und von einer Anwendungsprogrammierschnittstelle (API) zu übertragen.
-
-APIs ermöglichen es uns, eine Anfrage an einen Webdienst zu senden, um verschiedene Aufgaben auszuführen. Ein Beispiel ist das Senden eines Texts (z. B. einer E-Mail-Nachricht) an eine API und das Zurücksenden der Stimmung (positiv, negativ oder neutral) an uns. JSON sieht einem Wörterbuch in Python sehr ähnlich. Hier ist zum Beispiel ein Beispielwörterbuch in Python, das Daten darüber speichert, wie viele Bücher und Artikel wir gelesen haben und was ihre Themen umfassen:
-
-```json
-data_dictionary = {
-    'books': 12,
-    'articles': 100,
-   'subjects': ['math',
-                'programming',
-                'data science']}
-```
-
-Als Dictionary bietet dies eine praktische Datenstruktur, die die Basis einer umfangreichen Analyse sein könnte. Wir können diese Struktur in Python in eine Zeichenfolge im JSON-Format konvertieren, indem wir zuerst das integrierte JSON-Modul importieren und dann `json.dumps()` verwenden.
-
-```python
-import json
-json_string = json.dumps(data_dictionary)
-print(json_string)
-```
-
-Der resultierende String sieht so aus:
-```
-'{"books": 12, "articles": 100, "subjects": ["math", "programming", "data science"]}'
-```
-
-Diesen String können wir auch zurück in ein Dictionary verwandeln:
-
-```python
-data_dict = json.loads(json_string)
-print(data_dict)
-```
-
-Um ein JSON dictionary aus einer Datei zu lesen, hilft der Befehl `json.load()`:
-
-```python
-with open('reading.json') as f:
-    loaded_data = json.load(f)
-print(loaded_data)
-```
-
-Diese wenigen Befehle können die Grundlage für umfassende Datenanalysen im Austausch mit Dateien oder APIs darstellen.
-
-## Objekte mit Picke persistieren
-
-Manchmal möchten wir ein Python-Objekt direkt speichern, beispielsweise ein Wörterbuch oder ein anderes Python-Objekt. Dies kann passieren, wenn wir Python-Code zur Datenverarbeitung oder -erfassung ausführen und die Ergebnisse für eine spätere Analyse speichern möchten. Eine einfache Möglichkeit hierfür ist die Verwendung des integrierten Pickle-Moduls. Wie bei vielen Dingen in Python ist Pickle ein wenig humorvoll – es ist wie das Einlegen von Gemüse, aber wir legen stattdessen Daten ein. Wenn wir beispielsweise dasselbe Datenwörterbuch verwenden, das wir zuvor verwendet haben (mit Daten zu Büchern und Artikeln, die wir gelesen haben), können wir dieses Wörterbuchobjekt wie folgt in einer Pickle-Datei speichern:
-
-```python
-import pickle as pk
-data_dictionary = {
-    'books': 12,
-    'articles': 100,
-   'subjects': ['math',
-                'programming',
-                'data science']}
-with open('readings.pk', 'wb') as f:
-    pk.dump(data_dictionary, f)
-```
-
-Sobald wir Daten in einer Pickle-Datei haben, können wir sie wie folgt in Python laden:
-
-```python
-with open('readings.pk', 'rb') as f:
-    data = pk.load(f)
-```
-
-Beachten Sie, dass wir jetzt „rb“ für unser Modusargument verwenden, was „Binärdatei lesen“ bedeutet. Da die Datei im Binärformat vorliegt, müssen wir dies beim Öffnen der Datei angeben. Sobald wir die Datei geöffnet haben, laden wir den Inhalt der Datei mit pickle.load(f) in die Datenvariable (was im vorherigen Code pk.load(f) ist, da wir pickle als pk bezeichnet haben). Pickle ist eine großartige Möglichkeit, fast jedes Python-Objekt schnell und einfach zu speichern. Für bestimmte, organisierte Daten kann es jedoch besser sein, sie in einer SQL-Datenbank zu speichern, worauf wir jetzt eingehen.
-
-## Verwendung von SQLite und SQL
+---
+title: "Strukturierte Daten lesen: Datenbanken"
+layout: single
+author_profile: true
+author: Christina Kratsch
+lecture_name: "Data Science"
+lecture_desc: "Grundlegende Methoden für die Exploration und das Management von Daten."
+licence: "CC-BY"
+licence_desc: 2024 | HTW Berlin 
+classes: wide
+---
 
 **SQL** oder **Structured Query Language** ist eine Programmiersprache für die Interaktion mit Daten in relationalen Datenbanken (manchmal auch RDBMS genannt, was „Relational Database Management System“ bedeutet). SQL gibt es seit den 1970er Jahren und wird auch heute intensiv verwendet. 
 
@@ -126,9 +21,11 @@ Tatsächlich wurde SQL sogar von der *International Organization for Standardiza
 
 Ein Großteil der weltweiten Daten wird mithilfe von SQL in relationalen Datenbanken gespeichert. Es ist wichtig, die Grundlagen von SQL zu verstehen, damit wir unsere eigenen Daten für unsere datenwissenschaftliche Arbeit abrufen können. Wir können über die Befehlszeile oder GUI-Tools sowie über Python-Pakete wie Pandas und SQLAlchemy direkt mit SQL-Datenbanken interagieren. Aber zuerst üben wir SQL mit SQLite-Datenbanken, da SQLite3 mit Python installiert ist. SQLite ist das, wonach es sich anhört – eine schlanke Version von SQL. Es fehlt die umfangreichere Funktionalität anderer SQL-Datenbanken wie MySQL, sie ist jedoch schneller und einfacher zu verwenden. Es kann jedoch immer noch eine Menge Daten speichern, wobei die maximale potenzielle Datenbankgröße für SQLite-Datenbanken etwa 281 TB beträgt.
 
+## Verwendung von SQLite und SQL
+
 Für unsere nächsten Beispiele verwenden wir die `Chinook`-Datenbank. Dabei handelt es sich um einen Datensatz mit Liedern und Einkäufen von Kunden, der einem Datensatz mit iTunes-Liedern und -Käufen ähnelt. Wir werden diesen Datensatz gelegentlich als „iTunes-Datenbank“ bezeichnen. Die Datei „chinook.db“ und der zugehörige der Quellcode  sind unter https://github.com/lerocha/chinook-database zu finden. 
 
-Laden wir zunächst die Datenbank über die Befehlszeile und werfen einen Blick darauf. Öffnen Sie zunächst ein Terminal oder eine Shell und navigieren Sie zu dem Verzeichnis, das die Datei chinook.db enthält. Führen Sie dann den folgenden Befehl aus, um die Datenbank in einer SQLite-Shell zu öffnen:
+Laden wir zunächst die Datenbank über die Befehlszeile und werfen einen Blick darauf. Öffnen Sie ein Terminal oder eine Shell und navigieren Sie zu dem Verzeichnis, das die Datei `chinook.db` enthält. Führen Sie dann den folgenden Befehl aus, um die Datenbank in einer SQLite-Shell zu öffnen:
 
 ```
 sqlite3 chinook.db
@@ -176,13 +73,13 @@ connection = sqlite3.connect('chinook.db')
 cursor = connection.cursor()
 ```
 
-Das Zeichenfolgenargument für sqlite3.connect() sollte entweder der relative oder der absolute Pfad zur Datenbankdatei sein. Der relative Pfad bedeutet, dass er relativ zu unserem aktuellen Arbeitsverzeichnis ist (von dem aus wir den Python-Code ausführen). Wenn wir einen absoluten Pfad verwenden möchten, könnten wir etwa Folgendes angeben:
+Das Zeichenfolgenargument für `sqlite3.connect()` sollte entweder der relative oder der absolute Pfad zur Datenbankdatei sein. Der relative Pfad bedeutet, dass er relativ zu unserem aktuellen Arbeitsverzeichnis ist (von dem aus wir den Python-Code ausführen). Wenn wir einen absoluten Pfad verwenden möchten, könnten wir etwa Folgendes angeben:
 
 ```python
 connection = sqlite3.connect(r'C:\Users\my_username\github\chinook.db')
 ```
 
-Beachten Sie, dass vor der Zeichenfolge das Zeichen „r“ steht. Wie bereits erwähnt, steht dies für Raw String und bedeutet, dass Sonderzeichen (wie der Backslash, \) als Literalzeichen behandelt werden. Bei unformatierten Strings ist der Backslash einfach ein Backslash, und das ermöglicht uns, Dateipfade aus dem Windows-Datei-Explorer zu kopieren und in Python einzufügen.
+Beachten Sie, dass vor der Zeichenfolge das Zeichen `„r“` steht. Wie bereits erwähnt, steht dies für Raw String und bedeutet, dass Sonderzeichen (wie der Backslash, \) als Literalzeichen behandelt werden. Bei unformatierten Strings ist der Backslash einfach ein Backslash, und das ermöglicht uns, Dateipfade aus dem Windows-Datei-Explorer zu kopieren und in Python einzufügen.
 
 Der vorangehende Cursor ermöglicht es uns, SQL-Befehle auszuführen. Um beispielsweise den SELECT-Befehl auszuführen, den wir bereits in der SQLite-Shell ausprobiert haben, können wir den Cursor verwenden:
 
@@ -205,7 +102,7 @@ cursor.execute(query)
 cursor.fetchall()
 ```
 
-Wir verwenden eine mehrzeilige Zeichenfolge für die Abfragevariable mit dreifachen Anführungszeichen und setzen jeden SQL-Befehl in eine separate Zeile. Dann übergeben wir diese String-Variable, query, an die Funktion „cursor.execute()“. Abschließend rufen wir die Ergebnisse mit fetchall ab.
+Wir verwenden eine mehrzeilige Zeichenfolge für die Abfragevariable mit dreifachen Anführungszeichen und setzen jeden SQL-Befehl in eine separate Zeile. Dann übergeben wir diese String-Variable, query, an die Funktion `cursor.execute()`. Abschließend rufen wir die Ergebnisse mit `fetchall()` ab.
 
 Bei der Auswahl von Daten kann es sinnvoll sein, diese nach einer der Spalten zu sortieren. Schauen wir uns die Rechnungstabelle an und ermitteln die größten Rechnungen:
 
@@ -219,7 +116,7 @@ cursor.execute(
 cursor.fetchall()
 ```
 
-Hier verwenden wir dieselbe Verbindung und denselben Cursor wie zuvor. Wir wählen einige Spalten aus Rechnungen aus: Total und InvoiceDate. Anschließend verwenden wir den SQL-Befehl ORDER BY und sortieren nach der Spalte „Gesamt“ mit dem Zusatz DESC für absteigende Reihenfolge.
+Hier verwenden wir dieselbe Verbindung und denselben Cursor wie zuvor. Wir wählen einige Spalten aus Rechnungen aus: `Total` und `InvoiceDate`. Anschließend verwenden wir den SQL-Befehl ORDER BY und sortieren nach der Spalte „Gesamt“ mit dem Zusatz DESC für absteigende Reihenfolge.
 
 Wenn wir ORDER BY ohne das Schlüsselwort DESC verwenden, sortiert das DBMS (Datenbankverwaltungssystem) standardmäßig nach der angegebenen Datenspalte in aufsteigender Reihenfolge (vom kleinsten zum größten). Wir können auch Text- und Datumsspalten sortieren – Textspalten werden alphabetisch sortiert und Datumsangaben werden standardmäßig vom frühesten zum neuesten sortiert.
 
@@ -237,7 +134,7 @@ cursor.fetchall()
 
 Wir haben eine ähnliche SELECT-Anweisung wie in den vorherigen Beispielen, außer dass wir mithilfe des WHERE-Befehls nach BillingCountry gleich Kanada filtern. Beachten Sie, dass wir Kanada als Zeichenfolge in doppelten Anführungszeichen angeben. Da die gesamte Abfragezeichenfolge in einfachen Anführungszeichen steht, können wir innerhalb der Zeichenfolge doppelte Anführungszeichen verwenden. Wenn wir alle Ergebnisse abrufen, sehen wir, dass sie nur aus Kanada stammen:
 
-```
+```sql
 [(8.91, 'Canada'),
  (8.91, 'Canada'),
  (0.99, 'Canada'),
@@ -276,7 +173,7 @@ cursor.fetchall()
 
 Wir verwenden hier den Befehl SUM() für die Spalte „Gesamt“ aus der Tabelle „Rechnungen“. Dies summiert die Gesamtspalte basierend auf der Spalte, nach der wir gruppieren. Wenn wir uns die GROUP BY-Klausel ansehen, können wir sehen, dass wir BillingCountry angeben, um unsere Daten zu gruppieren. Das bedeutet, dass alle Einträge mit demselben Wert für „BillingCountry“ gruppiert werden und dann die Summe der Spalte „Gesamt“ für jede Gruppe berechnet wird. Wir verwenden auch ORDER BY mit DESC, um die Summe der Spalte „Total“ vom größten zum kleinsten Wert zu ordnen. Wir können sehen, dass die USA den größten Gesamtumsatz erzielen:
 
-```
+```sql
 [(523.0600000000003, 'USA'),
  (303.9599999999999, 'Canada'),
  (195.09999999999994, 'France'),
@@ -308,7 +205,7 @@ cursor.fetchall()
 
 Diese Abfrage gibt Folgendes zurück:
 
-```
+```sql
 [(0, 'InvoiceId', 'INTEGER', 1, None, 1),
  (1, 'CustomerId', 'INTEGER', 1, None, 0),
  (2, 'InvoiceDate', 'DATETIME', 1, None, 0),
@@ -520,9 +417,9 @@ conn.execute(ins)
 
 Mit der oben genannten Methode können wir eine vorhandene Tabelle als Python-Objekt laden und dann Befehle wie „insert“ und „select“ als Methoden des Objekts verwenden. Dann führen wir die resultierende Variable mit einem SQLAlchemy-Cursor aus.
 
-Jetzt haben wir einige wichtige Möglichkeiten zum Speichern und Abrufen von Daten in Python kennengelernt. Ich empfehle, einige dieser Fähigkeiten zu üben, um Ihr Wissen zu festigen.
 
 
 ## Quelle
+ Dieses Modul wurde stark angelehnt an das Buch "[Pratical Data Science](https://learning.oreilly.com/library/view/practical-data-science/9781801071970/Text/Chapter_3.xhtml#_idParaDest-93)" von Aathan George.
+{: .notice--info}
 
-https://learning.oreilly.com/library/view/practical-data-science/9781801071970/Text/Chapter_3.xhtml#_idParaDest-93
