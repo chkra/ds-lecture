@@ -1,5 +1,5 @@
 ---
-title: "Workshop: 05 Klassisches Data Engineering"
+title: "Workshop: 06 Klassisches Data Engineering"
 layout: single
 header:
   overlay_color: "#5e616c"
@@ -13,7 +13,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-### 🚀 Challenge #1: Am Flughafen
+### 🚀 Challenge #1: At the airport
 
 You have been provided a [database](https://raw.githubusercontent.com/Microsoft/Data-Science-For-Beginners/main/2-Working-With-Data/05-relational-databases/airports.db) built on [SQLite](https://sqlite.org/index.html) which contains information about airports. The schema is displayed below. You will use the [SQLite extension](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite&WT.mc_id=academic-77958-bethanycheum) in [Visual Studio Code](https://code.visualstudio.com?WT.mc_id=academic-77958-bethanycheum) to display information about different cities' airports.
 
@@ -40,7 +40,7 @@ Next you will download an open the database.
 
 Once open, the new query window can be used to run SQL statements against the database. You can use the command **Ctl-Shift-Q** (or **Cmd-Shift-Q** on a Mac) to run queries against the database.
 
-> [!NOTE] For more information about the SQLite extension, you can consult the [documentation](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite&WT.mc_id=academic-77958-bethanycheum)
+For more information about the SQLite extension, you can consult the [sqlite documentation](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite&WT.mc_id=academic-77958-bethanycheum).
 
 #### Database schema
 
@@ -68,26 +68,14 @@ Create queries to return the following information:
 1. all airport names with their city and country
 1. all airports in London, United Kingdom
 
-### 🚀 Challenge #2: X (Twitter)
-
-
-
-There is a `TwitterData.json` file that you can upload to the SampleDB database. It's recommended that you add it to a separate container. This can be done by:
-
-1. Clicking the new container button in the top right
-2. Selecting the existing database (SampleDB) creating a container id for the container
-3. Setting the partition key to `/id`
-4. Clicking OK (you can ignore rest of the information in this view as this is a small dataset running locally on your machine)
-5. Open your new container and upload the Twitter Data file with `Upload Item` button
-
-Try to run a few select queries to find the documents that have Microsoft in the text field. Hint: try to use the [LIKE keyword](https://docs.microsoft.com/en-us/azure/cosmos-db/sql/sql-query-keywords#using-like-with-the--wildcard-character)
-
-
-### 🚀 Challenge #3: Coca Cola
+### 🚀 Challenge #2: Coca Cola
 
 #### Instructions
 
-The [Coca Cola Co spreadsheet](CocaColaCo.xlsx) is missing some calculations. Your task is to: 
+The Kaggle Account of user Yiyi Wang hosts a [Coca Cola data set](https://www.kaggle.com/yiyiwang0826/cocacola-excel), stored in a large Excel table. This Coca Cola Co spreadsheet is missing some calculations. 
+Visit the account and, if necessary, inform yourself on the relevance of [Kaggle](https://www.kaggle.com/) - a site every data scientist should know. 
+
+Study the data set description on Kaggle. After that, your task is to: 
 
 1. Calculate the Gross profits of FY '15, '16, '17, and '18
     - Gross Profit = Net Operating revenues - Cost of goods sold
@@ -96,4 +84,12 @@ The [Coca Cola Co spreadsheet](CocaColaCo.xlsx) is missing some calculations. Yo
     - Documentation on the [AVERAGE function](https://support.microsoft.com/en-us/office/average-function-047bac88-d466-426c-a32b-8f33eb960cf6)
 1. This is an Excel file, but it should be editable in any spreadsheet platform
 
-[Data source credit to Yiyi Wang](https://www.kaggle.com/yiyiwang0826/cocacola-excel)
+
+### 🚀 Challenge #3: Principal Component Analysis
+
+Principal Component Analysis is a very well established method to visualize high-dimensional data sets. Inform yourself on the mathematical bassis of the method using Wikipedia, ChatGPT, [SciKit Learn](https://scikit-learn.org/stable/modules/decomposition.html) or other sources. 
+
+After that, 
+1. study the [scikit learn demo for PCA](https://scikit-learn.org/stable/auto_examples/decomposition/plot_pca_iris.html#sphx-glr-auto-examples-decomposition-plot-pca-iris-py) on a very famous data set
+2. try to apply PCA methods on a data set of your choice.
+  
