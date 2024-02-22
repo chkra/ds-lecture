@@ -65,7 +65,12 @@ print(f"Genauigkeit des Perzeptron-Klassifikators: {accuracy:.2f}")
 
 ```
 
-Im Code werden Sie sehen, dass der Original-Datensatz zuerst in die Merkmale $X$ und Zielvariable $y$ aufgeteilt wurden. Anschließend wurde erneut aufgeteilt in Trainings- und Testdaten. Dies ist ein typischese Vorgehen im Maschinellen Lernen: die Trainingsdaten werden verwendet, um mit dem Modell einen statistischen Zusammenhang zwischen Input und Output zu lernen. In den Testdaten wird der Output zurückgehalten (vor dem Modell verborgen), um die Korrektheit des Modells zu überprüfen. In der Theorie des Maschinellen Lernens gibt auch komplexere Vorgehensweisen, um die Qualität eines Modells möglichst zuverlässig bewerten zu können.
+### Train, Test, Predict
+
+Im Code werden Sie sehen, dass der Original-Datensatz zuerst in die Merkmale $X$ und Zielvariable $y$ aufgeteilt wurden. Anschließend wurde erneut aufgeteilt in Trainings- und Testdaten. Dies ist ein typischese Vorgehen im Maschinellen Lernen: die Trainingsdaten werden verwendet, um mit dem Modell einen statistischen Zusammenhang zwischen Input und Output zu lernen. Das eigentliche **Modell**, hier ein Perzeptron, also en sehr einfaches neuronales Netz, wird in der Variable `clf` angelegt und mit der Funktion `fit` trainiert. Anschließend wird das Modell mit der Funktion `predict` auf neue Daten (die Testdaten) angewendet.  In den Testdaten wird der Output zurückgehalten (vor dem Modell verborgen), um die Korrektheit des Modells zu überprüfen. 
+
+In der Theorie des Maschinellen Lernens gibt auch komplexere Vorgehensweisen, um die Qualität eines Modells möglichst zuverlässig bewerten zu können, die grunsätzliche Art der Verwendung von Modellen (Initialisierung, Training, Vorhersage) ist für aber bei fast allen Algorithmen und Modelle sehr ähnlich und lässt sich auch über Programmiersprachen hinweg immer wieder finden.
+
 
 ## Unüberwachtes Lernen
 
