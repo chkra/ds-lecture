@@ -69,7 +69,7 @@
 
   @if $yiq-debug { @debug $yiq, $threshold; }
 
-  @return if($yiq >= $threshold, true, false);
+  @return if( gte($yiq, $threshold), true, false);
 }
 
 @function yiq-contrast-color(
