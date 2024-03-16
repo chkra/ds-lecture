@@ -65,11 +65,11 @@
   $green: green($color);
   $blue: blue($color);
 
-  $yiq: calc(calc( calc($red*299) + calc($green*587) + calc($blue*114))/1000);
+  $yiq: (($red*299)+($green*587)+($blue*114))/1000;
 
   @if $yiq-debug { @debug $yiq, $threshold; }
 
-  @return if( gte($yiq, $threshold), true, false);
+  @return if($yiq >= $threshold, true, false);
 }
 
 @function yiq-contrast-color(
