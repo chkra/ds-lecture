@@ -26,7 +26,7 @@ Strukturelement. Hier stehen Einleitungstexte.
 **Aufgabe:** Bitte erledigen Sie diese wichtige Aufgabe.
 {: .notice--warning}
 
-**Gut zu wissen:** hier steht etwas nützliches.
+**Gut zu wissen:** hier steht etwas nützliches. Oder eine Definition.
 {: .notice--success}
 
 **Achtung!** Hier steht etwas gefährliches.

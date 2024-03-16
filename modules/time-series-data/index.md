@@ -103,7 +103,7 @@ opsd_daily.head(3)
 opsd_daily.index
 ```
 
-Alternativ können wir die obigen Schritte in einer einzigen Zeile zusammenfassen, indem wir die Parameter index_col und parse_dates der Funktion read_csv() verwenden. Dies ist oft eine nützliche Abkürzung.
+Alternativ können wir die obigen Schritte in einer einzigen Zeile zusammenfassen, indem wir die Parameter `index_col` und `parse_dates` der Funktion `read_csv()` verwenden. Dies ist oft eine nützliche Abkürzung.
 
 
 Referenzen:
