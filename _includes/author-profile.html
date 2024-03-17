@@ -8,16 +8,6 @@
 {% endif %}
 {% endif %}
 
-{% if page.licence == "CC-BY" %}
-<a href="https://creativecommons.org/licenses/by/4.0/">
-  <img style="height: 15px; width: 80px;" src="https://licensebuttons.net/l/by/4.0/80x15.png">
-</a>
-
-{% if page.licence_desc %}
-<div style="color: #858585;font-size:small;margin-top: -15px;">{{ page.licence_desc }}</div>
-{% endif %}
-
-{% endif %}
 
 <div itemscope itemtype="https://schema.org/Person" class="h-card">
 
@@ -41,7 +31,7 @@
   </div>
 
   <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button>
+    <!-- <button class="btn btn--inverse">{{ site.data.ui-text[site.locale].follow_label | remove: ":" | default: "Follow" }}</button> -->
     <ul class="author__urls social-icons">
       {% if author.location %}
         <li itemprop="homeLocation" itemscope itemtype="https://schema.org/Place">

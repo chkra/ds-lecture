@@ -11,7 +11,7 @@ toc: false
 classes: wide
 ---
 
-Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
+Herzlich Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
 
 ## ➤ Was ist Data Science?
 
@@ -25,12 +25,16 @@ Die Veranstaltung besteht aus drei Bereichen:
 * einem **Praxisteil**, den wir  wöchentlich *vor Ort gemeinsam üben* und
 * einem **Gesellenstück**, welches Sie ab der zweiten Semsesterhälfte *selbstständig anfertigen*.
 
-Konkret werden wir uns mit folgenden Inhalten beschäftigen:
+Konkret werden wir uns mit folgenden Inhalten beschäftigen:[^1]
+
+[^1]: Die Unterlagen zur Vorlesung sind *work in progress* und werden sich kontinuierlich verändern und weiterentwickeln.
 
 ### Vor der Vorlesung
 
-Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt:
+Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt: <br>
 [Von den Besten lernen](modules/ex-bahn-ds/index.md)
+{: .notice--warning}
+
 
 ### Teil 1: Werkzeuge kennen
 
@@ -42,15 +46,18 @@ Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt:
 
 ### Teil 2: Echte Problem analysieren und Lösungen organisieren
 
-6. Data Engineering für Strukturierte Daten (Datenbanken, Clustering, DimRed)	
-7. Data Engineering für unstrukturierte Daten (NoSQL)		
-8. Data Engineering für Text, Web, Social (LLMS, Vector-DB)		
+6. [Data Engineering für Strukturierte Daten (Datenbanken, Clustering, DimRed)](lectures/06/06.md)
+7. [Data Engineering für unstrukturierte Daten (NoSQL) und Bilder](lectures/07/07.md)
+8. [Statistische Inferenz und Forecasting](lectures/08/08.md)
 9. Pipelines / AutoML, Docker, MLOps		
 
 ### Teil 3: Verantwortungsvoll die Wirkung von Lösungen steuern
+09.	Data Engineering für Text, Web, Social (LLMS, Vector-DB)	
 10. Data Science im Unternehmen		
 11.	Digitale Nachhaltigkeit	
 12. Daten ansprechend präsentieren
+
+
 
 ## ➤ Was lernt man in dieser Vorlesung?
 
@@ -63,7 +70,7 @@ Workflows entwerfen und miteinander vergleichen.
 
 ## ✘ Was lernen wir NICHT in dieser Vorlesung?
 
-Wir beschäftigen uns wenig mit der Theorie des Holzes (Statistik) und der Forstwirtschaft (Mathematik), wir beschäftigen uns nicht mit der Werkzeugkunde (Algorithmen). Wir arbeiten auch nicht mit Anfänger- oder Spielzeugmaterialen, sondern entscheiden Live, welche echten Werkstücke in die Werkstatt kommen (Datensätze aus dem aktuellen Tagesgeschehen, Verifikation von Tages-Nachrichten, Datensätze aus aktuellen studentischen Projekten). Wer hier rauskommt, ist kein KI-Experte und kann keine Algorithmen entwerfen. Er versteht nicht, warum das Werkzeug funktioniert, sondern, wie man es richtig in die Hand nimmt.
+Wir beschäftigen uns wenig Statistik und Mathematik wir beschäftigen uns nur unwesentlich mit Algorithmen. Wir arbeiten auch nicht mit Anfänger- oder Spielzeugdaten, sondern entscheiden Live, welche echten Werkstücke in die Werkstatt kommen (Datensätze aus dem aktuellen Tagesgeschehen, Verifikation von Tages-Nachrichten, Datensätze aus aktuellen studentischen Projekten). Wir stellen häufig Fragen, zu denen es keine unmittelbar richtige Antwort geben wird. Wer hier rauskommt, ist kein KI-Experte und kann keine Algorithmen entwerfen. Er versteht nicht, warum das Werkzeug funktioniert, sondern, wie man es richtig in die Hand nimmt.
 
 
 ## ★ Wie wird die Teilnahme bewertet?

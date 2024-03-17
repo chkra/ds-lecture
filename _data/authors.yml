@@ -1,14 +1,11 @@
-sChristina Kratsch:
+Christina Kratsch:
   name        : "Christina Kratsch"
-  #bio         : "I ordered what?"
   avatar      : "/assets/images/authors/ck.png"
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:kratsch@htw-berlin.de"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://www.htw-berlin.de/hochschule/personen/person/?eid=13856"
+#  links:
+#  - label: "Email"
+#    icon: "fas fa-fw fa-envelope-square"
+#  - label: "Website"
+#    icon: "fas fa-fw fa-link"
 #    - label: "Twitter"
 #      icon: "fab fa-fw fa-twitter-square"
 #      url: "https://twitter.com/rhymeswithsackit"

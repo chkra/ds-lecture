@@ -15,18 +15,19 @@ classes: wide
 
 ## Boxes
 
+GRAU 
 > Ein Zitat mit klugen Worten. 
 > Mehr Zitat.
 <br>(Der Autor)
 {: .notice} 
 
-Strukturelement. Hier stehen Einleitungstexte.
+ROT Strukturelement. Hier stehen Einleitungstexte.
 {: .notice--primary}
 
-**Hinweis:** ein neutraler Hinweis.
+BLAU  **Hinweis:** ein neutraler Hinweis.
 {: .notice--info}
 
-**Aufgabe:** Bitte erledigen Sie diese wichtige Aufgabe.
+GELB  **Aufgabe:** Bitte erledigen Sie diese wichtige Aufgabe.
 {: .notice--warning}
 
 **Gut zu wissen:** hier steht etwas nützliches. Oder eine Definition.
