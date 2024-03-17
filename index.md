@@ -1,5 +1,5 @@
 ---
-title: "Vorlesung Data Science - Überblick"
+title: "Vorlesung Data Science"
 layout: single
 author_profile: true
 author: Christina Kratsch
@@ -13,27 +13,26 @@ classes: wide
 
 Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
 
-[templates.md](lecture/templates.md)
-
-## Was ist Data Science?
+## ➤ Was ist Data Science?
 
 Data Science ist das Handwerk vom Umgang mit Daten, bei dem man sich auch mal die Hände schmutzig machen muss. Hier werden keine eleganten Algorithmen auf Papier ersonnen – hier werden Daten so lange abgeklopft, bis man die Erkenntnisse herausgearbeitet hat. Dabei fliegen Späne, Hände werden schmutzig und es fließen Schweiß und Tränen. Unser Ziel ist es, alle Arbeitsschritte vom Betreten der Werkstatt über das Verstehen und Bearbeiten unseres Rohmaterials bis hin zum Erstellen und Verkaufen unseres finalen Werkstücks in einem Semester zu adressieren. 
 
-## ☰ Wie ist die Vorlesung aufgebaut?
+## ➤ Wie ist die Vorlesung aufgebaut?
 
 Die Veranstaltung besteht aus drei Bereichen:
 
-* einem **Theorieteil**, den Sie sich *selbstständig zu Hause anlesen* sollen.
-* einem **Praxisteil**, den wir *vor Ort gemeinsam üben* und
-* einem **Gesellenstück**, welches Sie vor allem ab der zweiten Semsesterhälfte *selbstständig anfertigen*.
+* einem **Theorieteil**, den Sie sich wöchentlich *selbstständig zu Hause anlesen* sollen.
+* einem **Praxisteil**, den wir  wöchentlich *vor Ort gemeinsam üben* und
+* einem **Gesellenstück**, welches Sie ab der zweiten Semsesterhälfte *selbstständig anfertigen*.
 
-Hier finden Sie weiterführende Links zu den Inhalten der Vorlesung:
+Konkret werden wir uns mit folgenden Inhalten beschäftigen:
 
 ### Vor der Vorlesung
 
+Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt:
 [Von den Besten lernen](modules/ex-bahn-ds/index.md)
 
-### Grüne Phase: Werkzeuge kennen
+### Teil 1: Werkzeuge kennen
 
 1. [Grundlagen, Organisatorisches, Daten](lectures/01/01.md)
 2. [Werkzeuge für Data Science](lectures/02/02.md)
@@ -41,14 +40,14 @@ Hier finden Sie weiterführende Links zu den Inhalten der Vorlesung:
 4. [Einfache Visualisierungen](lectures/04/04.md)
 5. [Fortgeschrittene Visualisierungen](lectures/05/05.md)
 
-### Blaue Phase: Echte Problem analysieren und Lösungen organisieren
+### Teil 2: Echte Problem analysieren und Lösungen organisieren
 
 6. Data Engineering für Strukturierte Daten (Datenbanken, Clustering, DimRed)	
 7. Data Engineering für unstrukturierte Daten (NoSQL)		
 8. Data Engineering für Text, Web, Social (LLMS, Vector-DB)		
 9. Pipelines / AutoML, Docker, MLOps		
 
-### Rote Phase: verantwortungsvoll die Wirkung von Lösungen steuern
+### Teil 3: Verantwortungsvoll die Wirkung von Lösungen steuern
 10. Data Science im Unternehmen		
 11.	Digitale Nachhaltigkeit	
 12. Daten ansprechend präsentieren
@@ -69,4 +68,4 @@ Wir beschäftigen uns wenig mit der Theorie des Holzes (Statistik) und der Forst
 
 ## ★ Wie wird die Teilnahme bewertet?
 
- ➤ **Hier geht es zu den [Bewertungskriterien](Bewertung.md).**
+Alle relevanten Informationen zur Bewertung finden Sie im Moodle.

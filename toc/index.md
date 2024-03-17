@@ -9,6 +9,9 @@ toc: false
 classes: wide
 ---
 
+## Unicode Characters
+
+☰ ➤
 
 ## Boxes
 
