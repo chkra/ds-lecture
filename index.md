@@ -23,7 +23,7 @@ Die Veranstaltung besteht aus drei Bereichen:
 
 * einem **Theorieteil**, den Sie sich wöchentlich *selbstständig zu Hause anlesen* sollen.
 * einem **Praxisteil**, den wir  wöchentlich *vor Ort gemeinsam üben* und
-* einem **Gesellenstück**, welches Sie ab der zweiten Semsesterhälfte *selbstständig anfertigen*.
+* einem **Gesellenstück**, welches Sie ab der zweiten Semesterhälfte *selbstständig anfertigen*.
 
 Konkret werden wir uns mit folgenden Inhalten beschäftigen:[^1]
 
