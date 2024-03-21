@@ -9,7 +9,7 @@ licence: "CC-BY"
 licence_desc: 2024 | HTW Berlin 
 ---
 
-Wenn Sie die Data Science Infrastruktur am Institut nutzen möchten, können Sie sich von zu Hause oder im Labor am Campus mit Hilfe des [VMWare Horizon Client](https://webdesktop.htw-berlin.de/) auf der virtuellen Maschine KI Werkstatt einloggen. Der Client ist auch als Anwendung auf den Windows-Rechnern in den HTW-Laboren installiert.
+Wenn Sie die Data Science Infrastruktur am Institut nutzen möchten, können Sie sich von zu Hause oder im Labor am Campus mit Hilfe des [VMWare Horizon Client](https://webdesktop.htw-berlin.de/) auf der virtuellen Maschine **KI Werkstatt** einloggen. Der Client ist auch als Anwendung auf den Windows-Rechnern in den HTW-Laboren installiert.
 
 Dort sollten Sie eine voll funktionsfähige Python-Installation inclusive Anaconda vorfinden.
 
