@@ -1,4 +1,16 @@
-*Datensatzsteckbrief*
+---
+title: "Datensatzsteckbrief"
+layout: single
+header:
+  overlay_color: "#5e616c"
+  overlay_image: /assets/images/mm-home-page-feature.jpg
+author_profile: false
+licence: "CC-BY"
+licence_desc: 2024 | HTW Berlin 
+classes: wide
+---
+
+
 # Name des Datensatzes
 
 ## Über den Datensatz
