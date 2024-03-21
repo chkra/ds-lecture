@@ -140,6 +140,8 @@ include:
   - .htaccess
   - _pages
   - lectures
+  - modules
+  - workshops
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
