@@ -1,0 +1,37 @@
+Wir wollen die Hypothese prüfen, dass Ingenieurinformatiker besser im Kopfrechnen sind als durchschnittliche Studenten. Was können wir tun?
+A) Daten sammeln.
+B) Statistische Methoden und Hypothesentests anwenden.
+C) Mittelwerte berechnen.
+D) Alle oben genannten Dinge.
+ANSWER: D
+
+Wir werfen einen Würfel 100 mal und berechnen den Mittelwert der gewürfelten Ergebnisse. Welcher Verteilung unterliegt das Ergebnis?
+A) Gleichverteilung
+B) Normalverteilung
+C) Hypergeometrisch
+D) Kann man nicht sagen - das hängt vom Zufall ab.
+ANSWER: B
+
+Wir wollen zeigen, dass der durchschnittliche Basketball-Spieler größer als der Durchschnittsmensch ist. Wie haben zu diesem Zweck Daten von je 20 Personen beider Gruppen gesammelt. Was müssen wir jetzt tun? Wählen Sie die Antwort, die am ehesten korrekt ist.
+A) Die Mittelwerte vergleichen.
+B) Mehr Daten sammeln.
+C) Einen t-test durchführen.
+ANSWER: C
+
+Warum sollte man als Data Scientist grundlegende Kenntnisse von Statistik haben?
+A) Weil man ohne Mathematik-Kenntnisse nicht mit Daten umgehen kann.
+B) Weil Data Science im Kern eine wissenschaftliche Methode mit formalen Methoden ist.
+C) Um Menschen mit niedriger Intelligenz davon abzuhalten, sich auf die wenigen Data Science Stellen zu bewerben.
+ANSWER: B
+
+Sie werfen einen normalen Würfel. Was ist die Wahrscheinlich, eine gerade Zahl zu würfeln?
+A) 0.5
+B) 0.3
+C) Das hängt vom Zufall ab.
+ANSWER: A
+
+Wir wollen die Hypothese prüfen, dass das durchschnittliche Einkommen eines Erwachsenen mit der Höhe seines Bildungsabschlusses zusammenhängt. Was sollten wir am besten tun?
+A) Mittelwerte vergleichen
+B) Den Korrelationskoeffizienten bestimmen.
+C) Einen t-Test durchführen.
+ANSWER: B

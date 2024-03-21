@@ -1,0 +1,123 @@
+Data Science für Anfänger: Quizze
+
+Was ist die Cloud?
+A. Eine Sammlung von Datenbanken zur Speicherung großer Daten.
+B. Eine Sammlung von Computing-Services mit Bezahlung nach Nutzung über das Internet.
+C. Eine sichtbare Masse von Partikeln, die in der Luft schweben.
+D. Antwort B ist korrekt
+ANSWER: B
+
+Was ist Cloud-Computing?
+A. Bereitstellung von Computing-Services über das Internet.
+B. Einrichten eines eigenen Rechenzentrums.
+C. Nutzung des Internets.
+D. Antwort A ist korrekt
+ANSWER: A
+
+Was sind einige Vorteile der Cloud?
+A. Flexibilität, Skalierbarkeit, Zuverlässigkeit, Sicherheit
+B. Flexibilität, Skalierbarkeit, Variabilität, Sicherheit
+C. Klarheit, Skalierbarkeit, Zuverlässigkeit, Variabilität
+D. Antwort A ist korrekt
+ANSWER: A
+
+Welches ist NICHT zwangsläufig ein guter Grund für die Wahl der Cloud?
+A. Verwendung von Machine Learning und Datenintelligenzdiensten
+B. Verarbeitung großer Datenmengen
+C. Speichern sensibler/vertraulicher Regierungsdaten
+D. Antwort C ist korrekt
+ANSWER: C
+
+Auf welche Weise(n) nutzen Datenwissenschaftler die Cloud?
+A. Infrastrukturaufgaben
+B. Speichern großer Datenmengen
+C. Konfiguration von Netzwerkoptionen
+D. Antwort B ist korrekt
+ANSWER: B
+
+Welcher Cloud-Computing-Service bietet Zugriff auf Softwareanwendungen, ohne die Software warten zu müssen?
+A. Infrastructure as a Service
+B. Platform as a Service
+C. Software as a Service
+D. Antwort C ist korrekt
+ANSWER: C
+
+Ein Vorteil der Verwendung von Jupyter Notebooks ist, dass Sie schnell Prototypen von Modellen erstellen können.
+A. Wahr
+B. Falsch
+ANSWER: A
+
+Warum würde ein Datenwissenschaftler Azure Machine Learning verwenden?
+A. Um Zeit beim Erkunden und Vorbereiten von Daten zu sparen.
+B. Um genaue Modelle zu erstellen
+C. Alle oben genannten
+D. Antwort C ist korrekt
+ANSWER: C
+
+Sie benötigen keine Expertise in Codierung, um Azure ML zu verwenden.
+A. Wahr
+B. Falsch, Code wird immer benötigt
+ANSWER: A
+
+Was benötigen Sie, um auf Azure ML Studio zuzugreifen?
+A. Einen Arbeitsbereich
+B. Eine Berechnungsinstanz
+C. Einen Berechnungscluster
+D. Antwort A ist korrekt
+ANSWER: A
+
+Welche der folgenden Aufgaben werden von Automated ML unterstützt?
+A. Bildgenerierung
+B. Klassifikation
+C. Generierung natürlicher Sprache
+D. Antwort B ist korrekt
+ANSWER: B
+
+In welchem Fall benötigen Sie GPU statt CPU?
+A. Wenn Sie tabellarische Daten haben
+B. Wenn Sie genug Geld haben, um es sich leisten zu können
+C. Wenn Sie Deep Learning betreiben
+D. Antwort C ist korrekt
+ANSWER: C
+
+Was würde durch Erhöhen der Clustergröße beeinflusst?
+A. Reaktionsfähigkeit
+B. Kosten
+C. Modellleistung
+D. Antwort C ist korrekt
+ANSWER: C
+
+Was ist ein Vorteil der Verwendung von Low-Code-Tools?
+A. Keine Expertise in Codierung erforderlich
+B. Das Dataset wird automatisch gelabelt
+C. Bessere Sicherheit des Modells
+D. Antwort A ist korrekt
+ANSWER: A
+
+Was ist AutoML?
+A. Ein Tool zur Automatisierung der Vorverarbeitung von Daten
+B. Ein Tool zur Automatisierung der Bereitstellung von Modellen
+C. Alle oben genannten
+D. Antwort B ist korrekt
+ANSWER: B
+
+Was ist der Grund für die Erstellung einer AutoMLConfig?
+A. Hier werden die Trainings- und Testdaten aufgeteilt
+B. Hier geben Sie das zu trainierende Modell an
+C. Hier finden Sie alle Details Ihres AutoML-Experiments
+D. Antwort C ist korrekt
+ANSWER: C
+
+Welche der folgenden Metriken wird von Automated ML für eine Klassifikationsaufgabe unterstützt?
+A. Genauigkeit
+B. R2-Score
+C. Normalisierte Wurzel-Mittel-Fehler
+D. Antwort A ist korrekt
+ANSWER: A
+
+Was ist KEIN Vorteil der Verwendung des SDK?
+A. Es kann verwendet werden, um mehrere Aufgaben und Läufe zu automatisieren
+B. Es erleichtert das programmgesteuerte Bearbeiten von Läufen
+C. Es kann über eine grafische Benutzeroberfläche verwendet werden
+D. Antwort C ist korrekt
+ANSWER: C

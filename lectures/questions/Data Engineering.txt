@@ -1,0 +1,81 @@
+Ein Foreign Key wird meistens verwendet, um zu
+A) Werte in anderen Tabellen zu referenzieren.
+B) passende Strings zu Werten in anderen Tabellen zu finden.
+C) Werte zu beobachten, die sich mit der Zeit verändern können.
+ANSWER: A
+
+Tabellenkalkulationen sind nicht-relationale Daten.
+A) Stimmt.
+B) Stimmt nicht.
+ANSWER: A
+
+Wofür steht NoSQL?
+A) Nope SQL
+B) Not Only SQL
+C) Not SQL
+ANSWER: B
+
+Was ist KEINE NoSQL Technologie?
+A) Objektorientierung.
+B) Key-value
+C) Columnar
+ANSWER: A
+
+Wie fertigt man Berechnungen in einer Tabellenkalkulation an?
+A) Mit eingebettetem Python-Code.
+B) Mit Aliases.
+C) Mit Formeln.
+ANSWER: C
+
+Wie fertigt man Berechnungen in einer Tabellenkalkulation an?
+A) Mit eingebettetem Python-Code.
+B) Mit Aliases.
+C) Mit Formeln.
+ANSWER: C
+
+Die meisten Datenbanken bestehen aus ...
+A) einer Tabelle
+B) vielen verknüpften Tabellen
+C) einer Tabellenkalkulation
+ANSWER: B
+
+Ein Foreign Key wird meistens verwendet, um
+A) Werte in anderen Tabellen zu referenzieren.
+B) passende Strings zu Werten in anderen Tabellen zu finden.
+C) Werte zu beobachten, die sich mit der Zeit verändern können.
+ANSWER: A
+
+Ein primary key ist ...
+A) ein Wert, um einen Eintrag in einer Datenbank eindeutig zu identifizieren.
+B) ein Wert, der Spalten einzigartig machen soll.
+C) eine Art "Passwort" zum Schutz der Tabelle.
+ANSWER: A
+
+Das Duplizieren von Spaltennamen kann man verhindern, indem man ...
+A) Kopien von Tabellen anlegt und diese aktuell hält. 
+B) Tabellen mit Relationen verknüpft.
+C) Alle Daten in einer großen Tabelle zusammenhält.
+ANSWER: B
+
+Tabellenkalkulationen sind nicht-relationale Daten.
+A) Stimmt.
+B) Stimmt nicht.
+ANSWER: A
+
+Bei welchem der folgenden Beispiele handelt es sich am ehesten um unstrukturierte Daten?
+A) Liste aller Teilnehmer eines Hochschul-Kurses
+B) Sammlung von studentischen Hausarbeiten als PDF-Dokumente
+C) Netzwerk / Graph in einem sozialen Netzwerk
+ANSWER: B
+
+Was ist KEINE NoSQL Technologie?
+A) Objektorientierung.
+B) Key-value
+C) Columnar
+ANSWER: A
+
+Wofür steht NoSQL?
+A) Nope SQL
+B) Not Only SQL
+C) Not SQL
+ANSWER: B

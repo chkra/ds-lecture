@@ -1,0 +1,173 @@
+Eine nützliche Bibliothek für Datenvisualisierungen ist:
+A) Matplotlib
+B) Matchartlib
+C) Matgraphtlib
+ANTWORT: A
+
+Man kann Mengen visualisieren mit:
+A) Streudiagrammen
+B) Liniendiagrammen
+C) beidem oben Genannten
+ANTWORT: C
+
+Balkendiagramme sind nützlich für die Visualisierung von Mengen.
+A) wahr
+B) falsch
+ANTWORT: A
+
+Man kann Trends über die Zeit analysieren mit einem:
+A) Liniendiagramm
+B) Balkendiagramm
+C) Tortendiagramm
+ANTWORT: A
+
+Man kann Werte vergleichen mit diesem Typ von Diagramm:
+A) Liniendiagramm
+B) Balkendiagramm
+C) beidem der oben genannten
+ANTWORT: C
+
+Zeige, wie Teile zu einem Ganzen in Beziehung stehen, mit diesem Typ von Diagramm:
+A) Linie
+B) Säule
+C) Kuchen
+ANTWORT: C
+
+Histogramme sind insgesamt anspruchsvollere Diagrammtypen als Streudiagramme.
+A) Wahr
+B) Falsch
+ANTWORT: A
+
+Man kann Verteilungen visualisieren mit diesem Typ von Diagramm:
+A) Streudiagramm
+B) Tortendiagramm
+C) Säulendiagramm
+ANTWORT: A
+
+Diese Bibliothek ist besonders nützlich für den Bau von Histogrammen.
+A) TensorFlow
+B) PyTorch
+C) Matplotlib
+ANTWORT: C
+
+Histogramme können verwendet werden, um diese Art von Daten zu analysieren:
+A) Textuelle
+B) Numerische
+C) beides der oben genannten
+ANTWORT: C
+
+In einem Histogramm bezieht sich ein 'Bin' auf:
+A) Eine Klasse von Daten
+B) Eine Gruppierung von Daten
+C) Wegwerfdaten
+ANTWORT: B
+
+Um ein glattes Dichtediagramm zu erstellen, verwende diese Bibliothek:
+A) Seaborn
+B) Matplotlib
+C) PyTorch
+ANTWORT: A
+
+Um Proportionen zu visualisieren, verwende diesen Diagrammtyp:
+A) Kuchen
+B) Waffel
+C) entweder der oben genannten
+ANTWORT: C
+
+Ein kostenloses Tool zur Visualisierung Ihrer Daten ist:
+A) Popculator
+B) Graphculator
+C) Charticulator
+ANTWORT: C
+
+Verwende `plt.pie`, um anzuzeigen:
+A) Kuchen-Diagramm
+B) Waffel-Diagramm
+C) Streudiagramm
+ANTWORT: A
+
+Man kann die Farben der Waffeldiagramme bearbeiten.
+A) Wahr
+B) Falsch
+ANTWORT: A
+
+Verwende diese Bibliothek, um Waffeldiagramme zu erstellen:
+A) edwaffle
+B) pywaffle
+C) yumwaffle
+ANTWORT: B
+
+In einem Donut-Diagramm baust du deinen Zentrumskreis mit dieser Syntax:
+A) plt.Oval
+B) plt.Circle
+C) plt.Edit
+ANTWORT: B
+
+Verwende diese Bibliothek, um Beziehungen zu visualisieren:
+A) Seaborn
+B) Merborn
+C) Reborn
+ANTWORT: A
+
+Verwende Seaborns `relplot`, um zu visualisieren:
+A) Kategoriale Beziehungen
+B) Statistische Beziehungen
+C) Besondere Beziehungen
+ANTWORT: B
+
+Durch Bearbeiten der Farbe eines Streudiagramms kannst du:
+A) Die Verteilung eines Datensatzes anzeigen
+B) Die Farben der Elemente anzeigen
+C) Die Temperaturen anzeigen
+ANTWORT: A
+
+Eine zugänglichere Möglichkeit, Verteilungen anzuzeigen, ist:
+A) Die Variation der Datenpunktform verwenden
+B) Die Variation der Datenpunktgröße verwenden
+C) Eine der oben genannten Methoden verwenden
+ANTWORT: C
+
+Mit Seaborns `relplot` kannst du eine Aggregation von Daten um ein Liniendiagramm anzeigen.
+A) wahr
+B) falsch
+ANTWORT: A
+
+Rastergitter helfen bei der Visualisierung von:
+A) Einem bestimmten Aspekt Ihrer Daten
+B) Ausreißern in Ihren Daten
+C) Fortschritten in Ihren Daten
+ANTWORT: A
+
+Es ist relativ einfach, Benutzer durch Bearbeiten von Diagrammen zu täuschen.
+A) Wahr
+B) Falsch
+ANTWORT: A
+
+Die Auswahl des Diagrammtyps hängt von der Art der Daten ab, die Sie haben, und von der Geschichte, die Sie darüber erzählen.
+A) Wahr
+B) Falsch
+ANTWORT: A
+
+Um ein täuschendes Diagramm zu erstellen, manipulieren einige Ersteller:
+A) Die Diagrammfarben
+B) Die X- und Y-Achsen
+C) eine der oben genannten
+ANTWORT: C
+
+Stellen Sie sicher, dass Ihre Diagramme:
+A) zugänglich sind
+B) lesbar sind
+C) beides der oben genannten
+ANTWORT: C
+
+D3 ist eine ausgezeichnete Diagrammbibliothek, um zu erstellen:
+A) animierte Visualisierungen
+B) Infografiken
+C) Deep Learning
+ANTWORT: A
+
+Stellen Sie die Lesbarkeit Ihres Diagramms sicher, indem Sie:
+A) Tags hinzufügen
+B) Farben bearbeiten
+C) Etiketten ordnungsgemäß ausrichten
+ANTWORT: C

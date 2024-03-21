@@ -1,0 +1,10 @@
+Ohne Python kein Data Science.
+A) Stimmt.
+B) Stimmt nicht.
+ANSWER: B
+
+Welche Python-Bibliothek nehmen Sie, um die Namen, Matrikelnummern und Noten von Studenten zu speichern?
+A) Numpy
+B) SciPy
+C) Pandas
+ANSWER: C

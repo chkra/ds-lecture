@@ -1,0 +1,65 @@
+Warum befindet sich das Wort _Science_ im Titel Data Science?
+A) Weil das Fach wissenschaftliche Methoden zur Datenanalyse verwendet.
+B) Weil nur Wissenschaftler, also Menschen mit einem abgeschlossenen Studium, als Data Scientists arbeiten.
+C) Weil es sich cool anhört.
+ANSWER: A
+
+Welche wissenschaftlichen Gebiete sind eng mit Data Science verwandt? 
+A) Machine Learning
+B) Statistik
+C) Alle oben genannten.
+ANSWER: C
+
+Was ist das primäre Ziel von Data Science?
+A) Das Sammeln von Daten.
+B) Das Bearbeiten und Auswerten von Daten.
+C) Datengetriebene Entscheidungen zu treffen.
+ANSWER: C
+
+Ein Unternehmen führt Umfragen unter seinen Kunden durch, um das eigene Produktangebot zu verbessern. Was für eine Datenquelle ist das am ehesten?
+A) Primärdaten.
+B) Sekundärdaten.
+C) Tertiärdaten.
+ANSWER: A
+
+Die Dozentin erstellt eine Auswertung über die Anzahl der korrekt beantworteten Klausurfragen. Was für Daten sind das? 
+A) Qualitative Daten.
+B) Quantitative Daten.
+C) Beides.
+ANSWER: B
+
+Bei welchem der folgenden Beispiele handelt es sich am ehesten um qualitative Daten?
+A) Liste von Mitarbeitergehältern
+B) Hotelbewertungen
+C) Klausurnoten
+ANSWER: B
+
+Bei welchem der folgenden Beispiele handelt es sich am ehesten um quantitative Daten?
+A) Bilder von Katzen
+B) Hotel Reviews
+C) Klausurnoten
+ANSWER: C
+
+Was ist ein wichtiger Aspekt von ethischen Betrachten in Data Science?
+A) Die korrekte Auswahl der Daten.
+B) Die korrekte Auswahl der Algorithmen und Verfahren.
+C) Beides.
+ANSWER: C
+
+Was ist der Zusammenhang oder Unterschied zwischen Ethischen Prinzipien und Regulierung?
+A) Es gibt keinen Unterschied - im Wesentlichen ist das das gleiche.
+B) Ethische Regulierung beschäftigt sich damit, Ethische Prinzipien _regulär_, also alltäglich und allgemein bekannt zu machen. 
+C) Ethische Prinzipien sind generelle Richtlinien, während Regulierung aus konkreten Gesetzen stammt.
+ANSWER: C
+
+Welcher dieser Aspekte stellt üblicherweise die wichtigste ethische Herausforderung bei Data Science Projekten dar?
+A) Transparenz über die Methodik.
+B) Datenschutz / Schutz der Privatsphäre.
+C) Zuverlässigkeit und Belastbarkeit der Ergebnisse.
+ANSWER: B
+
+Data Science für Nachhaltigkeit handelt vom
+A) Studium der Abholzung
+B) Studium von Klimadaten
+C) Beides
+ANSWER: C
