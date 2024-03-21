@@ -11,7 +11,7 @@ toc: false
 classes: wide
 ---
 
-<img src="assets/images/ds-lecture/Data Science Intro.png">
+<img src="lectures/01/img/Data Science Intro.png">
 
 Herzlich Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
 
@@ -72,7 +72,7 @@ Workflows entwerfen und miteinander vergleichen.
 
 ## ✘ Was lernen wir NICHT in dieser Vorlesung?
 
-Wir beschäftigen uns wenig Statistik und Mathematik wir beschäftigen uns nur unwesentlich mit Algorithmen. Wir arbeiten auch nicht mit Anfänger- oder Spielzeugdaten, sondern entscheiden Live, welche echten Werkstücke in die Werkstatt kommen (Datensätze aus dem aktuellen Tagesgeschehen, Verifikation von Tages-Nachrichten, Datensätze aus aktuellen studentischen Projekten). Wir stellen häufig Fragen, zu denen es keine unmittelbar richtige Antwort geben wird. Wer hier rauskommt, ist kein KI-Experte und kann keine Algorithmen entwerfen. Er versteht nicht, warum das Werkzeug funktioniert, sondern, wie man es richtig in die Hand nimmt.
+Wir beschäftigen uns wenig mit Statistik und Mathematik und nur unwesentlich mit Algorithmen. Wir arbeiten auch nicht mit Anfänger- oder Spielzeugdaten, sondern entscheiden live, welche echten Werkstücke in die Werkstatt kommen (Datensätze aus dem aktuellen Tagesgeschehen, Verifikation von Tages-Nachrichten, Datensätze aus aktuellen studentischen Projekten). Wir stellen häufig Fragen, zu denen es keine unmittelbar richtige Antwort geben wird. Wer hier rauskommt, ist kein KI-Experte und kann keine Algorithmen entwerfen. Er versteht nicht, warum das Werkzeug funktioniert, sondern, wie man es richtig in die Hand nimmt.
 
 
 ## ★ Wie wird die Teilnahme bewertet?
