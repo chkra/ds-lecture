@@ -10,8 +10,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-<img src="/modules/story-telling/img/dragon.png" height=250>
-
+![](/modules/story-telling/img/dragon.png)
 
 Storytelling in Data Science ist die Idee, über die die bloße Darstellung von Zahlen und Diagrammen hinauszugehen. Es geht darum, überzeugende Geschichten zu schaffen, die **wertvolle, relevante Einsichten** aus den Daten offenbaren. Indem Datenpunkte zu einer zusammenhängenden und fesselnden Erzählung verwoben werden, können Analysten komplexe Erkenntnisse vermitteln und datenbasierte Entscheidungen für verschiedene Zielgruppen zugänglich und wirkungsvoll machen.
  Besondere Herausforderung beim Story Telling konkret für Data Science ist es, dass der Vortragsgegenstand oft komplex und anspruchsvoll ist. Deshalb ist es wichtig,
@@ -22,7 +21,7 @@ Storytelling in Data Science ist die Idee, über die die bloße Darstellung von 
 
 ## Tipps für gutes Story Telling
 
-<img src="/modules/story-telling/img/heart.png" height=200>
+![](/modules/story-telling/img/heart.png)
 
 ### Seien Sie authentisch
 
@@ -36,7 +35,7 @@ Authentizität heißt auch, dass Sie sich nicht verstellen müssen. Sie sind so 
 
 
 
-<img src="/modules/story-telling/img/brain.png" height=150>
+![](/modules/story-telling/img/brain.png)
 
 ### Beleidigen Sie nicht die Intelligenz des Publikums
 
@@ -46,7 +45,7 @@ Ganz wichtig: kennen Sie Ihre Zielgruppe, und formulieren Sie zielgruppengerecht
 
 
 
-<img src="/modules/story-telling/img/diamond.png" height=150>
+![](/modules/story-telling/img/diamond.png)
 
 ### Mehrwert ist (fast) alles
 
@@ -62,7 +61,7 @@ Vermeiden Sie
 * Vollständigkeitszwang
 * Überladene Grafiken, Fancy Grafiken
 
-<img src="/modules/story-telling/img/audience.png" height=150>
+![](/modules/story-telling/img/audience.png)
 
 ### Nehmen Sie das Publikum mit
 
@@ -72,7 +71,7 @@ Ihr Publikum ist üblicherweise freiwillig gekommen. Dort sitzen Experten, die (
 * gehen Sie in den Dialog (und planen Sie Zeit dafür ein)
 
 
-<img src="/modules/story-telling/img/goal.png" height=150>
+![](/modules/story-telling/img/goal.png)
 
 ### Bringen Sie es auf den Punkt
 Das Ende Ihres Vortrags ist ein essenzieller Punkt. Hier definieren (bzw. verstärken) Sie die Kernbotschaft, die das Publikum mitnimmt. Bedenken Sie, dass Sie einen Teil der Publikums eventuell aufgrund einer komplexen Fachlichkeit verloren haben. Nehmen Sie diesen Teil unbedingt auch mit!
