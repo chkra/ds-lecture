@@ -15,7 +15,7 @@ Was würden Sie tun, wenn Sie wüssten, wie die Zukunft aussehen würde? Für ei
  
 Obwohl die Menschheit schon seit Jahrtausenden Wahrsager danach befragt, was die Zukunft für uns bereithält, ist es immer noch eine Herausforderung, die Zukunft vorherzusagen. Selbst mit unserer heutigen Technologie könnten Vorhersagen über das Wetter in einer Stunde massiv falsch sein. Für einige Anwendungsfälle können wir das Verhalten einer Zeitreihe jedoch gut genug modellieren, um ziemlich genaue Vorhersagen über die Zukunft zu treffen.
  
-**Zeitreihenanalyse und -prognose** sind zwei umfassende Themen, die überwältigend sein können. Einen ersten Teil zur Visualisierung und Bearbeitung von Zeitreihendaten haben wir bereits [an anderer Stelle](/modules/time-series-data/index.md)  vorgestellt.  In diesem Modul stellen wir die wesentlichen Konzepte des **Forecastings** vor.Um einige Konzepte zu veranschaulichen, verwenden wir Codebeispiele in Python und Methoden aus der Bibliothek `statsmodels`.
+**Zeitreihenanalyse und -prognose** sind zwei umfassende Themen, die überwältigend sein können. Einen ersten Teil zur Visualisierung und Bearbeitung von Zeitreihendaten haben wir bereits [an anderer Stelle](/modules/time-series-data/timeseries.md)  vorgestellt.  In diesem Modul stellen wir die wesentlichen Konzepte des **Forecastings** vor.Um einige Konzepte zu veranschaulichen, verwenden wir Codebeispiele in Python und Methoden aus der Bibliothek `statsmodels`.
 
 
 ## Zeitreihenprognose und Zeitreihenanalyse

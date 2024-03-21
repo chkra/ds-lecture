@@ -1,14 +1,15 @@
 ---
-title: "Vorlesung 01"
+title: "Vorlesung Data Science"
 layout: single
-author_profile: true
-author: Christina Kratsch
-lecture_name: "Data Science"
-lecture_desc: "Grundlegende Methoden für die Exploration und das Management von Daten."
-licence: "CC-BY"
-licence_desc: 2024 | HTW Berlin 
 classes: wide
 ---
+
+[Dummy Link](/dumm/01/test.md)
+
+[Was ist Story Telling?](/modules/story-telling/story-telling.md)
+
+[Pages](/modules/ex-bahn-ds/index.md )
+
 
 In dieser Vorlesung geht es ums Ankommen und Kennenlernen. Wir reden über den Sinn und Zweck von Date Science, klären alle organisatorischen Fragen und besprechen ganz genau, was einen guten Data Scientist ausmacht.
 {: .notice--primary}
@@ -17,12 +18,12 @@ In dieser Vorlesung geht es ums Ankommen und Kennenlernen. Wir reden über den S
 
 Wir steigen direkt ambitioniert ein - es gibt eine Hausaufgabe, bevor die Vorlesung überhaupt begonnen habt. Hoffentlich macht Ihnen die Aufgabe aber Appetit auf die geplanten Inhalte:
 
-**Aufgabe:** Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema ["BahnMining - Pünktlichkeit ist eine Zier"](/modules/ex-bahn-ds/bahn.md) beim 36C3 des Chaos Computer Clubs. Bitte sehen Sie sich zur Vorbereitung auf die erste Vorlesung das Video VOR der Vorlesung in Gänze an (Achtung, es ist etwas länger, aber hoffentlich sehr unterhaltsam). Machen Sie sich Notizen, aber nicht dazu, *was* der Redner bespricht, sondern vor allem *wie* er seine Data Science Story erzählt.
+**Aufgabe:** Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema ["BahnMining - Pünktlichkeit ist eine Zier"](/modules/ex-bahn-ds/index.md) beim 36C3 des Chaos Computer Clubs. Bitte sehen Sie sich zur Vorbereitung auf die erste Vorlesung das Video VOR der Vorlesung in Gänze an (Achtung, es ist etwas länger, aber hoffentlich sehr unterhaltsam). Machen Sie sich Notizen, aber nicht dazu, *was* der Redner bespricht, sondern vor allem *wie* er seine Data Science Story erzählt.
 {: .notice--warning}
 
 ## Was ist Data Science?
 
-<img src="/lectures/01/img/Data_Science.png" height=300>
+<img src="img/Data_Science.png" height=300>
 
 
 **Definition** Data Science ist ein interdisziplinäres Fachgebiet, das statistische Methoden, Datenanalyse, maschinelles Lernen, Informatik, Softwareentwicklung und Domänenwissen kombiniert, um Erkenntnisse aus Daten zu gewinnen, Muster zu erkennen, Vorhersagen zu treffen und komplexe Probleme zu lösen. Es beinhaltet den gesamten Prozess der Datenerfassung, -bereinigung, -exploration, -modellierung und -interpretation, um wertvolle Erkenntnisse zu generieren und fundierte Entscheidungen zu treffen. Data Science wird in verschiedenen Bereichen wie Wissenschaft, Wirtschaft, Gesundheitswesen, Marketing, Finanzen und vielen anderen angewendet, um Daten in Wissen und Handlungen umzuwandeln.

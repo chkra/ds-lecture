@@ -10,7 +10,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-![Kriesel: Bahn Mining](img/36C3.png)
+![Kriesel: Bahn Mining](/modules/ex-bahn-ds/img/36C3.png)
 
 
 Data Science ist Handwerkskunst! Ein exzellent gemachtes Beispiel für Data Science in der Praxis ist der Vortrag von David Kriesel zum Thema ["BahnMining - Pünktlichkeit ist eine Zier"](https://media.ccc.de/v/36c3-10652-bahnmining_-_punktlichkeit_ist_eine_zier) beim 36C3 des Chaos Computer Clubs.

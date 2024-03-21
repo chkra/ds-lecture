@@ -8,9 +8,9 @@ Diese Woche lernen wir fortgeschrittene Methoden, die über einfache Charts hina
 
 | Thema | Inhalt | 
 | :------------- |  :---------- |
-| [Beziehungen visualisieren](modules/12-visualization-relationships/index.md) |  Netzwerke und Abhängigkeiten | 
-| [Visualisierungen verstehen](modules//13-meaningful-visualizations/index.md) |  Hypothesen und Mehrwert erzeugen | 
-| [Komplex und interaktiv](modules//14-interactive-visualizations/index.md) | UNFINISHED Anwendungen mit D3 | 
+| [Beziehungen visualisieren](/modules/12-visualization-relationships/viz_rel.md) |  Netzwerke und Abhängigkeiten | 
+| [Visualisierungen verstehen](/modules//13-meaningful-visualizations/viz_mean.md) |  Hypothesen und Mehrwert erzeugen | 
+| [Komplex und interaktiv](/modules//14-interactive-visualizations/viz_int.md) | UNFINISHED Anwendungen mit D3 | 
 | Citizen Data Sciecnce | UNFINISHED Datenanalyse mit interaktiven Tools [Qullen dazu]((https://www.jmp.com/de_de/software/capabilities/data-exploration-and-visualization.html) ) | 
 | ChatGPT | UNFINISHED Datenanalyse mit ChatGPT | 
 https://infovis.fh-potsdam.de/tutorials/
@@ -23,7 +23,7 @@ https://data.europa.eu/apps/data-visualisation-guide/calendar-heatmap
 
 #### 🛠 Workshop
 
-Im [Workshop](workshops/04-Fortgeschrittene-Visualisierungen/index.md) erzählen wir Geschichten von Bienen und Blumen, lügen mit Daten und untersuchen eigene Themen.
+Im [Workshop](/workshops/05-Fortgeschrittene-Visualisierungen/05.md) erzählen wir Geschichten von Bienen und Blumen, lügen mit Daten und untersuchen eigene Themen.
 
 ### 🕮 Woche 05: Klassisches Data Engineering: Relational
 
@@ -35,15 +35,15 @@ https://towardsdatascience.com/designing-a-relational-database-and-creating-an-e
 
 | Thema | Inhalt | 
 | :------------- |  :---------- |
-| [UNFINISHED Mit Relationalen Daten arbeiten ](modules/05-relational-databases/README.md) |  Datenanalyse mit SQL | 
-| [UNFINISHED Mit Nicht-Relationalen Daten arbeiten ](modules/06-non-relational/README.md) |  Datenmanagement und Analyse mit NoSQL | 
+| [UNFINISHED Mit Relationalen Daten arbeiten ](/modules/05-relational-databases/README.md) |  Datenanalyse mit SQL | 
+| [UNFINISHED Mit Nicht-Relationalen Daten arbeiten ](/modules/06-non-relational/README.md) |  Datenmanagement und Analyse mit NoSQL | 
 
 # 🕮 Woche 06: Data Engineering / NoSQL 
 
 | Thema | Inhalt | 
 | :------------- |  :---------- |
-| [UNFINISHED Mit Relationalen Daten arbeiten ](modules/05-relational-databases/README.md) |  Datenanalyse mit SQL | 
-| [UNFINISHED Mit Nicht-Relationalen Daten arbeiten ](modules/06-non-relational/README.md) |  Datenmanagement und Analyse mit NoSQL | 
+| [UNFINISHED Mit Relationalen Daten arbeiten ](/modules/05-relational-databases/README.md) |  Datenanalyse mit SQL | 
+| [UNFINISHED Mit Nicht-Relationalen Daten arbeiten ](/modules/06-non-relational/README.md) |  Datenmanagement und Analyse mit NoSQL | 
 
 
 # 🕮 Woche 08: Data Engineering für Big Data

@@ -10,7 +10,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-<img src="./img/dragon.png" height=250>
+<img src="/modules/story-telling/img/dragon.png" height=250>
 
 
 Storytelling in Data Science ist die Idee, über die die bloße Darstellung von Zahlen und Diagrammen hinauszugehen. Es geht darum, überzeugende Geschichten zu schaffen, die **wertvolle, relevante Einsichten** aus den Daten offenbaren. Indem Datenpunkte zu einer zusammenhängenden und fesselnden Erzählung verwoben werden, können Analysten komplexe Erkenntnisse vermitteln und datenbasierte Entscheidungen für verschiedene Zielgruppen zugänglich und wirkungsvoll machen.
@@ -22,7 +22,7 @@ Storytelling in Data Science ist die Idee, über die die bloße Darstellung von 
 
 ## Tipps für gutes Story Telling
 
-<img src="./img/heart.png" height=200>
+<img src="/modules/story-telling/img/heart.png" height=200>
 
 ### Seien Sie authentisch
 
@@ -34,18 +34,21 @@ Jeder Influencer weiß, dass ein persönlicher Bezug zum "Produkt" mehr Follower
 Authentizität heißt auch, dass Sie sich nicht verstellen müssen. Sie sind so ruhig, zurückhaltend, aufbrausend, albern, laut wie Sie nun mal sind. Machen Sie sich Ihren individuellen Stil zur Stärke!
 
 
+
+
+<img src="/modules/story-telling/img/brain.png" height=150>
+
 ### Beleidigen Sie nicht die Intelligenz des Publikums
-<br>
-<img src="./img/brain.png" height=150>
-<br>
+
 Ihr Inhalt ist anspruchsvoll, das wissen alle. Entschuldigen Sie sich nicht dafür, sondern geben Sie Ihr Bestes, um dem Publikum so gut wie möglich alle wichtigen Erkenntnisse zu vermitteln. Üblicherweise besteht Ihr Publikum aus Entscheidern, d.h. Menschen, die sehr wenig Zeit und noch weniger Aufmerksamkeit haben. Lassen Sie deshalb alles unwesentliche weg.
 Ganz wichtig: kennen Sie Ihre Zielgruppe, und formulieren Sie zielgruppengerecht, d.h. passen Sie Komplexität, Sachlichkeit, Geschwindigkeit und Stil dem Publikum an.
 
 
+
+
+<img src="/modules/story-telling/img/diamond.png" height=150>
+
 ### Mehrwert ist (fast) alles
-<br>
-<img src="./img/diamond.png" height=150>
-<br>
 
 Gerade im unternehmerischen Kontext interessieren sich Ihre Zuhörer nur für die *relevanten* Informationen. Relevante Informationen sind
 * neu
@@ -59,10 +62,9 @@ Vermeiden Sie
 * Vollständigkeitszwang
 * Überladene Grafiken, Fancy Grafiken
 
+<img src="/modules/story-telling/img/audience.png" height=150>
+
 ### Nehmen Sie das Publikum mit
-<br>
-<img src="./img/audience.png" height=150>
-<br>
 
 Ihr Publikum ist üblicherweise freiwillig gekommen. Dort sitzen Experten, die (auf ihre Weise) für das Vortragsthema brennen und eine Meinung dazu haben. Beachten und nutzen Sie das für den Vortrag:
 * stellen Sie dem Publikum fragen
@@ -70,11 +72,9 @@ Ihr Publikum ist üblicherweise freiwillig gekommen. Dort sitzen Experten, die (
 * gehen Sie in den Dialog (und planen Sie Zeit dafür ein)
 
 
-### Bringen Sie es auf den Punkt
-<br>
-<img src="./img/goal.png" height=150>
-<br>
+<img src="/modules/story-telling/img/goal.png" height=150>
 
+### Bringen Sie es auf den Punkt
 Das Ende Ihres Vortrags ist ein essenzieller Punkt. Hier definieren (bzw. verstärken) Sie die Kernbotschaft, die das Publikum mitnimmt. Bedenken Sie, dass Sie einen Teil der Publikums eventuell aufgrund einer komplexen Fachlichkeit verloren haben. Nehmen Sie diesen Teil unbedingt auch mit!
 
 

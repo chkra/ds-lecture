@@ -11,10 +11,9 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
 # uncomment since github actually does not support custom themes
-# theme                  : "minimal-mistakes-jekyll"
+theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise", "default"
-
 
 
 # Site Settings
@@ -24,9 +23,9 @@ title_separator          : "-"
 subtitle                 : 
 name                     : ""
 description              : "Neue Impulse für die KI-Lehre"
-url                      : https://chkra.github.io/ds-lecture # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "chkra/ds-lecture"
+#url                      : https://chkra.github.io/ds-lecture # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+#base_url                 : "/"
+#repository               : "chkra/ds-lecture"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : /assets/images/logo.png # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
@@ -138,10 +137,13 @@ footer:
 # Reading Files
 include:
   - .htaccess
-  - _pages
-  - lectures
   - modules
   - workshops
+  - lectures
+  - lectures\01
+  - dumm
+  - dumm\01
+#  - _pages
 exclude:
   - "*.sublime-project"
   - "*.sublime-workspace"
@@ -175,6 +177,9 @@ keep_files:
 encoding: "utf-8"
 markdown_ext: "markdown,mkdown,mkdn,mkd,md"
 
+relative_links:
+  enabled:     true
+  collections: true
 
 # Conversion
 markdown: kramdown
@@ -224,7 +229,6 @@ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 plugins:
   - jekyll-relative-links
   - jekyll-gist
-
   - jekyll-include-cache
 #  - jekyll-paginate
 #  - jekyll-feed
@@ -240,9 +244,6 @@ whitelist:
 #  - jekyll-sitemap
 
 
-relative_links:
-  enabled:     true
-  collections: false
 
 # Archives
 #  Type

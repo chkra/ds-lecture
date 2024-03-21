@@ -10,6 +10,9 @@ licence_desc: 2024 | HTW Berlin
 toc: false
 classes: wide
 ---
+
+
+# KOPIE
 <img src="/lectures/01/img/Data Science Intro.png">
 
 Herzlich Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
@@ -39,11 +42,11 @@ Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt: <br>
 
 ### Teil 1: Werkzeuge kennen
 
-1. [Grundlagen, Organisatorisches, Daten](lectures/01/01.md)
-2. [Werkzeuge für Data Science](lectures/02/02.md)
-3. [Daten  verstehen als Projekt](lectures/03/03.md)
-4. [Einfache Visualisierungen](lectures/04/04.md)
-5. [Fortgeschrittene Visualisierungen](lectures/05/05.md)
+1. [Grundlagen, Organisatorisches, Daten](/lectures/01/01.md)
+2. [Werkzeuge für Data Science](/lectures/02/02.md)
+3. [Daten  verstehen als Projekt](/lectures/03/03.md)
+4. [Einfache Visualisierungen](/lectures/04/04.md)
+5. [Fortgeschrittene Visualisierungen](/lectures/05/05.md)
 
 ### Teil 2: Echte Problem analysieren und Lösungen organisieren
 
