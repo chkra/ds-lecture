@@ -11,6 +11,8 @@ toc: false
 classes: wide
 ---
 
+<img src="assets/images/ds-lecture/Data Science Intro.png">
+
 Herzlich Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
 
 ## ➤ Was ist Data Science?
