@@ -1,4 +1,3 @@
-
 ---
 title: "Story Telling"
 layout: single
