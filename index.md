@@ -10,7 +10,8 @@ licence_desc: 2024 | HTW Berlin
 toc: false
 classes: wide
 ---
-<img src="/lectures/01/img/Data Science Intro.png">
+
+![]("/lectures/01/img/Data Science Intro.png")
 
 Herzlich Willkommen zum Kurs <em>Data Science</em> im Master Ingenieurinformatik an der HTW Berlin.
 
