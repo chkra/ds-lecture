@@ -17,14 +17,22 @@ Besondere Aufmerksamkeit haben Vektordatenbanken auch mit dem Aufkommen von Chat
 
 ## Vector Embeddings mit neuronalen Netzen
 
-Um alltägliche Daten als Vektoren abzubilden, werden verschiedene Methoden genutzt. Im folgenden Beispiel nutzen wir einen Autoencoder, um Bilddaten erst auf eine niedrig-dimensionalere Repräsentation abzubilden (Encoder) und dann (fehlerbehaftet) die Originaldaten wieder herzustellen. Nachdem das neuronale Netz wiederholt trainiert wurde, so dass der Rekonstruktionsfehler minimiert wurde, kann der innere *Latent Space* als niedrigdimensionaleres Embedding der Originaldaten verstanden werden. Der Encoder ist also unser *Vecotrizer*, der Latent Space unser Ziel-Vektorraum, und der Decoder die Rückübersetzung in den Bildraum.
+Um alltägliche Daten als Vektoren abzubilden, werden verschiedene Methoden genutzt. [Dieser Code](/modules/autoencoder/MNIST_Autoencoder.ipynb) zeigt exemplarisch, wie man einen Autoencoder für MNIST-Daten trainieren kann. Hier nutzen wir einen Autoencoder, um Bilddaten erst auf eine niedrig-dimensionalere Repräsentation abzubilden (Encoder) und dann (fehlerbehaftet) die Originaldaten wieder herzustellen. Nachdem das neuronale Netz wiederholt trainiert wurde, so dass der Rekonstruktionsfehler minimiert wurde, kann der innere *Latent Space* als niedrigdimensionaleres Embedding der Originaldaten verstanden werden. Der Encoder ist also unser *Vecotrizer*, der Latent Space unser Ziel-Vektorraum, und der Decoder die Rückübersetzung in den Bildraum.
+
+Es fällt insbesondere auf, dass ähnliche Bilder (z.B. Bilder der handschriftlichen Zahl "0") auf ähnliche (nahe) Vektoren im Latent Space abgebildet werden. 
+
+Eine detaillierte Erklärung zum Thema Autoencoder finden Sie in [der zugehörigen Lektion](/modules/autoencoder/autoencoder.md). 
+{: .notice--info} 
+
+
+# Vector Embeddings für Texte.
+
+
+Dieses Prinzip lässt sich insbesondere mit Bilddaten, aber auch mit allen numerischen Eingabedaten fester Größe verwenden. Text-Eingaben, wie sie bei LLMs verwendet werden, zeichnen sich insbesondere durch ihre dynamsische Länge aus, deshalb muss dazu das Prinzip des Autoencoders abgewandelt werden. Ein wichtiger Ansatz dafür ist word2vec, den wir an anderer Stelle erklären.
 
 
 
-![](./images/Autoencoder.png)
-*Autoencoder (schematischer Aufbau)*
 
-[Dieser Code](https://databasecamp.de/ki/autoencoder) zeigt exemplarisch, wie man einen Autoencoder für MNIST-Daten trainieren kann. Es fällt insbesondere auf, dass ähnliche Bilder (z.B. Bilder der handschriftlichen Zahl "0") auf ähnliche (nahe) Vektoren im Latent Space abgebildet werden. Dieses Prinzip lässt sich insbesondere mit Bilddaten, aber auch mit allen numerischen Eingabedaten fester Größe verwenden. Text-Eingaben, wie sie bei LLMs verwendet werden, zeichnen sich insbesondere durch ihre dynamsische Länge aus, deshalb wird das Prinzip des Autoencoders abgewandelt. Ein wichtiger Ansatz dafür ist word2vec, den wir an anderer Stelle erklären.
 
 @Todo
 <!-- 
