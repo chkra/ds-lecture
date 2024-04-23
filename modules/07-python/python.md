@@ -97,7 +97,9 @@ a = pd.Series(range(1,10))
 b = pd.Series(["I","like","to","play","games","and","will","not","change"],index=range(0,9))
 df = pd.DataFrame([a,b])
 ```
+
 This will create a horizontal table like this:
+
 |     | 0   | 1    | 2   | 3   | 4      | 5   | 6      | 7    | 8    |
 | --- | --- | ---- | --- | --- | ------ | --- | ------ | ---- | ---- |
 | 0   | 1   | 2    | 3   | 4   | 5      | 6   | 7      | 8    | 9    |
@@ -107,6 +109,7 @@ We can also use Series as columns, and specify column names using dictionary:
 ```python
 df = pd.DataFrame({ 'A' : a, 'B' : b })
 ```
+
 This will give us a table like this:
 
 |     | A   | B      |
