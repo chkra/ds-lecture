@@ -30,12 +30,12 @@ If you have a dataset and need to discover how much of a given item is included,
 
 ## Build a line plot about bird wingspan values
 
-Download and study the `notebook.ipynb` file [here](./notebook.ipynb) and add a cell. You can also [download the data]('../../data/birds.csv') here.
+Download and study the `notebook.ipynb` file [here](./notebook.ipynb) and add a cell. You can also [download the data]('data/birds.csv') here.
 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
-birds = pd.read_csv('../../data/birds.csv')
+birds = pd.read_csv('data/birds.csv')
 birds.head()
 ```
 This data is a mix of text and numbers:

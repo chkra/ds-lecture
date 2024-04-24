@@ -16,12 +16,12 @@ In the previous lesson, you learned some interesting facts about a dataset about
 
 Another way to dig into data is by looking at its distribution, or how the data is organized along an axis. Perhaps, for example, you'd like to learn about the general distribution, for this dataset, of the maximum wingspan or maximum body mass for the birds of Minnesota. 
 
-Let's discover some facts about the distributions of data in this dataset. In the _notebook.ipynb_ file at the root of this lesson folder, import Pandas, Matplotlib, and your data:
+Let's discover some facts about the distributions of data in this dataset. In the [notebook.ipynb](notebook.ipynb) file at the root of this lesson folder, import Pandas, Matplotlib, and your data:
 
 ```python
 import pandas as pd
 import matplotlib.pyplot as plt
-birds = pd.read_csv('../../data/birds.csv')
+birds = pd.read_csv('data/birds.csv')
 birds.head()
 ```
 

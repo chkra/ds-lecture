@@ -119,11 +119,15 @@ wobei \(F(x)\) die Verteilungsfunktion der Stichprobe ist.
 
 **Ein Beispiel:** Angenommen, wir haben eine Liste von Gehältern in einem Unternehmen:
 
+```
 {2000, 2500, 2700, 3000, 3200, 3500, 3800, 4000, 4200, 5000}
+```
 
 Um das 50. Perzentil zu berechnen, sortieren wir zunächst die Daten:
 
+```
 {2000, 2500, 2700, 3000, 3200, 3500, 3800, 4000, 4200, 5000}
+```
 
 Da die Anzahl der Datenpunkte (zehn) gerade ist, nehmen wir den Durchschnitt der beiden mittleren Werte, um den Median zu erhalten. In diesem Fall sind die mittleren Werte 3200 und 3500. Der Durchschnitt von 3200 und 3500 ist 3350. Daher beträgt das 50. Perzentil 3350. Das bedeutet, dass 50% der Gehälter in diesem Unternehmen 3350 oder weniger sind und 50% der Gehälter 3350 oder mehr betragen.
 
