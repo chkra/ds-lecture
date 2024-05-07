@@ -22,7 +22,7 @@ title                    : ""
 title_separator          : "-"
 subtitle                 : 
 name                     : ""
-description              : ""Grundlegende Methoden für die Exploration und das Management von Daten | HTW Berlin"
+description              : "Grundlegende Methoden für die Exploration und das Management von Daten | HTW Berlin"
 url                      : https://chkra.github.io/ds-lecture # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 #base_url                 : "/"
 repository               : "chkra/ds-lecture"
@@ -140,9 +140,9 @@ include:
   - modules
   - workshops
   - lectures
-  - lectures\01
+  - lectures/01
   - dumm
-  - dumm\01
+  - dumm/01
 #  - _pages
 exclude:
   - "*.sublime-project"
@@ -284,7 +284,6 @@ compress_html:
 
 # Defaults
 defaults:
-  # _posts
   - scope:
       path: ""
       type: posts
@@ -295,4 +294,3 @@ defaults:
       comments: # true
       share: true
       related: true
-
