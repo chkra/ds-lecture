@@ -10,7 +10,7 @@ licence_desc: 2024 | HTW Berlin
 classes: wide
 ---
 
-<img src="https://pandas.pydata.org/pandas-docs/stable/_static/pandas.svg" width=30%><br>
+<img src="img/pandas.png" width=30%> <br>
 
 Über die Python-Bibliothek `Pandas` kann man eingentlich kaum genug Superlative formulieren. Pandas ist vielleicht DIE  umfangreichste, komfortabelste und wichtigste Python-Bibliothek für Datenanalyse und Datenmanipulation. Als Data Scientist kommt man an der Bedienung nicht vorbei. 
 
@@ -25,6 +25,10 @@ Die Benutzerfreundlichkeit und Flexibilität von Pandas machen es zu einem unver
 Online gibt es zahlreiche Übersichten, Kurse und Cheat Sheets zur Bibliothek und es erscheint nicht sinnvoll, diese hier zu kopieren.
 
 Besonders zu empfehlen ist die exzellent aufbereitete Dokumentation auf [pandas.pydata.org](https://pandas.pydata.org/), **insbesondere sollte jeder Data Scientist die Inhalte aus folgenden beidene Referenzen kennen**:
+
+Werfen Sie einen Blick auf die folgenden externen Inhalte:
+{: .notice--warning}
+
 * [Das Allernötigste: 10 minutes to pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/10min.html)
 * [Datenvisualisierung mit Pandas](https://pandas.pydata.org/pandas-docs/stable/user_guide/visualization.html)
 {: .notice--info}

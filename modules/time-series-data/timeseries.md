@@ -68,7 +68,7 @@ Wenn wir `to_datetime()` eine Liste oder ein Array von Zeichenfolgen als Eingabe
 ```python
 pd.to_datetime(['05.01.2018', '08.07.1952', '10. Okt. 1995'])
 DatetimeIndex(['2018-01-05', '1952-07-08', '1995-10-10'], dtype='datetime64[ns]', freq=None)
-
+```
 
 Im obigen DatetimeIndex gibt der Datentyp `datetime64[ns]` an, dass die zugrunde liegenden Daten als 64-Bit-Ganzzahlen in Einheiten von Nanosekunden (ns) gespeichert werden. Diese Datenstruktur ermöglicht es Pandas, große Sequenzen von Datums-/Uhrzeitwerten kompakt zu speichern und vektorisierte Operationen mithilfe von [NumPy datetime64-Arrays](https://docs.scipy.org/doc/numpy-1.15.0/reference/arrays.datetime.html) effizient durchzuführen.
 
@@ -123,7 +123,7 @@ Ein weiterer nützlicher Aspekt des DatetimeIndex besteht darin, dass die einzel
 # Add columns with year, month, and weekday name
 opsd_daily['Year'] = opsd_daily.index.year
 opsd_daily['Month'] = opsd_daily.index.month
-opsd_daily['Weekday Name'] = opsd_daily.index.weekday_name
+opsd_daily['Weekday Name'] = opsd_daily.index.day_name()
 # Display a random sampling of 5 rows
 opsd_daily.sample(5, random_state=0)
 ```
@@ -208,6 +208,10 @@ Um die wöchentliche Saisonalität des Stromverbrauchs im obigen Diagramm besser
 
 Da Datums-/Uhrzeit-Ticks in matplotlib.dates etwas anders gehandhabt werden als in der plot()-Methode des DataFrame, erstellen wir den Plot direkt in matplotlib. Dann verwenden wir `mdates.WeekdayLocator()` und `mdates.MONDAY`, um die Ticks der x-Achse auf den ersten Montag jeder Woche zu setzen. Wir verwenden auch mdates.DateFormatter(), um die Formatierung der Teilstrichbeschriftungen zu verbessern, indem wir die Formatcodes verwenden, die wir zuvor gesehen haben.
 
+
+myFmt = mdates.DateFormatter('%d')
+ax.xaxis.set_major_formatter(myFmt)
+
 ```python
 import matplotlib.dates as mdates
 fig, ax = plt.subplots()
@@ -217,7 +221,8 @@ ax.set_title('Jan-Feb 2017 Electricity Consumption')
 # Set x-axis major ticks to weekly interval, on Mondays
 ax.xaxis.set_major_locator(mdates.WeekdayLocator(byweekday=mdates.MONDAY))
 # Format x-tick labels as 3-letter month name and day number
-ax.xaxis.set_major_formatter(mdates.DateFormatter(
+myFmt = mdates.DateFormatter('%m')
+ax.xaxis.set_major_formatter(myFmt)
 ```
 
 Jetzt haben wir an jedem Montag vertikale Gitternetzlinien und schön formatierte Häkchenbeschriftungen, sodass wir leicht erkennen können, welche Tage Wochentage und Wochenenden sind.
