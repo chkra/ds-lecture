@@ -99,6 +99,6 @@ K-Means-Clustering ist mit Abstand die beliebteste Version des Zentroid-Clusteri
 
 ## ⚑ Quelle
 
-** Quelle** <br> Diese Lektion ist in Teilen angelehnt an den Kurs ["Machine Learning for Beginners"](https://github.com/microsoft/ML-For-Beginners/blob/main/5-Clustering/1-Visualize/README.md).
+**Quelle** <br> Diese Lektion ist in Teilen angelehnt an den Kurs ["Machine Learning for Beginners"](https://github.com/microsoft/ML-For-Beginners/blob/main/5-Clustering/1-Visualize/README.md).
 {: .notice--info}
 
