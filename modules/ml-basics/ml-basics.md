@@ -16,6 +16,8 @@ Maschinelles Lernen (ML) ist ein Teilgebiet der Künstlichen Intelligenz, welche
 
 ## Überwachtes Lernen
 
+<img src="img/sup-vs-unsup.png">
+
 Grundsätzlich werden im Maschinellen Lernen zwei wesentliche Arten von Algorithmen unterschieden: beim **Überwachten Lernen** werden bereits in den Lerndaten korrekte Ausgabewerte (sogenannte Label oder Zielvariablen) bereitgestellt.
 
 Innerhalb des Überwachten Lernens unterscheidet man zwei Arten von Algorithmen:
@@ -66,6 +68,8 @@ print(f"Genauigkeit des Perzeptron-Klassifikators: {accuracy:.2f}")
 ```
 
 ### Train, Test, Predict
+
+<img src="img/ablauf.png">
 
 Im Code werden Sie sehen, dass der Original-Datensatz zuerst in die Merkmale $X$ und Zielvariable $y$ aufgeteilt wurden. Anschließend wurde erneut aufgeteilt in Trainings- und Testdaten. Dies ist ein typischese Vorgehen im Maschinellen Lernen: die Trainingsdaten werden verwendet, um mit dem Modell einen statistischen Zusammenhang zwischen Input und Output zu lernen. Das eigentliche **Modell**, hier ein Perzeptron, also en sehr einfaches neuronales Netz, wird in der Variable `clf` angelegt und mit der Funktion `fit` trainiert. Anschließend wird das Modell mit der Funktion `predict` auf neue Daten (die Testdaten) angewendet.  In den Testdaten wird der Output zurückgehalten (vor dem Modell verborgen), um die Korrektheit des Modells zu überprüfen. 
 

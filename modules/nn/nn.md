@@ -12,11 +12,12 @@ classes: wide
 
 <img src="img/deep_learning.png" height=400>
 
-**Maschinelles Lernen** (ML) bezeichnet eine umfangreiche Sammlung von statistischen Methoden, welche Daten verarbeiten und daraus Modelle entwickeln. Anhand dieser Modelle können Vorhersagen getroffen oder Muster identifiziert werden, sowie Entscheidungen und Automatisierungen vorgenommen werden. **Deep Learning** (DL) ist eine besondere Art von Methoden des ML, welche auf dem mathematischen Prinzip von großen neuronalen Netzen basieren.
+**Künstliche Intelligenz** (KI) ist ein umfangreiches Forschungs- und Arbeitsfeld, dessen Definition und Bedeutungsumfang in den letzten 50 Jahren immer wieder starken Veränderungen unterlag. Aktuell kann man KI am ehesten verstehen als Gesamtheit aller Methoden, Systeme und Forschungsansätze, die dem Ziel der automatisierung menschlichen Verhaltens und menschlicher Aufgaben dienen.  
+**Maschinelles Lernen** (ML) bezeichnet innerhalb der KI eine umfangreiche Sammlung von insbesondere statistischen Methoden, welche Daten verarbeiten und daraus Modelle entwickeln. Anhand dieser Modelle können Vorhersagen getroffen oder Muster identifiziert werden, sowie Entscheidungen und Automatisierungen vorgenommen werden. **Deep Learning** (DL) ist eine besondere Art von Methoden des ML, welche auf dem mathematischen Prinzip von großen neuronalen Netzen basieren.
 {: .notice--info}
 
 
-Neuronale Netze sind, formell betrachtet, mathematische Modelle, das heißt große, mathematische Formeln, die auf Basis eines Eingabevektors ein Ergebnis (eine Zahl) ausrechnen. Also für einen Zahlenvektor $\mathbb{x}$ eine Funktion $f(\mathbb{x}) = y$ mit $y\in \R$:
+**Neuronale Netze** sind, formell betrachtet, mathematische Modelle, das heißt große, mathematische Formeln, die auf Basis eines Eingabevektors ein Ergebnis (eine Zahl) ausrechnen. Also für einen Zahlenvektor $\mathbb{x}$ eine Funktion $f(\mathbb{x}) = y$ mit $y\in \R$:
 
 $$y = f(\mathbb{x})$$
 
@@ -37,12 +38,12 @@ Ein einzelnes Perzeptron bildet damit das einfachste mögliche Neuronale Netz. T
 
  <img src="img/nn_layer.png" height=400>
 
-Für einfache Bildklassifikationsaufgaben genügen dafür schon 2-3 Layer, die jeweils ein paar hundert Perzeptrons haben. Für anspruchsvollerer Probleme werden aktuelle hunderte von Schichten hintereinander geschalten, was Tausende von Perzeptrons benötigt. Jedes Perzeptron ist damit eine kleine Teil-Funktion in der großen mathematischen Formel, die das neuroanle Netzwerk berechnet. Beachten Sie dabei, dass jedes Perzeptron (jede einzelen Teil-Funktion) sich durch einen ganz individuellen Gewichtsvektor $w§ auszeichnet. Damit verfügt die große Funktion des gesamten Netzes über sehr viele solcher $w$-Vektoren und damit über Tausende, vielleicht Millionen von Parametern! 
+Für einfache Bildklassifikationsaufgaben genügen dafür schon 2-3 Layer, die jeweils ein paar hundert Perzeptrons haben. Für anspruchsvollerer Probleme werden aktuelle hunderte von Schichten hintereinander geschalten, was Tausende von Perzeptrons benötigt. Jedes Perzeptron ist damit eine kleine Teil-Funktion in der großen mathematischen Formel, die das neuronale Netzwerk berechnet. Beachten Sie dabei, dass jedes Perzeptron (jede einzelen Teil-Funktion) sich durch einen ganz individuellen Gewichtsvektor $w$ auszeichnet. Damit verfügt die große Funktion des gesamten Netzes über sehr viele solcher $w$-Vektoren und damit über Tausende, vielleicht Millionen von Parametern! 
 
 Aber wo kommen die Gewichte $w$ her? Dies ist die Magie des Deep Learnings. Vereinfacht gesagt werden die Parameter in der mathematischen Funktion $f$ zu Beginn mit zufälligen Zahlen belegt. Dies führt dazu, dass die Funktion $f$ des neuronalen Netzes zu Beginn absehbar ein unsinniges Ergebnis berechnet, wenn unser Katzenbild als Input gegeben wird. In sehr komplexen iterativen Algorithmen (die wir hier nicht behandeln) wird nun wieder und wieder ein kleines bisschen an den (vielen!) Gewichten $w$ gedreht, so dass der Output ein *bisschen* korrekter ist (erinnern Sie sich: der Output des Netzes ist eine reelle Zahl). Dies wird unzählige Male wiederholt, mit unzäligen Beispielbildern und ihrem jeweiligen Output, bis die Gewichte schließlich so eingestelt sind, dass das Neuronale Netz den gewünschten Output liefert, d.h. die gewünschte Zielfunktion "gelernt" hat.
 
 Damit beherrschen Sie nun die grundlegende Intuiton neuronaler Netze. Neben unzähligen mathematischen Feinheiten in der obigen Erklärung beschäftigt sich die aktuelle Forschung vor allem damit, welche **Architekturen** von neuronalen Netzen für bestimmte Anwendungsfälle gut geeignet sind. Die Architekturen werden üblicherweise nur anhand ihrere Schichten angedeutet.{: .notice--success}
 
-Überlegen Sie mal: wofür könnte z.B. ein Autoencoder gut sein? {: .notice--warning}
+Überlegen Sie mal: wofür könnte z.B. ein **Autoencoder** (siehe Bild unten) gut sein? {: .notice--warning}
 
  <img src="img/autoencoder.png" height=400>
