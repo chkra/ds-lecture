@@ -51,13 +51,15 @@ Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt: <br>
 6. [Data Engineering für Strukturierte Daten (Datenbanken, Clustering, DimRed)](lectures/06/06.md)
 7. [Data Engineering für unstrukturierte Daten (NoSQL) und Bilder](lectures/07/07.md)
 8. [Statistische Inferenz und Forecasting](lectures/08/08.md)
-9. Pipelines / AutoML, Docker, MLOps		
+9. [ChatGPT und Vektordatenbanken](lectures/09/09.md)
 
 ### Teil 3: Verantwortungsvoll die Wirkung von Lösungen steuern
-09.	Data Engineering für Text, Web, Social (LLMS, Vector-DB)	
-10. Data Science im Unternehmen		
-11.	Digitale Nachhaltigkeit	
-12. Daten ansprechend präsentieren
+
+10. [Data Science im Unternehmen](lectures/10/10.md)
+11.	Data Engineering für Text, Web, Social (LLMS, Vector-DB)	
+12. Data Science im Unternehmen		
+13.	Digitale Nachhaltigkeit	
+14. Daten ansprechend präsentieren
 
 
 

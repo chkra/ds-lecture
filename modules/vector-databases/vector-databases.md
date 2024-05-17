@@ -21,11 +21,11 @@ Um alltägliche Daten als Vektoren abzubilden, werden verschiedene Methoden genu
 
 Bei genauerer Betrachtung des Jupyter Notebooks fällt insbesondere auf, dass ähnliche Bilder (z.B. alle Bilder der handschriftlichen Zahl "0") auf ähnliche (nahe) Vektoren im Latent Space abgebildet werden:
 
-Nullen im latent space:
+"Nullen" im latent space:
 
 <img src="images/latent_zeros.png">
 
-Im Vergleich dazu vieren im latent space:
+Im Vergleich dazu "Vieren" im latent space:
 
 <img src="images/latent_fours.png">
 
@@ -39,7 +39,7 @@ Das heißt, dass sich semantisch-inhaltliche Daten auch an einem ähnlichen Ort 
 
 Das Prinzip des Embeddings unter Beibehaltung der semantischen Nähe lässt sich mit Bilddaten, aber auch mit allen anderen numerischen Eingabedaten fester Größe verwenden. Aber was ist mit natürlicher Sprache? Text-Eingaben, wie sie bei LLMs verwendet werden, zeichnen sich insbesondere durch ihre dynamische Länge aus, deshalb muss dazu das Prinzip abgewandelt werden. 
 
-[Dieses Tutorial zu **Word embeddings**](https://www.tensorflow.org/text/tutorials/word_embeddings) erklärt detailliert, wie man ein neuronales Netz trainiert, welches aus Texten (also Strings, als Input) einen Latent Space lernt, der für jedes Wort einen Vektor als numerische Repräsentation angibt.
+[Dieses Tutorial zu **Word embeddings**](https://www.tensorflow.org/text/tutorials/word_embeddings) erklärt detailliert, wie man ein neuronales Netz trainiert, welches aus Texten (also Strings, als Input) einen Latent Space lernt, der für jedes Wort einen Vektor als numerische Repräsentation angibt. Hier vermitteln wir nur eine grundlegende Intuition:
 
 <img src="images/text_embedding.png" height=300> 
 
@@ -51,9 +51,9 @@ Dieses Verfahren führt nach dem Training insbesondere auch dazu, dass auch einz
 
 Ein derartiges Verfahren führt auch dazu, dass semantisch ähnliche Worte wie z.B. *Katze* und *Kater* deutlich näher beieinander im Latent Space platziert sind als semantisch verschiedene Worte wie *Katze* und *Finanzamt*. 
 
-Probieren Sie es selbst aus: der [Tensorflow Embedding Projecotr](https://projector.tensorflow.org/) erlaubt das interaktive Spielen mit derartigen bestehenden Embeddings.
+Probieren Sie es selbst aus: der [Tensorflow Embedding Projector](https://projector.tensorflow.org/) erlaubt das interaktive Spielen mit derartigen bestehenden Embeddings.
 
-Um im praktischen Einsatz dann ganze Sätze (oder Dokumente!) dynamischer Länge als Embedding zu repräsentieren, gibt es sehr unterschiedliche Ansätze. Der einfachste ist vermutlich **Pooling**: die Wort-Vektoren aller Worte im Satz werden einfach aufaddiert (und ggf. normiert):
+Um im praktischen Einsatz dann ganze Sätze (oder Dokumente! oder Dokumentensammlungen!) dynamischer Länge als Embedding zu repräsentieren, gibt es sehr unterschiedliche Ansätze. Der einfachste ist vermutlich **Pooling**: die Wort-Vektoren aller Worte im Satz werden einfach aufaddiert (und ggf. normiert):
 
 <img src="images/pooling.png" height=100> 
 
@@ -83,11 +83,13 @@ welche eine Laufzeit von nur $O(\log N)$ aufweisen.
 
 Diese Approximationsalgorithmen legen zusätzliche Metadaten im Vektorraum an, die die Suche beschleunigen. Diese Vorgehensweise macht den Kern von *Vektordatenbanken* aus, welche Sammlungen von Vektoren verwalten und schnell durchsuchbar machen.
 
-Dieses [beigefügte Jupyter Notebook]("vector_database.ipynb") (siehe Quellenangaben) zeigt, wie man eine Vektordatenbank mit Daten füllt und einen Query gegen die Datenbank laufen lässt.
+Dieses [beigefügte Jupyter Notebook]("/modules/vector-databases/vector_database.ipynb") (siehe Quellenangaben im Notebook) zeigt, wie man eine Vektordatenbank mit Daten füllt und einen Query gegen die Datenbank laufen lässt.
 
 **Aufgabe:**  Studieren Sie das Jupyter Notebook und machen Sie sich mit der grundsätzlichen Funktionsweise einer Vektordatenbank vertraut. {: .notice--warning} 
 
 **Anmerkung:**  Leider ist der zugrundeliegende Client für die Vektordatenbank nicht Windows-kompatibel, sie sollten also auf ein Linux-basiertes System wechseln oder WSL nutzen. Falls Sie WSL nutzen, möchten Sie dort vielleicht vorher auch [Anaconda installieren](https://gist.github.com/kauffmanes/5e74916617f9993bc3479f401dfec7da). {: .notice--info} 
+
+**Anmerkung 2:**  Falls Sie gute Erfahrungen mit konkreten Anbietern von Vektordatenbanken gemacht haben - teilen Sie Ihr Wissen gern! {: .notice--info} 
 
 
 ## ⚑ Quellenangaben
