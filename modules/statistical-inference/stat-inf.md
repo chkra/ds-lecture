@@ -58,7 +58,7 @@ To help us understand the distribution of data, it is helpful to talk about **qu
 
 Graphically we can represent relationship between median and quartiles in a **box plot**:
 
-<img src="images/boxplot_explanation.png" width="50%"/>
+![Weight Box Plot](https://raw.githubusercontent.com/microsoft/Data-Science-For-Beginners/main/1-Introduction/04-stats-and-probability/images/boxplot_explanation.png)
 
 Here we also compute **inter-quartile range** IQR=Q3-Q1, and so-called **outliers** - values, that lie outside the boundaries [Q1-1.5*IQR,Q3+1.5*IQR].
 
