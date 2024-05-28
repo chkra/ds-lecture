@@ -17,3 +17,7 @@ licence_desc: 2024 | HTW Berlin
 5. [05 Visualisierungen für Fortgeschrittene](/workshops/05-Fortgeschrittene-Visualisierungen/05.md)
 6. [06 Data Engineering - Strukturierte Daten](/workshops/06-Klassisches-Data-Engineering/06.md)
 7. [07 Data Engineering - Unstrukturierte Daten](/workshops/07-Unstrukturierte-Daten/07.md)
+8. [08 Hypothesentests und Forecasting ](/workshops/08-statistics/08.md)
+9. [09 LLMs und Vektordatenbanken](/workshops/09-Vektordatenbanken/09.md)
+10. [10 DS im Unternehmen](/workshops/10-Unternehmen/10.md)
+11. [11 Ihr Video](/workshops/11-Videodrehbuch/11.md)
