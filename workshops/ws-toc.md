@@ -20,4 +20,5 @@ licence_desc: 2024 | HTW Berlin
 8. [Hypothesentests und Forecasting ](/workshops/08-statistics/08.md)
 9. [LLMs und Vektordatenbanken](/workshops/09-Vektordatenbanken/09.md)
 10. [DS im Unternehmen](/workshops/10-Unternehmen/10.md)
-11. [Ihr Video](/workshops/11-Videodrehbuch/11.md)
+11  DS & Nachhaltigkeit / Workshop AI Diversity
+12. [Ihr Video](/workshops/12-Videodrehbuch/12.md)
