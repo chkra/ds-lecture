@@ -21,7 +21,7 @@ Retrieval Augmented Generation (RAG) ist ein fortschrittlicher Ansatz im Bereich
 
 Die Idee ist einfach:
 
-<img src="./img/rag.png" height=400>
+![rag](img/rag.png)
 
 Information Retrieval bezieht sich auf den Prozess des Abrufens relevanter Informationen aus großen Datensätzen. Im Kontext von RAG werden große Wissensdatenbanken oder Informationsquellen verwendet, um relevante Informationen für eine gegebene Eingabeabfrage zu finden (siehe Grafik, zweiter Schritt). Dies können beispielsweise Wikipedia-Artikel, Fachbücher oder Online-Datenbanken oder eben Wissensquellen im unternehmerischen Kontext sein. 
 
