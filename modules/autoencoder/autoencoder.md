@@ -83,8 +83,7 @@ Deepfakes gewinnen aufgrund der Fortschritte bei den Algorithmen des maschinelle
 
 Autoencoder sind maschinelle Lernmodelle, die aus einem Encoder- und einem Decoder-Teil bestehen. Sie werden verwendet, um eine komprimierte, aber informationsreiche Darstellung unstrukturierter Daten zu lernen. Wir können zum Beispiel dasselbe Bild als Eingabe und Ausgabe verwenden. Dies würde es dem Autoencoder ermöglichen, eine möglichst komprimierte Vektordarstellung des Bildes (Code im Diagramm) zu lernen, in der alle wichtigen Merkmale gespeichert sind. Dieser Vektor wird dann vom Decoder verwendet, um daraus wieder das Originalbild zu erzeugen. Je besser die gelernte komprimierte Vektordarstellung des Autoencoders ist, desto realistischer ist das erzeugte (=rekonstruierte) Bild.
 
-<img src="img/deepfake.png" height=400>
-![Deep Fake](iimg/deepfake.png)
+![Deep Fake](img/deepfake.png)
 
 Für ein Deepfake werden insgesamt zwei Autoencoder trainiert. Das erste Modell wird mit Bildern oder Videos der Person gefüttert, die im Endprodukt zu sehen sein soll. In den meisten Fällen sind dies Prominente, Politiker oder Sportler, in unserem Beispiel Person A. Das zweite Modell wird mit Bildern einer anderen Person (Person B) trainiert, die die zu imitierende Mimik oder Gestik liefert.
 
