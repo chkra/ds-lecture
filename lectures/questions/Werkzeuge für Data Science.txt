@@ -1,3 +1,9 @@
+Welche Panda-Funktionen bieten grundlegendes Datenprofilieren?
+A) pandas()
+B) isnull()
+C) describe()
+ANTWORT: C
+
 Ohne Python kein Data Science.
 A) Stimmt.
 B) Stimmt nicht.
@@ -8,3 +14,4 @@ A) Numpy
 B) SciPy
 C) Pandas
 ANSWER: C
+

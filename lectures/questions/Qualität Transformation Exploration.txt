@@ -1,0 +1,68 @@
+Ist Datenbereinigung wichtig?
+A) Ja, Weil die Modelle und Aussagen davon besser werden.
+B) Nein, Datenbereinigung ist nur in seltenen Fällen wirklich wichtig.
+C) Nein, üblicherweise übernehmen KI-Systeme die Datenbereinigung heutzutage selbst.
+ANSWER: A
+
+Was ist das primäre Ziel von Datenbereinigung?
+A) Formatierungsfehler beseitigen.
+B) Datentypen korrigieren
+C) Alles oben genannte.
+ANSWER: C
+
+Das Zusammenführen (merge, join) von zwei Datensätzen kann zu Inkonsistenzen in den Daten führen.
+A) Stimmt.
+B) Stimmt nicht.
+ANSWER: A
+
+Was ist das erste, was man tun sollte, wenn man fehlende Datenwerte beobachtet?
+A) Die Einträge löschen.
+B) Die Werte imputieren.
+C) Herausfinden, warum die Werte fehlen.
+ANSWER: C
+
+Was ist das primäre Ziel der Datenklassifikation?
+A) Daten korrekt speichern / ablegen.
+B) Korrekte Bezeichnungen für Daten finden.
+C) Neues Wissen über die Domäne generieren.
+ANSWER: C
+
+Welche Überlegungen sollten bei der Datenpflege berücksichtigt werden?
+A) Daten bereinigen
+B) Die Daten sicher halten
+C) Alle oben genannten
+ANSWER: C
+
+Analysieren kann sich auf das Analysieren von Modellen oder Daten beziehen.
+A) Wahr
+B) Falsch
+ANSWER: A
+
+Was ist wichtig beim Erkunden von Daten, bevor sie in einem Modell oder für weitere Analysen verwendet werden?
+A) Daten entfernen
+B) Herausforderungen in den Daten identifizieren
+C) Das Erkunden von Daten ist nicht wichtig
+ANSWER: B
+
+Was wird ein Datenwissenschaftler tun, wenn er Daten erkundet?
+A) Sampling
+B) Visualisierungen
+C) Dokumentation
+D) Alle oben genannten
+ANSWER: D
+
+Visualisierung ist nie Teil der explorativen Datenanalyse (EDA).
+A) Wahr
+B) Falsch
+ANSWER: B
+
+Was ist der Zweck der Datenstichprobe?
+A) Stichproben sind besser als Datenprofilierung, wenn Fehler gesucht werden.
+B) Stichproben haben keinen Zweck
+C) Stichproben werden verwendet, um Daten in einem großen Datensatz zu analysieren, weil es schwierig ist, alle zu analysieren.
+ANSWER: C
+
+Wenn Daten kommuniziert werden, können Farben verwendet werden, um Emotionen beim Publikum hervorzurufen.
+A) Wahr
+B) Falsch
+ANSWER: A

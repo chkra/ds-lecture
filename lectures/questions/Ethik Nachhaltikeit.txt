@@ -1,0 +1,19 @@
+Welche Rolle spielt Ethik in der Datenwissenschaft?
+A) Keine Rolle, da Datenwissenschaft rein technisch ist
+B) Ethik beeinflusst Entscheidungen bei der Datenerhebung und -analyse
+C) Ethik ist nur für Sozialwissenschaftler relevant
+D) Ethik ist nur wichtig, wenn Unternehmensdaten analysiert werden
+ANSWER: B
+
+Was ist Data Ethics / Datenethik?
+A) Die Untersuchung von Fragestellungen im Umfeld von Daten, Algorithmen und zugehörigen Anwendungen
+B) Die Erhebung von Daten zu ethisch relevanten Fragestellungen
+C) Alle Gesetze und Normen, die den Umgang mit Daten regulieren
+ANSWER: A
+
+
+Was ist "informed consent"?
+A) Akt der Zustimmung eines Benutzers zu einer Aktion, wobei alle relevanten Fakten, Risiken und Alternativen klar sind.
+B) Die Zustimmung, vorab umfassende Information zu einem Vertrag oder einer Handlung zu erhalten.
+C) Die Verpflichtung eines Unternehmens, Nutzer bei bestimmten Verträgen umfassend zu informieren.
+ANSWER: A

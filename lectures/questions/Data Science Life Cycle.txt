@@ -1,0 +1,47 @@
+Was ist der erste Schritt des Data Science Lebenszyklus?
+A) Daten analysieren
+B) Daten bereinigen
+C) Daten erfassen und das Problem lösen
+ANSWER: C
+
+Sobald der nächste Schritt des Data Science Lebenszyklus erreicht ist, können Sie nicht mehr zu vorherigen Schritten zurückkehren.
+A) Wahr
+B) Falsch
+ANSWER: B
+
+Was sind einige gängige Techniken in der Verarbeitungsphase im Data Science Life Cycle?
+A) Clustering
+B) Künstliche Intelligenz
+C) Dokumentation
+D) Alle oben genannten
+ANSWER: A
+
+Von den unten genannten Optionen, welche ist die aussagekräftigste Erklärung für den jährlichen Fortschritt eines Unternehmens?
+A) Wir hatten ein ausgezeichnetes Jahr! Unsere Nutzer wuchsen um 30%, unser Umsatz stieg um 21%, und wir haben 100 neue Teammitglieder hinzugefügt.
+B) Wir hatten ein tolles Jahr! Unsere Nutzer wuchsen enorm, unser Umsatz stieg deutlich an, und wir haben sogar mehrere neue Teammitglieder in allen Abteilungen hinzugefügt.
+C) Unser Fortschritt im vergangenen Jahr war einfach phänomenal. Ich kann nicht genug betonen, wie stark sich unsere Nutzer, unser Umsatz oder unser Team vergrößert haben.
+ANSWER: A
+
+Wenn Daten an ein Executive-Publikum kommuniziert werden, welche Strategie wäre akzeptabel?
+A) Vertiefen Sie sich in die kleinen Details und verbringen Sie weniger Zeit mit der Bedeutung der Daten.
+B) Konzentrieren Sie sich hauptsächlich auf die Bedeutung der Daten und die empfohlenen nächsten Schritte basierend auf den Daten.
+C) Erklären Sie den gesamten Kontext und versuchen Sie, gemeinsam mit den Führungskräften potenzielle Lösungen zu finden.
+ANSWER: B
+
+Welcher Schritt des Data Science Lebenszyklus produziert höchstwahrscheinlich ein Modell?
+A) Verarbeitung
+B) Wartung
+C) Erfassung
+ANSWER: A
+
+Welche Fragen würde ein Datenwissenschaftler in der Erfassungsphase des Data Science Lebenszyklus stellen?
+A) Was sind die Einschränkungen?
+B) Ergibt die Daten Sinn?
+C) Ergibt das Modell Sinn?
+ANSWER: A
+
+Welcher dieser Schritte ist Teil der Datenvorverarbeitung (data preparation) im Data Science Life Cycle?
+A) Model-Validierung
+B) Klassifikation
+C) Datenbereinigung
+ANSWER: C
