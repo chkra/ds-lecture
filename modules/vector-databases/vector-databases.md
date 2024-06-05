@@ -23,11 +23,11 @@ Bei genauerer Betrachtung des Jupyter Notebooks fällt insbesondere auf, dass ä
 
 "Nullen" im latent space:
 
-<img src="images/latent_zeros.png">
+![]("images/latent_zeros.png")
 
 Im Vergleich dazu "Vieren" im latent space:
 
-<img src="images/latent_fours.png">
+![]("images/latent_fours.png")
 
 Eine detaillierte Erklärung zum Thema Autoencoder finden Sie in [der zugehörigen Lektion](/modules/autoencoder/autoencoder.md). 
 {: .notice--info} 
@@ -41,13 +41,13 @@ Das Prinzip des Embeddings unter Beibehaltung der semantischen Nähe lässt sich
 
 [Dieses Tutorial zu **Word embeddings**](https://www.tensorflow.org/text/tutorials/word_embeddings) erklärt detailliert, wie man ein neuronales Netz trainiert, welches aus Texten (also Strings, als Input) einen Latent Space lernt, der für jedes Wort einen Vektor als numerische Repräsentation angibt. Hier vermitteln wir nur eine grundlegende Intuition:
 
-<img src="images/text_embedding.png" height=300> 
+![]("images/text_embedding.png")
 
 Vereinfacht gesagt werden zum Training Textsequenzen fester Länge (also z.B. immer 10 Worte, oder, wie im Beispiel oben, immer 6 Worte) zuerst in numerische Vektoren umgewandelt, indem die Worte durch ihren Index im Vokabular ersetzt werden. Nach dem bekannten Prinzip des Autoencoders wird nun eine *latent representation* gelernt.
 
 Dieses Verfahren führt nach dem Training insbesondere auch dazu, dass auch einzelne Worte eine latente Repräsentation haben:
 
-<img src="images/cat_embedding.png" height=300> 
+![]("images/cat_embedding.png")
 
 Ein derartiges Verfahren führt auch dazu, dass semantisch ähnliche Worte wie z.B. *Katze* und *Kater* deutlich näher beieinander im Latent Space platziert sind als semantisch verschiedene Worte wie *Katze* und *Finanzamt*. 
 
@@ -55,13 +55,13 @@ Probieren Sie es selbst aus: der [Tensorflow Embedding Projector](https://projec
 
 Um im praktischen Einsatz dann ganze Sätze (oder Dokumente! oder Dokumentensammlungen!) dynamischer Länge als Embedding zu repräsentieren, gibt es sehr unterschiedliche Ansätze. Der einfachste ist vermutlich **Pooling**: die Wort-Vektoren aller Worte im Satz werden einfach aufaddiert (und ggf. normiert):
 
-<img src="images/pooling.png" height=100> 
+![]("images/pooling.png")
 
 Intuitiv wird damit klar, dass auch Sätze (und Dokumente), die sich semantisch ähneln, nahe im Latent Space beieinander gruppiert werden, während Sätze (und Dokumente) mit stark unterschiedlichem Inhalt eine hohe euklidsche Distanz aufweisen.
 
 ## Semantische Suche: k-Nearest Neighbor im Latent Space
 
-<img src="images/SemanticSearch.png" height=400> 
+![]("images/SemanticSearch.png")
 
 Ein Anwendungsfall dieser vektorisierten Datenrepräsenation liegt damit extrem nahe: stellen Sie sich eine Wissensbasis vor (z.B. Website, Sharepoint, Dokumentensammlung), die mit Hilfe eines Autoencoders als Menge von Vektoren abgelegt wurde. Wir können nun mit einer Anfrage (Query) in natürlicher Sprache in dieser "Datenbank" suchen, indem wir unseren Query als Vektor darstellen und die $k$ nächsten (ähnlichsten) Dokumentvektoren als Ergebnis der Suche ausgeben. Dazu berechnen wir die Distanzen des Vektors zu allen Einträgen (= Vektoren = Punkten) in der Datenbank und geben die nächsten k Nachbarn im Raum aus. Damit haben wir eine Dokumentensuche implementiert, die nicht rein auf Schlagworten basiert, sondern echte sprachlich-semantische Ähnlichkeiten beachtet.
 
