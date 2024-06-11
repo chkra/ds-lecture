@@ -56,10 +56,11 @@ Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt: <br>
 ### Teil 3: Verantwortungsvoll die Wirkung von Lösungen steuern
 
 10. [Data Science im Unternehmen](lectures/10/10.md)
-11.	Data Engineering für Text, Web, Social (LLMS, Vector-DB)	
-12. Data Science im Unternehmen		
-13.	Digitale Nachhaltigkeit	
-14. Daten ansprechend präsentieren
+11. [Daten ansprechend präsentieren](lectures/11/11.md)
+12.	[Rückblick & Wissensorganisation](lectures/12/12.md)
+13. [Data Science und Nachhaltigkeit](lectures/13/13.md)
+
+
 
 
 
