@@ -61,7 +61,7 @@ Bitte studieren Sie VOR der der ersten Vorlesung folgenden Inhalt: <br>
 13. [Data Science und Nachhaltigkeit](lectures/13/13.md)
 
 
-
+Der Theorie-Teil wird mit einer [Klausur](/workshops/14-Klausur/14.md) abgeschlossen. Weitere Details zur Bewertung finden Sie im Moodle.
 
 
 ## ➤ Was lernt man in dieser Vorlesung?
