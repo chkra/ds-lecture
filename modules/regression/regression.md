@@ -33,12 +33,13 @@ für den $n$-dimensionalen Merkmalsraum (das $\beta_0$ lösen wir durch ein zus�
 
 Ein typisches praktisches Beispiel ist der Zusammenhang zwischen _Größe_ und _Gewicht_ von Dingen oder Personen. In der Grafik sehen wir das Ergebnis einer Datenerhebung, die klar einen linearen Zusammenhang erkennen lässt:
 
-<img src="./img/reg.png" height=300>
+![](./img/reg.png)
 
 Aber wie finden wir die konkreten Gewichte dieses Zusammenhangs? Welche Linie beschreibt die Daten am besten (in der Sprache des maschinellen Lernens formuliert: welches Modell hat die Maximum Likelihood in Anbedtract unseres Datensatzes?).
 
 Intutiv sehen wir, dass die im Beispiel unten die blaue Linie besser zu den Daten passt als die rote:
-<img src="./img/reg_good.png" height=300> . . . <img src="./img/reg_bad.png" height=300>
+![](./img/reg_good.png)
+![](./img/reg_bad.png)
 
 Mathematisch formuliert ist dies klar, weil die blaue Linie, ausgedrückt durch einen Parametervektor $\beta$, die Abweichung der einzelnen Datenpunkte zur Projektion auf der Linie minimiert:
 $$
@@ -111,7 +112,7 @@ Auch hier gibt es (etwas anspruchsvollere) mathematische Verfahren, die das best
 
 Besonderes Merkmal der logistischen Funktion ist aber insbesondere, dass ihr Ergebnis ($y$) immer nahe an -1 oder 1 ist. Das erkennt man leicht an ihrer Form:
 
-<img src="img/logit.png" height=300 >
+![](img/logit.png)
 
 Der Algorithmus wird deshalb trotz seines Namens üblicherweise nicht als Verfahren zur _Regression_ (Vorhersage von kontinuierlichen Zahlenwerten), sondern als Verfahren zur _Klassifikation_ (Vorhersage von Kategorien) verwendet.
 
