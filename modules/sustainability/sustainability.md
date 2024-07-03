@@ -39,7 +39,7 @@ Typische Anwendungen von Data Science für Umweltschutz beziehen sich üblicherw
 
 Wie wir im Bereich [Data Science für Unternehmen](/lectures/10/10.md) gelernt haben, ist ein Wesentlicher Aspekt von Data Science auch die **Definition** und **Messbar-Machung** von Metriken. 
 
-Ein schönes Beispiel ist der [Sustainability Development Goas Tracker](https://ourworldindata.org/sdgs) des [*Our World in Data Teams*](https://ourworldindata.org/). Mit Arbeiten wie diesen macht man 
+Ein schönes Beispiel ist der [Sustainability Development Goals Tracker](https://ourworldindata.org/sdgs) des [*Our World in Data Teams*](https://ourworldindata.org/). Mit Arbeiten wie diesen macht man 
 * Probleme erstmals sichtbar und quantifizierbar sowie
 * Lösungen vergleichbar
 
