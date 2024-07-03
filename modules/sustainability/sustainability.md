@@ -1,5 +1,5 @@
 ---
-title: "Data Science und Nachhaltigkeit
+title: "Data Science und Nachhaltigkeit"
 layout: single
 author_profile: true
 author: Christina Kratsch
@@ -9,8 +9,6 @@ licence: "CC-BY"
 licence_desc: 2024 | HTW Berlin 
 classes: wide
 ---
-
-
 
 
 ![](https://www.explainxkcd.com/wiki/images/4/40/superintelligent_ais.png)
@@ -51,3 +49,4 @@ Gerade für sehr komplexe Problemlagen macht Data Sciene Probleme und Lösungsan
 ### Zur Vertiefung
 
 **Circular Economy, durchgerechnet:** Eine exzellente Studie als Anwendung von Data Science für Umweltschutz, fachlich irgendwo zwischen Statistik, Suppy Chain Engineering und gesundem Menschenverstand, ist dieser Blogartikel zum Thema [Data Science for Sustainability — Simulate a Circular Economy](https://towardsdatascience.com/data-science-for-sustainability-simulate-a-circular-economy-b6a13d4b0451) von Samir Saci. Bei Circular Economy / [Kreislaufwirtschat](https://de.wikipedia.org/wiki/Kreislaufwirtschaft) handelt es sich um ein fundamentales Konzept der Nachhaltigkeit. Sie können die Artikel auch [hier](./img/circular.pdf) einsehen.
+{: .notice--info} 
